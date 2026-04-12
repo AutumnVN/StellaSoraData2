@@ -1,0 +1,514 @@
+[
+    [
+        "103",
+        "Amber",
+        "The Port",
+        "1",
+        "How about doing some night fishing?",
+        "The Kitten Encounter"
+    ],
+    [
+        "103",
+        "Amber",
+        "The Academy",
+        "1",
+        "Getting hungry. Gonna go to the cafeteria.",
+        "Cafeteria Trick"
+    ],
+    [
+        "107",
+        "Tilia",
+        "The Dessert Shop",
+        "1",
+        "Take part in the raffle inside the store.",
+        "Out of Habit"
+    ],
+    [
+        "107",
+        "Tilia",
+        "The Market",
+        "1",
+        "What's that? Looks suspicious.",
+        "Solved On the Spot"
+    ],
+    [
+        "108",
+        "Kasimira",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "Impressive Skills"
+    ],
+    [
+        "108",
+        "Kasimira",
+        "The Market",
+        "2",
+        "There's an event you can join in the game area.",
+        "Flawless Accuracy"
+    ],
+    [
+        "110",
+        "Firenze",
+        "The Academy",
+        "1",
+        "Getting hungry. Gonna go to the cafeteria.",
+        "School Days"
+    ],
+    [
+        "110",
+        "Firenze",
+        "The Port",
+        "1",
+        "How about doing some night fishing?",
+        "The Bait"
+    ],
+    [
+        "111",
+        "Iris",
+        "The Dessert Shop",
+        "3",
+        "It's still early. Chat a bit longer.",
+        "The Bitter and the Sweet"
+    ],
+    [
+        "111",
+        "Iris",
+        "The Academy",
+        "2",
+        "Gonna look around inside the library.",
+        "Library Talk"
+    ],
+    [
+        "112",
+        "Noya",
+        "The Cave",
+        "2",
+        "Don't go any deeper. Stop here and take a rest.",
+        "Foraging Cuisine"
+    ],
+    [
+        "112",
+        "Noya",
+        "The Market",
+        "3",
+        "There's a show over there.",
+        "The Professional"
+    ],
+    [
+        "113",
+        "Shimiao",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "Alliance Sealed by Cake"
+    ],
+    [
+        "113",
+        "Shimiao",
+        "The Market",
+        "2",
+        "There's an event you can join in the game area.",
+        "Pressure Relief"
+    ],
+    [
+        "116",
+        "Ridge",
+        "The Cave",
+        "2",
+        "Don't go any deeper. Stop here and take a rest.",
+        "Mushroom Scent"
+    ],
+    [
+        "116",
+        "Ridge",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "Cakes To-Go"
+    ],
+    [
+        "117",
+        "Jinglin",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "A Study in Dessert"
+    ],
+    [
+        "117",
+        "Jinglin",
+        "The Cave",
+        "2",
+        "Don't go any deeper. Stop here and take a rest.",
+        "Freshly Picked"
+    ],
+    [
+        "118",
+        "Coronis",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "Freshly Unearthed"
+    ],
+    [
+        "118",
+        "Coronis",
+        "The Academy",
+        "2",
+        "Gonna look around inside the library.",
+        "Burning Gaze"
+    ],
+    [
+        "119",
+        "Nanoha",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "Customized Sweetness"
+    ],
+    [
+        "119",
+        "Nanoha",
+        "The Market",
+        "2",
+        "There's an event you can join in the game area.",
+        "The Best Maid"
+    ],
+    [
+        "120",
+        "Canace",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "When It Rains, It Pours"
+    ],
+    [
+        "120",
+        "Canace",
+        "The Academy",
+        "1",
+        "Getting hungry. Gonna go to the cafeteria.",
+        "Faculty Cafeteria"
+    ],
+    [
+        "123",
+        "Ann",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "Gift from the Mountain God"
+    ],
+    [
+        "123",
+        "Ann",
+        "The Market",
+        "2",
+        "There's an event you can join in the game area.",
+        "View From High"
+    ],
+    [
+        "125",
+        "Freesia",
+        "The Cave",
+        "2",
+        "Don't go any deeper. Stop here and take a rest.",
+        "The Mysterious Mushroom"
+    ],
+    [
+        "125",
+        "Freesia",
+        "The Dessert Shop",
+        "3",
+        "It's still early. Chat a bit longer.",
+        "True Heart"
+    ],
+    [
+        "126",
+        "Flora",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "The Celebrity"
+    ],
+    [
+        "126",
+        "Flora",
+        "The Market",
+        "3",
+        "There's a show over there.",
+        "Outside Help"
+    ],
+    [
+        "127",
+        "Teresa",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "Practice Makes Perfect"
+    ],
+    [
+        "127",
+        "Teresa",
+        "The Market",
+        "4",
+        "Haven't been to that area yet.",
+        "Bond-Aid"
+    ],
+    [
+        "130",
+        "Donna",
+        "The Market",
+        "2",
+        "There's an event you can join in the game area.",
+        "The Teddy Bear"
+    ],
+    [
+        "130",
+        "Donna",
+        "The Academy",
+        "2",
+        "Gonna look around inside the library.",
+        "Old Letters"
+    ],
+    [
+        "132",
+        "Minova",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "Bioluminescence"
+    ],
+    [
+        "132",
+        "Minova",
+        "The Academy",
+        "2",
+        "Gonna look around inside the library.",
+        "Borrowing Books"
+    ],
+    [
+        "133",
+        "Nazuka",
+        "The Market",
+        "1",
+        "What's that? Looks suspicious.",
+        "False Alarm"
+    ],
+    [
+        "133",
+        "Nazuka",
+        "The Port",
+        "2",
+        "Take a small boat out for some coastal sightseeing.",
+        "Ever-Turning Waterwheel"
+    ],
+    [
+        "134",
+        "Fuyuka",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "Manager for a Day"
+    ],
+    [
+        "134",
+        "Fuyuka",
+        "The Cave",
+        "2",
+        "Don't go any deeper. Stop here and take a rest.",
+        "The Brave One's Proposition"
+    ],
+    [
+        "135",
+        "Mistique",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "Archaeological Discovery"
+    ],
+    [
+        "135",
+        "Mistique",
+        "The Academy",
+        "2",
+        "Gonna look around inside the library.",
+        "Material Gathering"
+    ],
+    [
+        "141",
+        "Chixia",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "The Mural Master"
+    ],
+    [
+        "141",
+        "Chixia",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "Cake Artistry"
+    ],
+    [
+        "142",
+        "Cosette",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "New Food Discovery"
+    ],
+    [
+        "142",
+        "Cosette",
+        "The Market",
+        "4",
+        "Haven't been to that area yet.",
+        "The Lure of the Bling-Bling"
+    ],
+    [
+        "143",
+        "Wraith",
+        "The Market",
+        "4",
+        "Haven't been to that area yet.",
+        "A Rare Find"
+    ],
+    [
+        "143",
+        "Wraith",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "\"Hot\" Springs?"
+    ],
+    [
+        "144",
+        "Chitose",
+        "The Port",
+        "2",
+        "Take a small boat out for some coastal sightseeing.",
+        "Port Talk"
+    ],
+    [
+        "144",
+        "Chitose",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "A Sugar-Tempered Blade"
+    ],
+    [
+        "147",
+        "Caramel",
+        "The Port",
+        "2",
+        "Take a small boat out for some coastal sightseeing.",
+        "Secret Stage"
+    ],
+    [
+        "147",
+        "Caramel",
+        "The Market",
+        "4",
+        "Haven't been to that area yet.",
+        "Artistic Integrity"
+    ],
+    [
+        "149",
+        "Gerie",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "The Cave Mass"
+    ],
+    [
+        "149",
+        "Gerie",
+        "The Port",
+        "2",
+        "Take a small boat out for some coastal sightseeing.",
+        "Sea Prayer"
+    ],
+    [
+        "150",
+        "Laru",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "Fry-Flavored Cake"
+    ],
+    [
+        "150",
+        "Laru",
+        "The Port",
+        "1",
+        "How about doing some night fishing?",
+        "Port Fishing Guide"
+    ],
+    [
+        "155",
+        "Shia",
+        "The Port",
+        "2",
+        "Take a small boat out for some coastal sightseeing.",
+        "Cruise of Ripples"
+    ],
+    [
+        "155",
+        "Shia",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "Underground Drift"
+    ],
+    [
+        "156",
+        "Nazuna",
+        "The Market",
+        "2",
+        "There's an event you can join in the game area.",
+        "\"Lord of the Prize Claw\""
+    ],
+    [
+        "156",
+        "Nazuna",
+        "The Port",
+        "1",
+        "How about doing some night fishing?",
+        "Seaside Fishing"
+    ],
+    [
+        "158",
+        "Snowish Laru",
+        "The Market",
+        "4",
+        "Haven't been to that area yet.",
+        "The Photo"
+    ],
+    [
+        "158",
+        "Snowish Laru",
+        "The Port",
+        "1",
+        "How about doing some night fishing?",
+        "Where Are the Fish?"
+    ],
+    [
+        "159",
+        "Springseek Coronis",
+        "The Cave",
+        "1",
+        "Keep exploring deeper.",
+        "In Search of Totems"
+    ],
+    [
+        "159",
+        "Springseek Coronis",
+        "The Market",
+        "4",
+        "Haven't been to that area yet.",
+        "A Peculiar Doll"
+    ]
+]
