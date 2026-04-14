@@ -1,0 +1,376 @@
+const { writeFileSync } = require('fs');
+const { ATTR_TYPE, EFFECT_TYPE, collectParamsFrom, getEffectData, PARAM_TYPE, formatEffectType, formatAddAttrType, collectUnusedDiscParamsFrom } = require('./utils');
+const DISC = require('./EN-data/bin/Disc.json');
+const DISCIP = require('./EN-data/bin/DiscIP.json');
+const DISCTAG = require('./EN-data/bin/DiscTag.json');
+const DISCPROMOTE = require('./EN-data/bin/DiscPromote.json');
+const ITEM = require('./EN-data/bin/Item.json');
+const MAINSKILL = require('./EN-data/bin/MainSkill.json');
+const SECONDARYSKILL = require('./EN-data/bin/SecondarySkill.json');
+const SUBNOTESKILL = require('./EN-data/bin/SubNoteSkill.json');
+const SUBNOTESKILLPROMOTEGROUP = require('./EN-data/bin/SubNoteSkillPromoteGroup.json');
+const ATTRIBUTE = require('./EN-data/bin/Attribute.json');
+const DISCEXTRAATTRIBUTE = require('./EN-data/bin/DiscExtraAttribute.json');
+const EFFECT = require('./EN-data/bin/Effect.json');
+const EFFECTVALUE = require('./EN-data/bin/EffectValue.json');
+const BUFF = require('./EN-data/bin/Buff.json');
+const ONCEADDITTIONALATTRIBUTEVALUE = require('./EN-data/bin/OnceAdditionalAttributeValue.json');
+const LANG_ITEM = require('./EN-data/language/en_US/Item.json');
+const LANG_UITEXT = require('./EN-data/language/en_US/UIText.json');
+const LANG_DISCTAG = require('./EN-data/language/en_US/DiscTag.json');
+const LANG_MAINSKILL = require('./EN-data/language/en_US/MainSkill.json');
+const LANG_SECONDARYSKILL = require('./EN-data/language/en_US/SecondarySkill.json');
+const LANG_SUBNOTESKILL = require('./EN-data/language/en_US/SubNoteSkill.json');
+const characterId = require('./characterid.json');
+
+const disc = {};
+
+for (const id in DISC) {
+    if (LANG_ITEM[ITEM[id].Title] === '???') continue;
+
+    disc[id] = {
+        id: +id,
+        name: LANG_ITEM[ITEM[id].Title] || `${id}`,
+        star: ITEM[id].Rarity === 1 ? 5 : ITEM[id].Rarity === 2 ? 4 : 3,
+        element: LANG_UITEXT[`UIText.T_Element_Attr_${DISC[id].EET}.1`],
+        tag: DISC[id].Tags?.map(tagId => LANG_DISCTAG[DISCTAG[tagId].Title]) || [],
+        char: DISCIP[id]?.CharId?.map(charId => characterId[charId]) || [],
+        mainSkill: getMainSkill(DISC[id].MainSkillGroupId),
+        secondarySkill1: getSeconarySkill(DISC[id].SecondarySkillGroupId1),
+        secondarySkill2: getSeconarySkill(DISC[id].SecondarySkillGroupId2),
+        supportNote: getSupportNote(DISC[id].SubNoteSkillGroupId),
+        stat: getStats(DISC[id].AttrBaseGroupId),
+        dupe: getDupes(DISC[id].AttrExtraGroupId),
+        upgrade: getUpgrades(DISC[id].PromoteGroupId),
+    };
+}
+
+writeFileSync('./disc.json', JSON.stringify(disc, null, 4));
+
+function getMainSkill(id) {
+    const key = Object.keys(MAINSKILL).find(key => MAINSKILL[key].GroupId === id);
+    if (!key) return;
+
+    return {
+        id: +id,
+        name: LANG_MAINSKILL[MAINSKILL[key].Name],
+        desc: LANG_MAINSKILL[MAINSKILL[key].Desc] + collectUnusedDiscParamsFrom(MAINSKILL[key], LANG_MAINSKILL),
+        effectType: getMainSkillEffectTypes(id),
+        addAttrType: getMainSkillAddAttrType(id),
+        effectData: getMainSkillEffectData(id),
+        buffIcon: getMainSkillBuffIcons(id),
+        params: getMainSkillParams(id),
+        icon: MAINSKILL[key].Icon.split('/').pop(),
+        iconBg: MAINSKILL[key].IconBg.split('/').pop(),
+    }
+}
+
+function getMainSkillParams(id) {
+    const keys = Object.keys(MAINSKILL).filter(key => MAINSKILL[key].GroupId === id);
+
+    const params = keys.map(key => collectParamsFrom(MAINSKILL[key]));
+
+    if (params.length === 0) return;
+    if (params.every(p => p.length === 0)) return;
+    if (params.every(p => p === params[0])) return params[0];
+    return params.join('/');
+}
+
+function getMainSkillEffectTypes(id) {
+    const effectTypes = [];
+
+    const key = Object.keys(MAINSKILL).find(key => MAINSKILL[key].GroupId === id);
+    if (!key) return effectTypes;
+
+    const effectKeys = Object.keys(EFFECT).filter(k => k.startsWith(`${id}0`) && k.length === 7);
+
+    for (const effectKey of effectKeys) {
+        let effectId = +effectKey;
+        if (!EFFECTVALUE[effectId]) effectId += 10;
+        if (!EFFECTVALUE[effectId]) continue;
+
+        let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
+        if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
+        const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+
+        effectTypes.push(formatEffectType(effectId, type, paramType));
+    }
+
+    return [...new Set(effectTypes)];
+}
+
+function getMainSkillAddAttrType(id) {
+    const attrTypes = [];
+
+    const key = Object.keys(MAINSKILL).find(key => MAINSKILL[key].GroupId === id);
+    if (!key) return attrTypes;
+
+    const addAttrKeys = Object.keys(ONCEADDITTIONALATTRIBUTEVALUE).filter(k => k.startsWith(`${id}0`) && k.length === 7);
+
+    for (const addAttrKey of addAttrKeys) {
+        let addAttrId = +addAttrKey;
+        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) addAttrId += 10;
+        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
+
+        const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
+        const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
+        const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
+        const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+
+        attrTypes.push(formatAddAttrType(type, paramType));
+        if (type2 && paramType2) attrTypes.push(formatAddAttrType(type2, paramType2));
+    }
+
+    return [...new Set(attrTypes)];
+}
+
+function getMainSkillEffectData(id) {
+    const effectDatas = [];
+
+    const effectKeys = Object.keys(EFFECT).filter(k => k.startsWith(`${id}0`) && k.length === 7);
+
+    for (const effectKey of effectKeys) {
+        let effectId = +effectKey;
+        if (!EFFECT[effectId]) continue;
+
+        const data = getEffectData(effectId);
+        if (!data) continue;
+
+        effectDatas.push(data);
+    }
+
+    return [...new Set(effectDatas)];
+}
+
+function getMainSkillBuffIcons(id) {
+    const buffIcons = [];
+
+    const effectKeys = Object.keys(EFFECT).filter(k => k.startsWith(`${id}0`) && k.length === 7);
+
+    for (const effectKey of effectKeys) {
+        let buffId = +effectKey;
+        if (!BUFF[buffId]) continue;
+
+        const buffIcon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon';
+        buffIcons.push(buffIcon);
+    }
+
+    return [...new Set(buffIcons)];
+}
+
+function getSeconarySkill(id) {
+    const key = Object.keys(SECONDARYSKILL).find(key => SECONDARYSKILL[key].GroupId === id);
+    if (!key) return;
+    if (LANG_SECONDARYSKILL[SECONDARYSKILL[key].Name] === '!NONEED!') return;
+
+    return {
+        id: +id,
+        name: LANG_SECONDARYSKILL[SECONDARYSKILL[key].Name],
+        desc: LANG_SECONDARYSKILL[SECONDARYSKILL[key].Desc] + collectUnusedDiscParamsFrom(SECONDARYSKILL[key], LANG_SECONDARYSKILL),
+        effectType: getSeconarySkillEffectTypes(id),
+        addAttrType: getSeconarySkillAddAttrType(id),
+        effectData: getSeconarySkillEffectData(id),
+        buffIcon: getSecondarySkillBuffIcons(id),
+        params: getSecondarySkillParams(id),
+        requirements: getNoteRequirements(id),
+        icon: SECONDARYSKILL[key].Icon.split('/').pop(),
+        iconBg: SECONDARYSKILL[key].IconBg.split('/').pop(),
+    }
+}
+
+function getSecondarySkillParams(id) {
+    const keys = Object.keys(SECONDARYSKILL).filter(key => SECONDARYSKILL[key].GroupId === id);
+
+    const params = keys.map(key => collectParamsFrom(SECONDARYSKILL[key]));
+
+    if (params.length === 0) return;
+    if (params.every(p => p.length === 0)) return;
+    if (params.every(p => p === params[0])) return params[0];
+    return params.join('/');
+}
+
+function getSeconarySkillEffectTypes(id) {
+    const effectTypes = [];
+
+    const keys = Object.keys(SECONDARYSKILL).find(key => SECONDARYSKILL[key].GroupId === id);
+    if (!keys) return effectTypes;
+
+    const effectKeys = Object.keys(EFFECT).filter(k => k.startsWith(`${id}`) && k.length === 7);
+
+    for (const effectKey of effectKeys) {
+        let effectId = +effectKey;
+        if (!EFFECTVALUE[effectId]) effectId += 10;
+        if (!EFFECTVALUE[effectId]) continue;
+
+        let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
+        if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
+        const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+
+        effectTypes.push(formatEffectType(effectId, type, paramType));
+    }
+
+    return [...new Set(effectTypes)];
+}
+
+function getSeconarySkillAddAttrType(id) {
+    const attrTypes = [];
+
+    const keys = Object.keys(SECONDARYSKILL).find(key => SECONDARYSKILL[key].GroupId === id);
+    if (!keys) return attrTypes;
+
+    const addAttrKeys = Object.keys(ONCEADDITTIONALATTRIBUTEVALUE).filter(k => k.startsWith(`${id}`) && k.length === 7);
+
+    for (const addAttrKey of addAttrKeys) {
+        let addAttrId = +addAttrKey;
+        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) addAttrId += 10;
+        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
+
+        const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
+        const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
+        const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
+        const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+
+        attrTypes.push(formatAddAttrType(type, paramType));
+        if (type2 && paramType2) attrTypes.push(formatAddAttrType(type2, paramType2));
+    }
+
+    return [...new Set(attrTypes)];
+}
+
+function getSeconarySkillEffectData(id) {
+    const effectDatas = [];
+
+    const effectKeys = Object.keys(EFFECT).filter(k => k.startsWith(`${id}`) && k.length === 7);
+
+    for (const effectKey of effectKeys) {
+        let effectId = +effectKey;
+        if (!EFFECT[effectId]) continue;
+
+        const data = getEffectData(effectId);
+        if (!data) continue;
+
+        effectDatas.push(data);
+    }
+
+    return [...new Set(effectDatas)];
+}
+
+function getSecondarySkillBuffIcons(id) {
+    const buffIcons = [];
+
+    const effectKeys = Object.keys(EFFECT).filter(k => k.startsWith(`${id}`) && k.length === 7);
+
+    for (const effectKey of effectKeys) {
+        let buffId = +effectKey;
+        if (!BUFF[buffId]) continue;
+
+        const buffIcon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon';
+        buffIcons.push(buffIcon);
+    }
+
+    return [...new Set(buffIcons)];
+}
+
+function getNoteRequirements(id) {
+    const keys = Object.keys(SECONDARYSKILL).filter(key => SECONDARYSKILL[key].GroupId === id);
+
+    const requirements = keys.map(key => {
+        const parsed = JSON.parse(SECONDARYSKILL[key].NeedSubNoteSkills);
+
+        const mapped = {};
+
+        for (const [noteId, qty] of Object.entries(parsed)) {
+            mapped[LANG_SUBNOTESKILL[SUBNOTESKILL[noteId].Name]] = qty;
+        }
+
+        return mapped;
+    });
+
+    return requirements;
+}
+
+function getSupportNote(id) {
+    const keys = Object.keys(SUBNOTESKILLPROMOTEGROUP).filter(key => SUBNOTESKILLPROMOTEGROUP[key].GroupId === id);
+
+    const notes = keys.map(key => {
+        const parsed = JSON.parse(SUBNOTESKILLPROMOTEGROUP[key].SubNoteSkills);
+
+        const mapped = {};
+
+        for (const [noteId, qty] of Object.entries(parsed)) {
+            mapped[LANG_SUBNOTESKILL[SUBNOTESKILL[noteId].Name]] = qty;
+        }
+
+        return mapped;
+    });
+
+    return notes;
+}
+
+
+
+function getStats(id) {
+    return Object.keys(ATTRIBUTE)
+        .filter(key => ATTRIBUTE[key].GroupId === +id)
+        .map(key => {
+            const attr = ATTRIBUTE[key];
+            return {
+                HP: attr.Hp || undefined,
+                ATK: attr.Atk || undefined,
+                DEF: attr.Def || undefined,
+                "Crit Rate": attr.CritRate ? attr.CritRate / 100 + '%' : undefined,
+                "Crit DMG": attr.CritPower ? attr.CritPower / 100 + '%' : undefined,
+                "Auto Attack DMG": attr.NORMALDMG ? attr.NORMALDMG / 100 + '%' : undefined,
+                "Skill DMG": attr.SKILLDMG ? attr.SKILLDMG / 100 + '%' : undefined,
+                "Ultimate DMG": attr.ULTRADMG ? attr.ULTRADMG / 100 + '%' : undefined,
+                "Other DMG": attr.OTHERDMG ? attr.OTHERDMG / 100 + '%' : undefined,
+                "Mark DMG": attr.MARKDMG ? attr.MARKDMG / 100 + '%' : undefined,
+                "Derivative DMG": attr.PROJECTILEDMG ? attr.PROJECTILEDMG / 100 + '%' : undefined,
+                "Minion DMG": attr.SUMMONDMG ? attr.SUMMONDMG / 100 + '%' : undefined,
+                "Aqua DMG": attr.WEE ? attr.WEE / 100 + '%' : undefined,
+                "Ignis DMG": attr.FEE ? attr.FEE / 100 + '%' : undefined,
+                "Terra DMG": attr.SEE ? attr.SEE / 100 + '%' : undefined,
+                "Ventus DMG": attr.AEE ? attr.AEE / 100 + '%' : undefined,
+                "Lux DMG": attr.LEE ? attr.LEE / 100 + '%' : undefined,
+                "Umbra DMG": attr.DEE ? attr.DEE / 100 + '%' : undefined,
+            };
+        });
+}
+
+function getDupes(id) {
+    return Object.keys(DISCEXTRAATTRIBUTE)
+        .filter(key => DISCEXTRAATTRIBUTE[key].GroupId === +id)
+        .map(key => {
+            const attr = DISCEXTRAATTRIBUTE[key];
+            return {
+                ATK: attr.Atk,
+            };
+        });
+}
+
+function getUpgrades(id) {
+    return Object.keys(DISCPROMOTE)
+        .filter(key => key.startsWith(id.toString()))
+        .map(key => {
+            const p = DISCPROMOTE[key];
+            const mats = {};
+
+            for (let i = 1; ; i++) {
+                const itemIdKey = `ItemId${i}`;
+                const numKey = `Num${i}`;
+
+                if (!p[itemIdKey]) break;
+
+                const itemId = p[itemIdKey];
+                const num = p[numKey];
+                if (!itemId || !num) continue;
+
+                mats[LANG_ITEM[ITEM[itemId].Title]] = num;
+            }
+
+            mats.Dorra = p.ExpenseGold;
+
+            return mats;
+        }).filter(mats => Object.keys(mats).length > 1);
+}
+

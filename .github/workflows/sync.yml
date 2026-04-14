@@ -1,0 +1,67 @@
+name: Sync
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v5
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setup-node@v6
+      with:
+        node-version: 24
+
+    - name: Sync
+      run: |
+        git config --global pull.rebase false
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git remote add upstream https://github.com/MakoStar/StellaSoraData
+
+        git fetch upstream
+        git fetch --all --prune
+        echo "Looking up latest Auto-Update commit on upstream/main..."
+        AUTOUPDATE_COMMIT=$(git log upstream/main --grep='Auto-Update' -i -n 1 --pretty=format:'%H')
+        echo "AUTOUPDATE_COMMIT=${AUTOUPDATE_COMMIT:-<none>}"
+        if [ -n "$AUTOUPDATE_COMMIT" ]; then
+          if git merge-base --is-ancestor "$AUTOUPDATE_COMMIT" HEAD; then
+            echo "Local already contains upstream Auto-Update commit $AUTOUPDATE_COMMIT, skipping sync"
+          fi
+        else
+          echo "No Auto-Update commit found on upstream/main; continuing sync"
+          git merge --allow-unrelated-histories -X theirs --no-edit upstream/main
+          echo "Merge HEAD: $(git rev-parse HEAD)"
+        fi
+
+        SCRIPTS=(arena.js ascension.js blitz.js character.js characterid.js disc.js gacha.js ground.js item.js raid.js word.js)
+        for script in "${SCRIPTS[@]}"; do
+          echo "Running $script"
+          node "$script"
+        done
+
+        git add .
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        git commit -m 'sync'
+        git push origin main
+
+        if [ -n "${{ secrets.DEPLOY_HOOK_URL }}" ]; then
+          curl -s -o /dev/null -w "%{http_code}" -d "" "${{ secrets.DEPLOY_HOOK_URL }}"
+        else
+          echo "No deploy hook URL configured"
+        fi
+
