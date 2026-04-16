@@ -8682,14 +8682,14 @@
         "secondarySkill1": {
             "id": 30031,
             "name": "Lingering Heatwave",
-            "desc": "When any Trekker triggers ##Ignis Mark#1016#, increases Ignis squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When any Trekker triggers ##Ignis Mark#1016#, increases the ATK of Ignis Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ignis | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ignis"
+                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ignis | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis"
             ],
             "buffIcon": [
                 "No Icon"
@@ -9814,14 +9814,14 @@
         "secondarySkill1": {
             "id": 30051,
             "name": "Shining Burst",
-            "desc": "When any Trekker triggers ##Lux Mark#1015#, increases Lux squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When any Trekker triggers ##Lux Mark#1015#, increases the ATK of Lux Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Lux | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Lux"
+                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Lux | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Lux"
             ],
             "buffIcon": [
                 "No Icon"
@@ -10946,14 +10946,14 @@
         "secondarySkill1": {
             "id": 30071,
             "name": "Evening Breeze",
-            "desc": "When any Trekker triggers ##Ventus Mark#1017#, increases Ventus squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When any Trekker triggers ##Ventus Mark#1017#, increases the ATK of Ventus Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ventus | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ventus"
+                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ventus | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ventus"
             ],
             "buffIcon": [
                 "No Icon"
@@ -12078,14 +12078,14 @@
         "secondarySkill1": {
             "id": 30091,
             "name": "Silken Raindrops",
-            "desc": "When any Trekker triggers ##Aqua Mark#1018#, increases Aqua squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When any Trekker triggers ##Aqua Mark#1018#, increases the ATK of Aqua Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Aqua | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Aqua"
+                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Aqua | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Aqua"
             ],
             "buffIcon": [
                 "No Icon"
@@ -13212,14 +13212,14 @@
         "secondarySkill1": {
             "id": 30111,
             "name": "Dancing Shadows",
-            "desc": "When any Trekker triggers ##Umbra Mark#1019#, increases Umbra squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When any Trekker triggers ##Umbra Mark#1019#, increases the ATK of Umbra Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Umbra | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Umbra"
+                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Umbra | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Umbra"
             ],
             "buffIcon": [
                 "No Icon"
@@ -14346,14 +14346,14 @@
         "secondarySkill1": {
             "id": 30131,
             "name": "Snuggle Up",
-            "desc": "When any Trekker triggers ##Terra Mark#1020#, increases Terra squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When any Trekker triggers ##Terra Mark#1020#, increases the ATK of Terra Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Terra | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Terra"
+                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Terra | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Terra"
             ],
             "buffIcon": [
                 "No Icon"
@@ -15480,14 +15480,14 @@
         "secondarySkill1": {
             "id": 30151,
             "name": "Caressing Breeze",
-            "desc": "When the main Ventus Trekker is hit, increases the squad's Ventus DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Ventus Main Trekker is hit, increases all friendly units' Ventus DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Ventus DMG",
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -16050,14 +16050,14 @@
         "secondarySkill1": {
             "id": 30161,
             "name": "Thorning Rose",
-            "desc": "When the main Ignis Trekker is hit, increases the squad's Ignis DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Ignis Main Trekker is hit, increases all friendly units' Ignis DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Ignis DMG",
                 "Ignis DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -16618,14 +16618,14 @@
         "secondarySkill1": {
             "id": 30171,
             "name": "Spinning Light",
-            "desc": "When the main Lux Trekker is hit, increases the squad's Lux DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Lux Main Trekker is hit, increases all friendly units' Lux DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Lux DMG",
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -17188,14 +17188,14 @@
         "secondarySkill1": {
             "id": 30181,
             "name": "Chilling Coolness",
-            "desc": "When the main Aqua Trekker is hit, increases the squad's Aqua DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Aqua Main Trekker is hit, increases all friendly units' Aqua DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Aqua DMG",
                 "Aqua DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -17756,14 +17756,14 @@
         "secondarySkill1": {
             "id": 30191,
             "name": "Fleeting Dreams",
-            "desc": "When the main Umbra Trekker is hit, increases the squad's Umbra DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Umbra Main Trekker is hit, increases all friendly units' Umbra DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Umbra DMG",
                 "Umbra DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -18324,14 +18324,14 @@
         "secondarySkill1": {
             "id": 30201,
             "name": "Startling Moment",
-            "desc": "When the main Terra Trekker is hit, increases the squad's Terra DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Terra Main Trekker is hit, increases all friendly units' Terra DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Terra DMG",
                 "Terra DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -18889,14 +18889,14 @@
         "secondarySkill1": {
             "id": 30211,
             "name": "Squall",
-            "desc": "When any Ventus Trekker casts an Ultimate, increases Ventus squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Ventus Trekker casts an Ultimate, increases the ATK of Ventus Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ventus"
+                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ventus"
             ],
             "buffIcon": [
                 "No Icon"
@@ -19454,14 +19454,14 @@
         "secondarySkill1": {
             "id": 30221,
             "name": "Surge of Flame",
-            "desc": "When any Ignis Trekker casts an Ultimate, increases Ignis squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Ignis Trekker casts an Ultimate, increases the ATK of Ignis Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ignis"
+                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis"
             ],
             "buffIcon": [
                 "No Icon"
@@ -20019,14 +20019,14 @@
         "secondarySkill1": {
             "id": 30231,
             "name": "Holy Glow",
-            "desc": "When any Lux Trekker casts an Ultimate, increases Lux squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Lux Trekker casts an Ultimate, increases the ATK of Ignis Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Lux"
+                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Lux"
             ],
             "buffIcon": [
                 "No Icon"
@@ -20584,14 +20584,14 @@
         "secondarySkill1": {
             "id": 30241,
             "name": "Sweet Creek",
-            "desc": "When any Aqua Trekker casts an Ultimate, increases Aqua squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Aqua Trekker casts an Ultimate, increases the ATK of Aqua Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Aqua"
+                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Aqua"
             ],
             "buffIcon": [
                 "No Icon"
@@ -21149,14 +21149,14 @@
         "secondarySkill1": {
             "id": 30251,
             "name": "Phantom Realm",
-            "desc": "When any Umbra Trekker casts an Ultimate, increases Umbra squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Umbra Trekker casts an Ultimate, increases the ATK of Umbra Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Umbra"
+                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Umbra"
             ],
             "buffIcon": [
                 "No Icon"
@@ -21714,14 +21714,14 @@
         "secondarySkill1": {
             "id": 30261,
             "name": "Livestream Prep",
-            "desc": "When any Terra Trekker casts an Ultimate, increases Terra squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Terra Trekker casts an Ultimate, increases the ATK of Terra Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Terra"
+                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Terra"
             ],
             "buffIcon": [
                 "No Icon"
@@ -22265,7 +22265,7 @@
         "mainSkill": {
             "id": 4001,
             "name": "Meowing Cat God",
-            "desc": "Increases the squad's Ignis DMG by <color=#ec6d21>{1}</color>.\u000bWhen the main Ignis Trekker casts a skill, increases the ATK of Ignis Trekkers in the squad by {2} for {3}s. The main Ignis Trekker gains Blazing Armor: reduces DMG taken by {4} for {5}s.",
+            "desc": "Increases the squad's Ignis DMG by <color=#ec6d21>{1}</color>.\u000bWhen the main Ignis Trekker casts a skill, increases the ATK of Ignis Trekkers in the squad and their Minions by {2} for {3}s. The main Ignis Trekker gains Blazing Armor: Reduces DMG taken by {4} for {5}s.",
             "effectType": [
                 "Ignis DMG (base)",
                 "ADDBUFF:ATK",
@@ -22276,7 +22276,7 @@
             "addAttrType": [],
             "effectData": [
                 "NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF_AND_SUMMONED, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2 | SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | FULL_TEAM, ACTORELEMENTTYPE, Ignis",
+                "CASTSKILL, SELF, SKILLSLOTTYPE, 2 | SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis",
                 "CASTSKILL, SELF, SKILLSLOTTYPE, 2 | SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ignis"
             ],
             "buffIcon": [
@@ -22331,14 +22331,14 @@
         "secondarySkill2": {
             "id": 40012,
             "name": "Destructive Aura",
-            "desc": "When the target is killed, if the main Trekker is inflicted with Blazing Armor, increases Ignis squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When the target is killed, if the Main Trekker has Blazing Armor, increases the ATK of Ignis Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "KILLENEMY, SELF, DEFAULT | MAINCONTROL_PLAYER, CARRYBUFFID, 4001041 | FULL_TEAM, ACTORELEMENTTYPE, Ignis"
+                "KILLENEMY, SELF, DEFAULT | MAINCONTROL_PLAYER, CARRYBUFFID, 4001041 | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis"
             ],
             "buffIcon": [
                 "No Icon"
@@ -22943,14 +22943,14 @@
         "secondarySkill2": {
             "id": 40022,
             "name": "Fragrance of Heart",
-            "desc": "When any Ventus Trekker kills a target inflicted with Laceration, increases the squad's Ventus DMG by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Ventus Trekker kills a target inflicted with Laceration, increases all friendly units' Ventus DMG by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:Ventus DMG",
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "KILLENEMY, ENEMY, CARRYBUFFID, 4002021 | SELF, ACTORELEMENTTYPE, Ventus | FULL_TEAM, DEFAULT"
+                "KILLENEMY, ENEMY, CARRYBUFFID, 4002021 | SELF, ACTORELEMENTTYPE, Ventus | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -24733,7 +24733,7 @@
         "secondarySkill1": {
             "id": 40061,
             "name": "Spectral Fragrance",
-            "desc": "When any Umbra Trekker casts a Support Skill, increases Umbra squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s.\u000bFor every minion summoned by an Umbra squadmate, increases the DMG of all allied Umbra minions on the battlefield by <color=#ec6d21>{3}</color> for {4}s, stacking up to {5} times.",
+            "desc": "When any Umbra Trekker casts a Support Skill, increases the ATK of Umbra Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s.\u000bFor every Minion summoned by an Umbra Trekker in the squad, increases the DMG of all allied Umbra Minions on the battlefield by <color=#ec6d21>{3}</color> for {4}s, stacking up to {5} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)",
@@ -24742,7 +24742,7 @@
             ],
             "addAttrType": [],
             "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_ASSISTANT | FULL_TEAM, ACTORELEMENTTYPE, Umbra",
+                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_ASSISTANT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Umbra",
                 "SUMMON, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | TEAM_SUMMONED, ACTORELEMENTTYPE, Umbra"
             ],
             "buffIcon": [
@@ -25357,15 +25357,15 @@
         "secondarySkill1": {
             "id": 40071,
             "name": "Decisive Strike",
-            "desc": "When a Lux main Trekker hits a target, increases all Lux squadmates' ATK by <color=#ec6d21>{1}</color> for {3}s.\u000bWhen any Lux Trekker hits a stunned target, increases this effect by an additional <color=#ec6d21>{2}</color> for {4}s.",
+            "desc": "When a Lux Main Trekker hits a target, increases the ATK of Lux Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {3}s.\u000bWhen any Lux Trekker hits a stunned target, increases this effect by an additional <color=#ec6d21>{2}</color> for {4}s.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | FULL_TEAM, ACTORELEMENTTYPE, Lux",
-                "HITTING, ENEMY, CARRYBUFFIDENTIFYING, Stun, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Lux"
+                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Lux",
+                "HITTING, ENEMY, CARRYBUFFIDENTIFYING, Stun, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Lux"
             ],
             "buffIcon": [
                 "No Icon"
@@ -25952,7 +25952,7 @@
         "mainSkill": {
             "id": 4008,
             "name": "Soaring Blue",
-            "desc": "When an Aqua Versatile Trekker deals Skill DMG, inflicts 1 stack of Bright Tide on the target for {1}s, stacking up to {2} times.\u000bAt {3} stacks, increases the Aqua Auto Attack DMG the target takes by <color=#ec6d21>{4}</color>.\u000bAt {5} stacks, increases the Aqua Skill DMG the target takes by <color=#ec6d21>{6}</color> additionally.",
+            "desc": "When an Aqua Versatile Trekker deals Skill DMG, inflicts 1 stack of Bright Tide on the target for {1}s, stacking up to {2} times.\u000bBright Tide: At {3} stacks, increases Aqua Auto Attack DMG Taken by <color=#ec6d21>{4}</color>.\u000bAt {5} stacks, increases Aqua Skill DMG Taken by an additional <color=#ec6d21>{6}</color>.",
             "effectType": [],
             "addAttrType": [
                 "Auto Attack DMG Taken (base)",
@@ -26569,14 +26569,14 @@
         "secondarySkill1": {
             "id": 40091,
             "name": "Starlit Winds",
-            "desc": "When the main Ventus Trekker gains a shield, increases the squad's Ventus DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Ventus Main Trekker gains a shield, increases all friendly units' Ventus DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Ventus DMG",
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "GET_SHIELD, MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "GET_SHIELD, MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -27174,14 +27174,14 @@
         "secondarySkill1": {
             "id": 40101,
             "name": "Light of Mercy",
-            "desc": "When the main Lux Trekker gains a shield, increases the squad's Lux DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Lux Main Trekker gains a shield, increases all friendly units' Lux DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Lux DMG",
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Lux, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Lux, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -27784,14 +27784,14 @@
         "secondarySkill1": {
             "id": 40111,
             "name": "Frosted Blossom",
-            "desc": "When the main Aqua Trekker gains a shield, increases the squad's Aqua DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Aqua Main Trekker gains a shield, increases all friendly units' Aqua DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Aqua DMG",
                 "Aqua DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Aqua, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Aqua, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -28396,14 +28396,14 @@
         "secondarySkill1": {
             "id": 40121,
             "name": "Dark Reckoning",
-            "desc": "When the main Umbra Trekker gains a shield, increases the squad's Umbra DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Umbra Main Trekker gains a shield, increases all friendly units' Umbra DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Umbra DMG",
                 "Umbra DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Umbra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Umbra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -29006,14 +29006,14 @@
         "secondarySkill1": {
             "id": 40131,
             "name": "Raging Wildfire",
-            "desc": "When the main Ignis Trekker gains a shield, increases the squad's Ignis DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Ignis Main Trekker gains a shield, increases all friendly units' Ignis DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Ignis DMG",
                 "Ignis DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Ignis, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Ignis, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -29611,14 +29611,14 @@
         "secondarySkill1": {
             "id": 40141,
             "name": "Fruity & Fragrant",
-            "desc": "When the main Terra Trekker gains a shield, increases the squad's Terra DMG by <color=#ec6d21>{1}</color> for {2}s.",
+            "desc": "When the Terra Main Trekker gains a shield, increases all friendly units' Terra DMG by <color=#ec6d21>{1}</color> for {2}s.",
             "effectType": [
                 "ADDBUFF:Terra DMG",
                 "Terra DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Terra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Terra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -30811,7 +30811,7 @@
         "mainSkill": {
             "id": 4016,
             "name": "Chronicles of Spring",
-            "desc": "The main Ventus Trekker gains 1 stack of Drifting Snow for 10s after casting a skill, stacking up to 3 times.\u000bWhen the main Ventus Trekker deals Auto Attack DMG, 1/2/3 stacks of Drifting Snow inflict the following effect on the target: increases Ventus Auto Attack DMG taken by <color=#ec6d21>{1}</color>/<color=#ec6d21>{2}</color>/<color=#ec6d21>{3}</color> for 10s.\u000bWhen the main Ventus Trekker deals Skill DMG, 1/2/3 stacks of Drifting Snow inflict the following effect on the target: increases Ventus Skill DMG taken by <color=#ec6d21>{4}</color>/<color=#ec6d21>{5}</color>/<color=#ec6d21>{6}</color> for 10s.",
+            "desc": "When the Ventus Main Trekker gains 1 stack of Drifting Snow for 10s after casting a skill, stacking up to 3 times.\u000bWhen the Ventus Main Trekker deals Auto Attack DMG, 1/2/3 stacks of Drifting Snow inflict the following on the target: increases Ventus Auto Attack DMG taken by <color=#ec6d21>{1}</color>/<color=#ec6d21>{2}</color>/<color=#ec6d21>{3}</color> for 10s.\u000bWhen the Ventus Main Trekker deals Skill DMG, 1/2/3 stacks of Drifting Snow inflict the following on the target: increases Ventus Skill DMG taken by <color=#ec6d21>{4}</color>/<color=#ec6d21>{5}</color>/<color=#ec6d21>{6}</color> for 10s.",
             "effectType": [
                 "ELEMENTTYPE_:(Ventus) Auto Attack DMG Taken",
                 "ELEMENTTYPE_:(Ventus) Skill DMG Taken"
@@ -32081,14 +32081,14 @@
         "secondarySkill2": {
             "id": 40182,
             "name": "Lasting Trends",
-            "desc": "For each target killed, increases Ventus squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "For each target killed, increases the ATK of Ventus Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "KILLENEMY, SELF, DEFAULT | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ventus"
+                "KILLENEMY, SELF, DEFAULT | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ventus"
             ],
             "buffIcon": [
                 "No Icon"
@@ -33910,7 +33910,7 @@
         "secondarySkill2": {
             "id": 40212,
             "name": "Moment of Unity",
-            "desc": "Increases Aqua Trekkers' Auto Attack and Skill DMG by <color=#ec6d21>{1}</color>.\u000bFor every {2} targets killed, increases this effect by an additional {3}, stacking up to {4} times.",
+            "desc": "Increases the Auto Attack DMG and Skill DMG of Aqua Trekkers in the squad by <color=#ec6d21>{1}</color>.\u000bFor every {2} targets killed, increases this effect by an additional {3}, stacking up to {4} times.",
             "effectType": [
                 "Auto Attack Damage (base)",
                 "Skill DMG (base)"
@@ -35118,7 +35118,7 @@
         "secondarySkill2": {
             "id": 40232,
             "name": "Hit and Run",
-            "desc": "Increases Terra Trekkers' Skill and Ultimate DMG by <color=#ec6d21>{1}</color>.\u000bFor every {2} targets killed, increases this effect by an additional {3}, stacking up to {4} times.",
+            "desc": "Increases the Skill DMG and Ultimate DMG of Terra Trekkers in the squad by <color=#ec6d21>{1}</color>.\u000bFor every {2} targets killed, increases this effect by an additional {3}, stacking up to {4} times.",
             "effectType": [
                 "Ultimate DMG (base)",
                 "Skill DMG (base)",
@@ -35693,7 +35693,7 @@
         "secondarySkill1": {
             "id": 40241,
             "name": "Graceful Dive",
-            "desc": "Increases the Ultimate DMG of Ventus Trekkers in the squad by <color=#ec6d21>{1}</color>.\u000bWhen any Trekker triggers ##Ventus Mark#1017#, increases Ventus squadmates' ATK by <color=#ec6d21>{2}</color> for {3}s.",
+            "desc": "Increases the Ultimate DMG of Ventus Trekkers in the squad by <color=#ec6d21>{1}</color>.\u000bWhen any Trekker triggers ##Ventus Mark#1017#, increases the ATK of Ventus Trekkers in the squad and their Minions by <color=#ec6d21>{2}</color> for {3}s.",
             "effectType": [
                 "Ultimate DMG (base)",
                 "ADDBUFF:ATK",
@@ -35702,7 +35702,7 @@
             "addAttrType": [],
             "effectData": [
                 "NOTHING, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT",
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ventus | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ventus"
+                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ventus | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ventus"
             ],
             "buffIcon": [
                 "No Icon"
@@ -36282,14 +36282,14 @@
         "mainSkill": {
             "id": 4026,
             "name": "Sword Against Stream",
-            "desc": "Increases the squad's Aqua DMG by <color=#ec6d21>{1}</color>.\u000bWhen any Trekker triggers ##Aqua Mark#1018#, increases the squad's Aqua DMG by <color=#ec6d21>{2}</color> for {3}s.",
+            "desc": "Increases the squad's Aqua DMG by <color=#ec6d21>{1}</color>.\u000bWhen any Trekker triggers ##Aqua Mark#1018#, increases all friendly units' Aqua DMG by <color=#ec6d21>{2}</color> for {3}s.",
             "effectType": [
                 "Aqua DMG (base)",
                 "ADDBUFF:Aqua DMG"
             ],
             "addAttrType": [],
             "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Aqua, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Aqua, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -38174,14 +38174,14 @@
         "secondarySkill2": {
             "id": 40302,
             "name": "Relaxing Tea",
-            "desc": "When any Lux Trekker kills a target inflicted with Shock, increases the squad's Lux DMG by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Lux Trekker kills a target inflicted with Shock, increases all friendly units' Lux DMG by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:Lux DMG",
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "KILLENEMY, ENEMY, CARRYBUFFID, 4030021, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "KILLENEMY, ENEMY, CARRYBUFFID, 4030021, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -38749,14 +38749,14 @@
         "secondarySkill1": {
             "id": 40311,
             "name": "Surging Slash",
-            "desc": "If the main Trekker is inflicted with Bless, increases the squad's Aqua DMG to elite or higher-tier targets by <color=#ec6d21>{1}</color>.",
+            "desc": "If the Main Trekker has Bless, increases all friendly units' Aqua DMG to elite or higher-tier targets by <color=#ec6d21>{1}</color>.",
             "effectType": [
                 "ADDBUFF:Aqua DMG",
                 "HITTED_ADDITIONAL_:Aqua DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "GETBUFF, MAINCONTROL_PLAYER, CERTAINBUFFID, 4031041 | SELF, DEFAULT | FULL_TEAM, DEFAULT",
+                "GETBUFF, MAINCONTROL_PLAYER, CERTAINBUFFID, 4031041 | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT",
                 "HITTING, ENEMY, CERTAIN_MONSTER_EPICTYPE, 2,3,4 | SELF, DEFAULT | SELF, DEFAULT"
             ],
             "buffIcon": [
@@ -38791,7 +38791,7 @@
         "secondarySkill2": {
             "id": 40312,
             "name": "Preferred Enemy",
-            "desc": "When the target is killed, if the main Trekker is inflicted with Bless, increases Aqua squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When the target is killed, if the Main Trekker has Bless, increases the ATK of Aqua Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
@@ -38800,7 +38800,7 @@
                 "Aqua DMG (base)"
             ],
             "effectData": [
-                "KILLENEMY, SELF, DEFAULT | MAINCONTROL_PLAYER, CARRYBUFFID, 4031041 | FULL_TEAM, ACTORELEMENTTYPE, Aqua"
+                "KILLENEMY, SELF, DEFAULT | MAINCONTROL_PLAYER, CARRYBUFFID, 4031041 | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Aqua"
             ],
             "buffIcon": [
                 "No Icon"
@@ -39406,14 +39406,14 @@
         "secondarySkill2": {
             "id": 40322,
             "name": "News Spree",
-            "desc": "When any Umbra Trekker kills a target inflicted with Corrosion, increases the squad's Umbra DMG by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Umbra Trekker kills a target inflicted with Corrosion, increases all friendly units' Umbra DMG by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:Umbra DMG",
                 "Umbra DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [
-                "KILLENEMY, ENEMY, CARRYBUFFID, 4032021, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, DEFAULT"
+                "KILLENEMY, ENEMY, CARRYBUFFID, 4032021, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -39983,14 +39983,14 @@
         "secondarySkill1": {
             "id": 40331,
             "name": "Truth Digger",
-            "desc": "If the main Trekker is inflicted with Boulder, increases Terra squadmates' ATK by <color=#ec6d21>{1}</color>.",
+            "desc": "If the Main Trekker is inflicted with Boulder, increases the ATK of Terra Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color>.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "GETBUFF, MAINCONTROL_PLAYER, CERTAINBUFFID, 4033041 | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Terra"
+                "GETBUFF, MAINCONTROL_PLAYER, CERTAINBUFFID, 4033041 | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Terra"
             ],
             "buffIcon": [
                 "No Icon"
@@ -40637,14 +40637,14 @@
         "secondarySkill2": {
             "id": 40362,
             "name": "Prison of Passion",
-            "desc": "When any Trekker triggers ##Terra Mark#1020#, increases Terra squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When any Trekker triggers ##Terra Mark#1020#, increases the ATK of Terra Trekkers in the squad and their Minions by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "ADDBUFF:ATK",
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Terra | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Terra"
+                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Terra | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Terra"
             ],
             "buffIcon": [
                 "No Icon"
@@ -43036,7 +43036,7 @@
         "secondarySkill1": {
             "id": 40401,
             "name": "Passion of the Captain",
-            "desc": "Increases the Skill DMG of Ignis Trekkers in the squad by <color=#ec6d21>{1}</color>.\u000bWhen an Ignis Trekker deals Skill DMG, increases Ignis Trekkers' ATK by <color=#ec6d21>{2}</color> for {3}s.",
+            "desc": "Increases the Skill DMG of Ignis Trekkers in the squad by <color=#ec6d21>{1}</color>.\u000bWhen an Ignis Trekker deals Skill DMG, increases the ATK of Ignis Trekkers in the squad and their Minions by <color=#ec6d21>{2}</color> for {3}s.",
             "effectType": [
                 "Skill DMG (base)",
                 "ADDBUFF:ATK",
@@ -43045,7 +43045,7 @@
             "addAttrType": [],
             "effectData": [
                 "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ignis"
+                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis"
             ],
             "buffIcon": [
                 "No Icon"
@@ -46036,7 +46036,7 @@
     },
     "214045": {
         "id": 214045,
-        "name": "214045",
+        "name": "Petals of Blooming Mirage",
         "star": 5,
         "element": "Umbra",
         "tag": [
@@ -46044,11 +46044,13 @@
             "Crit DMG",
             "Element"
         ],
-        "char": [],
+        "char": [
+            "Otoha"
+        ],
         "mainSkill": {
             "id": 4045,
-            "name": "???",
-            "desc": "???\u000bParam1: {1} \u000bParam2: {2} \u000bParam3: {3} \u000bParam4: {4}",
+            "name": "Petals of Blooming Mirage",
+            "desc": "Increases the squad's Umbra DMG by <color=#ec6d21>{1}</color>.\u000bWhen an Umbra Versatile Trekker deals Skill DMG, inflicts 1 stack of Dark Sakura on the target for {2}s, stacking up to {3} times. Dark Sakura: At max stacks, increases Umbra Skill DMG Taken by <color=#ec6d21>{4}</color>.",
             "effectType": [
                 "Umbra DMG (base)"
             ],
@@ -46057,14 +46059,14 @@
             ],
             "effectData": [],
             "buffIcon": [],
-            "params": "20%,4,20,15%/24%,4,20,18%/28%,4,20,21%/32%,4,20,24%/36%,4,20,27%/40%,4,20,30%",
+            "params": "20%,5,20,15%/24%,5,20,18%/28%,5,20,21%/32%,5,20,24%/36%,5,20,27%/40%,5,20,30%",
             "icon": "DiscSkill_214045",
             "iconBg": "db_DiscSkill_6"
         },
         "secondarySkill1": {
             "id": 40451,
-            "name": "???",
-            "desc": "???\u000bParam1: {1} \u000bParam2: {2}",
+            "name": "Fading Petals",
+            "desc": "Increases Umbra Versatile Trekkers' Crit DMG by <color=#ec6d21>{1}</color>.\u000bDark Sakura gains an additional effect: Each stack increases the Umbra Ultimate DMG Taken by the target by <color=#ec6d21>{2}</color>.",
             "effectType": [
                 "Crit DMG (base)",
                 "ELEMENTTYPE_:(Umbra) Ultimate DMG Taken"
@@ -46072,10 +46074,9 @@
             "addAttrType": [],
             "effectData": [],
             "buffIcon": [
-                "No Icon",
-                "Icon_CommonBuff_DefenseDown"
+                "No Icon"
             ],
-            "params": "15%,0.45%/20%,0.525%/25%,0.6%/30%,0.675%/35%,0.75%",
+            "params": "15%,0.6%/20%,0.7%/25%,0.8%/30%,0.9%/35%,1%",
             "requirements": [
                 {
                     "Melody of Pummel": 10,
@@ -46103,18 +46104,18 @@
         },
         "secondarySkill2": {
             "id": 40452,
-            "name": "???",
-            "desc": "???\u000bParam1: {1} \u000bParam2: {2} \u000bParam3: {3} \u000bParam4: {4}",
+            "name": "Lunar Mirage",
+            "desc": "When an Umbra Versatile Trekker deals Ultimate DMG to a target with max stacks of Dark Sakura, the Main Umbra Trekker gains Flower Feast for {1}s.\u000bWhen the Main Umbra Trekker with Flower Feast triggers a mark that inflicts ##Dark Burn#2028#, increases own Skill Crit Rate by <color=#ec6d21>{2}</color> for {3}s.\u000bWhen the Main Umbra Trekker with Flower Feast triggers a mark to activate the effects of ##Dark Shackles#2020#, increases own Auto Attack Crit DMG by <color=#ec6d21>{4}</color> for {5}s.",
             "effectType": [
-                "Skill Crit DMG (base)",
-                "Normal Attack Crit DMG (base)"
+                "Skill Crit Rate (base)",
+                "Skill Crit DMG (base)"
             ],
             "addAttrType": [],
             "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
-            "params": "5,20%,20,20%/5,27%,20,27%/5,35%,20,35%/5,42%,20,42%/5,50%,20,50%",
+            "params": "5,7.5%,30,15%,30/5,10%,30,20%,30/5,12.5%,30,25%,30/5,15%,30,30%,30/5,17.5%,30,35%,30",
             "requirements": [
                 {
                     "Melody of Pummel": 15,
@@ -46653,7 +46654,7 @@
         "mainSkill": {
             "id": 4046,
             "name": "Dawn After Winter",
-            "desc": "When the main Ventus Trekker deals Ultimate DMG, they gain 1 stack of Bitter Cold: increases Auto Attack and Skill DMG by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
+            "desc": "When the Ventus Main Trekker deals Ultimate DMG, they gain 1 stack of Bitter Cold: increases Auto Attack and Skill DMG by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times.",
             "effectType": [
                 "Auto Attack Damage (base)",
                 "Skill DMG (base)"
@@ -47257,7 +47258,7 @@
         "mainSkill": {
             "id": 4047,
             "name": "Delivered by the Breeze",
-            "desc": "When an Aqua Versatile Trekker deals Skill DMG, the main Aqua Trekker gains 1 stack of Thought Ripple for {1}s, stacking up to {2} times.\u000bAt {3} stacks, increases the Aqua DMG dealt by all friendly units by <color=#ec6d21>{4}</color>.\u000bAt {5} stacks, increases the Skill DMG dealt by Aqua Trekkers in the squad by <color=#ec6d21>{6}</color> additionally.",
+            "desc": "When an Aqua Versatile Trekker deals Skill DMG, the Aqua Main Trekker gains 1 stack of Thought Ripple for {1}s, stacking up to {2} times.\u000bAt {3} stacks, increases the Aqua DMG dealt by all friendly units by <color=#ec6d21>{4}</color>.\u000bAt {5} stacks, increases the Skill DMG dealt by Aqua Trekkers in the squad by an additional <color=#ec6d21>{6}</color>.",
             "effectType": [],
             "addAttrType": [
                 "Aqua DMG (base)",
@@ -47856,7 +47857,7 @@
         "mainSkill": {
             "id": 4048,
             "name": "Snowy Night Surprise",
-            "desc": "Increases Ignis DMG of the squad by <color=#ec6d21>{1}</color>.\u000bWhen any Ignis Trekker deals Skill DMG, inflicts ##Ode#6002#, lasting {2}s.\u000bOde can be converted into Hymn.\u000bHymn: Increase Ignis DMG taken by <color=#ec6d21>{3}</color> for {4}s, up to {5} stacks.",
+            "desc": "Increases Ignis DMG of the squad by <color=#ec6d21>{1}</color>.\u000bWhen any Ignis Trekker deals Skill DMG, inflicts ##Ode#6002#, lasting {2}s.\u000bOde can be converted into Hymn.\u000bHymn: Increase Ignis DMG Taken by <color=#ec6d21>{3}</color> for {4}s, stacking up to {5} times.",
             "effectType": [
                 "Ignis DMG (base)",
                 "Ignis DMG Taken (base)"
@@ -47873,7 +47874,7 @@
         "secondarySkill1": {
             "id": 40481,
             "name": "Kingdom of Fries",
-            "desc": "Hymn grants extra effects: Increases the Ignis Skill DMG Taken by <color=#ec6d21>{1}</color>.\u000bWhen ##Ode#6002# is converted in to Hymn, increases the Skill DMG of Ignis Trekkers in the squad by <color=#ec6d21>{2}</color> for {3}s, up to {4} stacks.",
+            "desc": "Hymn grants extra effects: Increases the Ignis Skill DMG Taken by <color=#ec6d21>{1}</color>.\u000bWhen ##Ode#6002# is converted to Hymn, increases the Skill DMG of Ignis Trekkers in the squad by <color=#ec6d21>{2}</color> for {3}s, stacking up to {4} times.",
             "effectType": [
                 "ELEMENTTYPE_:(Ignis) Skill DMG Taken",
                 "Skill DMG (base)"
@@ -48449,7 +48450,7 @@
     },
     "214049": {
         "id": 214049,
-        "name": "214049",
+        "name": "Traces of Starlight",
         "star": 5,
         "element": "None",
         "tag": [
@@ -48460,29 +48461,27 @@
         "char": [],
         "mainSkill": {
             "id": 4049,
-            "name": "???",
-            "desc": "???\u000bParam1: {1} \u000bParam2: {2} \u000bParam3: {3}",
+            "name": "Traces of Starlight",
+            "desc": "When the main Trekker's HP drops below 10%, instantly gains a shield equal to <color=#ec6d21>{1}</color> of Max HP for {2}s. This effect can only be triggered once every {3}s.",
             "effectType": [],
             "addAttrType": [],
-            "effectData": [
-                "BEHIT, MAINCONTROL_PLAYER, HEALTHDOWN, 10 | SELF, DEFAULT | MAINCONTROL_PLAYER, DEFAULT"
-            ],
+            "effectData": [],
             "buffIcon": [],
-            "params": "20%,30,30/24%,30,30/28%,30,30/32%,30,30/36%,30,30/40%,30,30",
+            "params": "20%,20,30/24%,20,30/28%,20,30/32%,20,30/36%,20,30/40%,20,30",
             "icon": "DiscSkill_214049",
             "iconBg": "db_DiscSkill_6"
         },
         "secondarySkill1": {
             "id": 40491,
-            "name": "???",
-            "desc": "???\u000bParam1: {1}",
+            "name": "Starlight Journey",
+            "desc": "Increases the squad's ATK by <color=#ec6d21>{1}</color>.\u000bParam2: {2}",
             "effectType": [
                 "ATK (%)"
             ],
             "addAttrType": [],
             "effectData": [],
             "buffIcon": [],
-            "params": "10%/12%/14%/16%/20%",
+            "params": "10%,10%%/12%,12%%/14%,14%%/16%,16%%/20%,20%%",
             "requirements": [
                 {
                     "Melody of Pummel": 10,
@@ -48510,8 +48509,8 @@
         },
         "secondarySkill2": {
             "id": 40492,
-            "name": "???",
-            "desc": "???\u000bParam1: {1}",
+            "name": "Memory Resonance",
+            "desc": "Increases the squad's Elemental DMG by <color=#ec6d21>{1}</color>.\u000bParam2: {2}",
             "effectType": [
                 "Aqua DMG (base)",
                 "Ignis DMG (base)",
@@ -48523,7 +48522,7 @@
             "addAttrType": [],
             "effectData": [],
             "buffIcon": [],
-            "params": "10%/12%/14%/16%/20%",
+            "params": "10%,10%%/12%,12%%/14%,14%%/16%,16%%/20%,20%%",
             "requirements": [
                 {
                     "Melody of Focus": 15,
@@ -49048,7 +49047,7 @@
     },
     "214050": {
         "id": 214050,
-        "name": "214050",
+        "name": "Phantom of the Banquet",
         "star": 5,
         "element": "Umbra",
         "tag": [
@@ -49056,11 +49055,13 @@
             "Skills",
             "Ultimate"
         ],
-        "char": [],
+        "char": [
+            "Otoha"
+        ],
         "mainSkill": {
             "id": 4050,
-            "name": "???",
-            "desc": "???\u000bParam1: {1} \u000bParam2: {2} \u000bParam3: {3} \u000bParam4: {4}",
+            "name": "Phantom of the Banquet",
+            "desc": "Increases the squad's Umbra DMG by <color=#ec6d21>{1}</color>.\u000bWhen an Umbra Versatile Trekker deals Skill DMG, the Umbra Main Trekker gains 1 stack of Blossom Glow for {2}s, stacking up to {3} times. At max stacks, increases the Skill DMG dealt by Umbra Trekkers in the squad by <color=#ec6d21>{4}</color>.",
             "effectType": [
                 "Umbra DMG (base)"
             ],
@@ -49069,14 +49070,14 @@
             ],
             "effectData": [],
             "buffIcon": [],
-            "params": "5%,4,20,6%/6%,4,20,7.2%/7%,4,20,8.4%/8%,4,20,9.6%/9%,4,20,10.8%/10%,4,20,12%",
+            "params": "5%,5,20,6%/6%,5,20,7.2%/7%,5,20,8.4%/8%,5,20,9.6%/9%,5,20,10.8%/10%,5,20,12%",
             "icon": "DiscSkill_214050",
             "iconBg": "db_DiscSkill_6"
         },
         "secondarySkill1": {
             "id": 40501,
-            "name": "???",
-            "desc": "???\u000bParam1: {1} \u000bParam2: {2}",
+            "name": "Umbral Harmony",
+            "desc": "Increases Umbra Versatile Trekkers' Ultimate DMG by <color=#ec6d21>{1}</color>.\u000bBlossom Glow gains an additional effect: Each stack increases own Skill DMG and Ultimate DMG by <color=#ec6d21>{2}</color>.",
             "effectType": [
                 "Ultimate DMG (base)",
                 "Skill DMG (base)"
@@ -49114,8 +49115,8 @@
         },
         "secondarySkill2": {
             "id": 40502,
-            "name": "???",
-            "desc": "???\u000bParam1: {1} \u000bParam2: {2} \u000bParam3: {3} \u000bParam4: {4}",
+            "name": "A Toast Behind the Scenes",
+            "desc": "When the Main Umbra Trekker with max stacks of Blossom Glow triggers a mark that activates the effects of ##Dark Burn#2028#, increases own Skill DMG by <color=#ec6d21>{1}</color> for {2}s.\u000bWhen the Main Umbra Trekker with max stacks of Blossom Glow triggers a mark that inflicts ##Dark Shackles#2020#, increases own Auto Attack DMG by <color=#ec6d21>{3}</color> for {4}s.",
             "effectType": [
                 "Skill DMG (base)",
                 "Auto Attack Damage (base)"
