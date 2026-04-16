@@ -35,12 +35,14 @@ jobs:
         echo "Looking up latest Auto-Update commit on upstream/main..."
         AUTOUPDATE_COMMIT=$(git log upstream/main --grep='Auto-Update' -i -n 1 --pretty=format:'%H')
         echo "AUTOUPDATE_COMMIT=${AUTOUPDATE_COMMIT:-<none>}"
-        if [ -n "$AUTOUPDATE_COMMIT" ]; then
-          if git merge-base --is-ancestor "$AUTOUPDATE_COMMIT" HEAD; then
-            echo "Local already contains upstream Auto-Update commit $AUTOUPDATE_COMMIT, skipping sync"
-          fi
+        if [ -n "$AUTOUPDATE_COMMIT" ] && git merge-base --is-ancestor "$AUTOUPDATE_COMMIT" HEAD; then
+          echo "Local already contains upstream Auto-Update commit $AUTOUPDATE_COMMIT, skipping sync"
         else
-          echo "No Auto-Update commit found on upstream/main; continuing sync"
+          if [ -n "$AUTOUPDATE_COMMIT" ]; then
+            echo "Auto-Update commit $AUTOUPDATE_COMMIT not present locally; merging upstream/main"
+          else
+            echo "No Auto-Update commit found on upstream/main; continuing sync"
+          fi
           git merge --allow-unrelated-histories -X theirs --no-edit upstream/main
           echo "Merge HEAD: $(git rev-parse HEAD)"
         fi
