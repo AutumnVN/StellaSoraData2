@@ -5528,6 +5528,10 @@ local AvgPreset = {
 			""
 		},
 		{
+			"fx_avg_unsheathe",
+			""
+		},
+		{
 			"--分割线，以下特效含后期效果--",
 			""
 		},

@@ -116,10 +116,12 @@ function PlayerPotentialPreselectionData:UnPackPotentialData(b64Str)
 	if not b64Str or type(b64Str) ~= "string" or b64Str == "" then
 		return
 	end
-	b64Str = b64Str:gsub("%s+", "")
+	if string.match(b64Str, "[^A-Za-z0-9+/=]") then
+		printError("包含非base64字符")
+		return
+	end
 	b64Str = b64Str:gsub("-", "+")
 	b64Str = b64Str:gsub("_", "/")
-	b64Str = b64Str:gsub("[^A-Za-z0-9+/=]", "")
 	local len = #b64Str
 	if len % 4 ~= 0 then
 		b64Str = b64Str .. string.rep("=", 4 - len % 4)
