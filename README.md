@@ -7,38 +7,37 @@
 <details id="dating-CN">
   <summary>🖼️ Table - CN </summary>
   <p align="center">
-    <img src="./_DatingEvents_/dating-CN.jpg">
+    <img src="./_Metadata/_DatingEvents/dating-CN.jpg">
   </p>
 </details>
 
 <details id="dating-EN">
   <summary>🖼️ Table - EN </summary>
   <p align="center">
-    <img src="./_DatingEvents_/dating-EN.jpg">
+    <img src="./_Metadata/_DatingEvents/dating-EN.jpg">
   </p>
 </details>
 
 <details id="dating-JP">
   <summary>🖼️ Table - JP </summary>
   <p align="center">
-    <img src="./_DatingEvents_/dating-JP.jpg">
+    <img src="./_Metadata/_DatingEvents/dating-JP.jpg">
   </p>
 </details>
 
 <details id="dating-KR">
   <summary>🖼️ Table - KR </summary>
   <p align="center">
-    <img src="./_DatingEvents_/dating-KR.jpg">
+    <img src="./_Metadata/_DatingEvents/dating-KR.jpg">
   </p>
 </details>
 
 <details id="dating-TW">
   <summary>🖼️ Table - TW </summary>
   <p align="center">
-    <img src="./_DatingEvents_/dating-TW.jpg">
+    <img src="./_Metadata/_DatingEvents/dating-TW.jpg">
   </p>
 </details>
-</div>
 
 ## Special Thanks
 
