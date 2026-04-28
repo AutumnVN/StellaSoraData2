@@ -1,9 +1,9 @@
 const { writeFileSync } = require('fs');
 const { iHateFloatingPointNumber } = require('./utils');
-const CHARGEMSLOTCONTROL = require('./EN-data/bin/CharGemSlotControl.json');
-const CHARGEMATTRTYPE = require('./EN-data/bin/CharGemAttrType.json');
-const CHARGEMATTRGROUP = require('./EN-data/bin/CharGemAttrGroup.json');
-const CHARGEMATTRVALUE = require('./EN-data/bin/CharGemAttrValue.json');
+const CHARGEMSLOTCONTROL = require('./EN/bin/CharGemSlotControl.json');
+const CHARGEMATTRTYPE = require('./EN/bin/CharGemAttrType.json');
+const CHARGEMATTRGROUP = require('./EN/bin/CharGemAttrGroup.json');
+const CHARGEMATTRVALUE = require('./EN/bin/CharGemAttrValue.json');
 
 const MAP = {
     '攻击力': 'ATK',

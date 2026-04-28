@@ -1,10 +1,10 @@
 const { writeFileSync } = require('fs');
-const WORD = require('./EN-data/bin/Word.json');
-const EFFECT = require('./EN-data/bin/Effect.json');
-const EFFECTVALUE = require('./EN-data/bin/EffectValue.json');
-const ONCEADDITTIONALATTRIBUTEVALUE = require('./EN-data/bin/OnceAdditionalAttributeValue.json');
-const BUFF = require('./EN-data/bin/Buff.json');
-const LANG_WORD = require('./EN-data/language/en_US/Word.json');
+const WORD = require('./EN/bin/Word.json');
+const EFFECT = require('./EN/bin/Effect.json');
+const EFFECTVALUE = require('./EN/bin/EffectValue.json');
+const ONCEADDITTIONALATTRIBUTEVALUE = require('./EN/bin/OnceAdditionalAttributeValue.json');
+const BUFF = require('./EN/bin/Buff.json');
+const LANG_WORD = require('./EN/language/en_US/Word.json');
 const { collectParamsFrom, resolveParam, formatEffectType, formatAddAttrType, getEffectData } = require('./utils');
 
 const word = {};

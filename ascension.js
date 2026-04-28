@@ -1,17 +1,17 @@
 const { writeFileSync } = require('fs');
 const { MONSTER_EPIC_TYPE } = require('./utils');
-const STARTOWER = require('./EN-data/bin/StarTower.json');
-const STARTOWERGROUP = require('./EN-data/bin/StarTowerGroup.json');
-const PREVIEWMONSTERGROUP = require('./EN-data/bin/PreviewMonsterGroup.json');
-const MONSTER = require('./EN-data/bin/Monster.json');
-const MONSTERMANUAL = require('./EN-data/bin/MonsterManual.json');
-const MONSTERSKIN = require('./EN-data/bin/MonsterSkin.json');
-const MONSTERVALUETEMPLETE = require('./EN-data/bin/MonsterValueTemplete.json');
-const MONSTERVALUETEMPLETEADJUST = require('./EN-data/bin/MonsterValueTempleteAdjust.json');
-const LANG_STARTOWER = require('./EN-data/language/en_US/StarTower.json');
-const LANG_STARTOWERGROUP = require('./EN-data/language/en_US/StarTowerGroup.json');
-const LANG_UITEXT = require('./EN-data/language/en_US/UIText.json');
-const LANG_MONSTERMANUAL = require('./EN-data/language/en_US/MonsterManual.json');
+const STARTOWER = require('./EN/bin/StarTower.json');
+const STARTOWERGROUP = require('./EN/bin/StarTowerGroup.json');
+const PREVIEWMONSTERGROUP = require('./EN/bin/PreviewMonsterGroup.json');
+const MONSTER = require('./EN/bin/Monster.json');
+const MONSTERMANUAL = require('./EN/bin/MonsterManual.json');
+const MONSTERSKIN = require('./EN/bin/MonsterSkin.json');
+const MONSTERVALUETEMPLETE = require('./EN/bin/MonsterValueTemplete.json');
+const MONSTERVALUETEMPLETEADJUST = require('./EN/bin/MonsterValueTempleteAdjust.json');
+const LANG_STARTOWER = require('./EN/language/en_US/StarTower.json');
+const LANG_STARTOWERGROUP = require('./EN/language/en_US/StarTowerGroup.json');
+const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
+const LANG_MONSTERMANUAL = require('./EN/language/en_US/MonsterManual.json');
 
 const ascension = {};
 

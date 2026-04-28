@@ -1,21 +1,21 @@
 const { writeFileSync } = require('fs');
 const { MONSTER_EPIC_TYPE } = require('./utils');
-const INFINITYTOWER = require('./EN-data/bin/InfinityTower.json');
-const INFINITYTOWERDIFFICULTY = require('./EN-data/bin/InfinityTowerDifficulty.json');
-const INFINITYTOWERFLOOR = require('./EN-data/bin/InfinityTowerFloor.json');
-const INFINITYTOWERAFFIX = require('./EN-data/bin/InfinityTowerAffix.json');
-const PREVIEWMONSTERGROUP = require('./EN-data/bin/PreviewMonsterGroup.json');
-const MONSTER = require('./EN-data/bin/Monster.json');
-const MONSTERMANUAL = require('./EN-data/bin/MonsterManual.json');
-const MONSTERSKIN = require('./EN-data/bin/MonsterSkin.json');
-const MONSTERVALUETEMPLETE = require('./EN-data/bin/MonsterValueTemplete.json');
-const MONSTERVALUETEMPLETEADJUST = require('./EN-data/bin/MonsterValueTempleteAdjust.json');
-const UITEXT = require('./EN-data/bin/UIText.json');
-const LANG_INFINITYTOWER = require('./EN-data/language/en_US/InfinityTower.json');
-const LANG_INFINITYTOWERDIFFICULTY = require('./EN-data/language/en_US/InfinityTowerDifficulty.json');
-const LANG_INFINITYTOWERAFFIX = require('./EN-data/language/en_US/InfinityTowerAffix.json');
-const LANG_UITEXT = require('./EN-data/language/en_US/UIText.json');
-const LANG_MONSTERMANUAL = require('./EN-data/language/en_US/MonsterManual.json');
+const INFINITYTOWER = require('./EN/bin/InfinityTower.json');
+const INFINITYTOWERDIFFICULTY = require('./EN/bin/InfinityTowerDifficulty.json');
+const INFINITYTOWERFLOOR = require('./EN/bin/InfinityTowerFloor.json');
+const INFINITYTOWERAFFIX = require('./EN/bin/InfinityTowerAffix.json');
+const PREVIEWMONSTERGROUP = require('./EN/bin/PreviewMonsterGroup.json');
+const MONSTER = require('./EN/bin/Monster.json');
+const MONSTERMANUAL = require('./EN/bin/MonsterManual.json');
+const MONSTERSKIN = require('./EN/bin/MonsterSkin.json');
+const MONSTERVALUETEMPLETE = require('./EN/bin/MonsterValueTemplete.json');
+const MONSTERVALUETEMPLETEADJUST = require('./EN/bin/MonsterValueTempleteAdjust.json');
+const UITEXT = require('./EN/bin/UIText.json');
+const LANG_INFINITYTOWER = require('./EN/language/en_US/InfinityTower.json');
+const LANG_INFINITYTOWERDIFFICULTY = require('./EN/language/en_US/InfinityTowerDifficulty.json');
+const LANG_INFINITYTOWERAFFIX = require('./EN/language/en_US/InfinityTowerAffix.json');
+const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
+const LANG_MONSTERMANUAL = require('./EN/language/en_US/MonsterManual.json');
 
 const arena = {};
 

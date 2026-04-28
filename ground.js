@@ -1,12 +1,12 @@
 const { writeFileSync } = require('fs');
-const WEEKBOSSAFFIX = require('./EN-data/bin/WeekBossAffix.json');
-const WEEKBOSSTYPE = require('./EN-data/bin/WeekBossType.json');
-const MONSTER = require('./EN-data/bin/Monster.json');
-const MONSTERVALUETEMPLETE = require('./EN-data/bin/MonsterValueTemplete.json');
-const MONSTERVALUETEMPLETEADJUST = require('./EN-data/bin/MonsterValueTempleteAdjust.json');
-const LANG_WEEKBOSSAFFIX = require('./EN-data/language/en_US/WeekBossAffix.json');
-const LANG_WEEKBOSSTYPE = require('./EN-data/language/en_US/WeekBossType.json');
-const LANG_UITEXT = require('./EN-data/language/en_US/UIText.json');
+const WEEKBOSSAFFIX = require('./EN/bin/WeekBossAffix.json');
+const WEEKBOSSTYPE = require('./EN/bin/WeekBossType.json');
+const MONSTER = require('./EN/bin/Monster.json');
+const MONSTERVALUETEMPLETE = require('./EN/bin/MonsterValueTemplete.json');
+const MONSTERVALUETEMPLETEADJUST = require('./EN/bin/MonsterValueTempleteAdjust.json');
+const LANG_WEEKBOSSAFFIX = require('./EN/language/en_US/WeekBossAffix.json');
+const LANG_WEEKBOSSTYPE = require('./EN/language/en_US/WeekBossType.json');
+const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
 const { MONSTER_EPIC_TYPE } = require('./utils');
 
 const ground = {};

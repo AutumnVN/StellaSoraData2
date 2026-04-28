@@ -1,7 +1,7 @@
 const { writeFileSync } = require('fs');
 const { ITEM_STYPE, ITEM_RARITY } = require('./utils');
-const ITEM = require('./EN-data/bin/Item.json');
-const LANG_ITEM = require('./EN-data/language/en_US/Item.json');
+const ITEM = require('./EN/bin/Item.json');
+const LANG_ITEM = require('./EN/language/en_US/Item.json');
 
 const item = {};
 

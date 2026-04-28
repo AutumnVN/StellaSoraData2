@@ -1,20 +1,20 @@
 const { writeFileSync } = require('fs');
 const { MONSTER_EPIC_TYPE, ATTR_TYPE, EFFECT_TYPE, collectParamsFrom, resolveParam } = require('./utils');
-const TRAVELERDUELBOSSLEVEL = require('./EN-data/bin/TravelerDuelBossLevel.json');
-const TRAVELERDUELCHALLENGEDIFFICULTY = require('./EN-data/bin/TravelerDuelChallengeDifficulty.json');
-const TRAVELERDUELCHALLENGEAFFIX = require('./EN-data/bin/TravelerDuelChallengeAffix.json');
-const TRAVELERDUELCHALLENGECONTROL = require('./EN-data/bin/TravelerDuelChallengeControl.json');
-const PREVIEWMONSTERGROUP = require('./EN-data/bin/PreviewMonsterGroup.json');
-const MONSTER = require('./EN-data/bin/Monster.json');
-const MONSTERMANUAL = require('./EN-data/bin/MonsterManual.json');
-const MONSTERSKIN = require('./EN-data/bin/MonsterSkin.json');
-const MONSTERVALUETEMPLETE = require('./EN-data/bin/MonsterValueTemplete.json');
-const MONSTERVALUETEMPLETEADJUST = require('./EN-data/bin/MonsterValueTempleteAdjust.json');
-const EFFECTVALUE = require('./EN-data/bin/EffectValue.json');
-const LANG_TRAVELERDUELBOSSLEVEL = require('./EN-data/language/en_US/TravelerDuelBossLevel.json');
-const LANG_UITEXT = require('./EN-data/language/en_US/UIText.json');
-const LANG_MONSTERMANUAL = require('./EN-data/language/en_US/MonsterManual.json');
-const LANG_TRAVELERDUELCHALLENGEAFFIX = require('./EN-data/language/en_US/TravelerDuelChallengeAffix.json');
+const TRAVELERDUELBOSSLEVEL = require('./EN/bin/TravelerDuelBossLevel.json');
+const TRAVELERDUELCHALLENGEDIFFICULTY = require('./EN/bin/TravelerDuelChallengeDifficulty.json');
+const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
+const TRAVELERDUELCHALLENGECONTROL = require('./EN/bin/TravelerDuelChallengeControl.json');
+const PREVIEWMONSTERGROUP = require('./EN/bin/PreviewMonsterGroup.json');
+const MONSTER = require('./EN/bin/Monster.json');
+const MONSTERMANUAL = require('./EN/bin/MonsterManual.json');
+const MONSTERSKIN = require('./EN/bin/MonsterSkin.json');
+const MONSTERVALUETEMPLETE = require('./EN/bin/MonsterValueTemplete.json');
+const MONSTERVALUETEMPLETEADJUST = require('./EN/bin/MonsterValueTempleteAdjust.json');
+const EFFECTVALUE = require('./EN/bin/EffectValue.json');
+const LANG_TRAVELERDUELBOSSLEVEL = require('./EN/language/en_US/TravelerDuelBossLevel.json');
+const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
+const LANG_MONSTERMANUAL = require('./EN/language/en_US/MonsterManual.json');
+const LANG_TRAVELERDUELCHALLENGEAFFIX = require('./EN/language/en_US/TravelerDuelChallengeAffix.json');
 
 const duel = {};
 
