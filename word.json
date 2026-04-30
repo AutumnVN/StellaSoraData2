@@ -789,13 +789,17 @@
     },
     "2020": {
         "name": "Dark Shackles",
-        "desc": "After some Umbra Trekkers trigger Umbra Mark, deal damage and trigger Dark Shackles, binding weaker enemies in place.",
+        "desc": "After some Umbra Trekkers trigger Umbra Mark, deal damage and trigger Dark Shackles for &Param1&s, binding weaker enemies in place.",
         "icon": "",
-        "params": [],
+        "params": [
+            5
+        ],
         "effectType": [],
         "addAttrType": [],
         "effectData": [],
-        "buffIcons": []
+        "buffIcons": [
+            "No Icon"
+        ]
     },
     "2021": {
         "name": "Butterfly Mark",
@@ -918,20 +922,6 @@
         "addAttrType": [],
         "effectData": [],
         "buffIcons": []
-    },
-    "3002": {
-        "name": "Dark Shackles",
-        "desc": "Binds weaker enemies in place for &Param1&s.",
-        "icon": "",
-        "params": [
-            5
-        ],
-        "effectType": [],
-        "addAttrType": [],
-        "effectData": [],
-        "buffIcons": [
-            "No Icon"
-        ]
     },
     "4002": {
         "name": "Shadow Clone",
