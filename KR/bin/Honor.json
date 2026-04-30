@@ -883,6 +883,45 @@
     "Sort": 0,
     "BGType": 2
   },
+  "118061": {
+    "Id": 118061,
+    "Name": "Honor.118061.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 3,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_118061_L",
+    "SubRes": "Icon/HonorTitle/HonorTitle_118061_S",
+    "Sort": 0,
+    "BGType": 2
+  },
+  "118062": {
+    "Id": 118062,
+    "Name": "Honor.118062.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 3,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_118062_L",
+    "SubRes": "Icon/HonorTitle/HonorTitle_118062_S",
+    "Sort": 0,
+    "BGType": 2
+  },
+  "118063": {
+    "Id": 118063,
+    "Name": "Honor.118063.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 3,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_118063_L",
+    "SubRes": "Icon/HonorTitle/HonorTitle_118063_S",
+    "Sort": 0,
+    "BGType": 2
+  },
   "119011": {
     "Id": 119011,
     "Name": "Honor.119011.1",

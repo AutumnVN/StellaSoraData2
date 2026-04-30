@@ -9915,7 +9915,7 @@ return {
 		cmd = "SetTalk",
 		param = {
 			0,
-			"avg3_999",
+			"avg1_143",
 			"",
 			0,
 			"",
@@ -10001,7 +10001,7 @@ return {
 		cmd = "SetTalk",
 		param = {
 			0,
-			"avg3_999",
+			"avg1_143",
 			"",
 			0,
 			"",
@@ -10044,7 +10044,7 @@ return {
 		cmd = "SetTalk",
 		param = {
 			0,
-			"avg3_999",
+			"avg1_143",
 			"",
 			0,
 			"",
@@ -10209,7 +10209,7 @@ return {
 		cmd = "SetTalk",
 		param = {
 			0,
-			"avg3_999",
+			"avg1_143",
 			"",
 			0,
 			"",
