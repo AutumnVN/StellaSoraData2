@@ -22338,6 +22338,88 @@
     "IsInherit": false,
     "IsExitDelete": false
   },
+  "631013001": {
+    "Id": 631013001,
+    "Name": "",
+    "Sort": 99,
+    "Effects": [
+      631013001
+    ],
+    "BuffEffects": [],
+    "Time": -10000,
+    "LaminatedNum": 1,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 2,
+    "ReplaceType": false,
+    "ReplaceMode": true,
+    "AttackClear": false,
+    "HitClear": false,
+    "IsInherit": false,
+    "IsExitDelete": false
+  },
+  "631013002": {
+    "Id": 631013002,
+    "Name": "",
+    "Sort": 99,
+    "Effects": [
+      631013002
+    ],
+    "BuffEffects": [],
+    "Time": 150000,
+    "LaminatedNum": 1,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 2,
+    "ReplaceType": true,
+    "ReplaceMode": true,
+    "AttackClear": false,
+    "HitClear": false,
+    "IsInherit": false,
+    "IsExitDelete": false
+  },
+  "631014001": {
+    "Id": 631014001,
+    "Name": "",
+    "Sort": 99,
+    "Effects": [
+      631014001,
+      631014011
+    ],
+    "BuffEffects": [],
+    "Time": 80000,
+    "LaminatedNum": 10,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 2,
+    "ReplaceType": true,
+    "ReplaceMode": true,
+    "AttackClear": false,
+    "HitClear": false,
+    "IsInherit": false,
+    "IsExitDelete": false
+  },
+  "631014002": {
+    "Id": 631014002,
+    "Name": "",
+    "Sort": 99,
+    "Effects": [
+      631014002,
+      631014022
+    ],
+    "BuffEffects": [],
+    "Time": 80000,
+    "LaminatedNum": 10,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 2,
+    "ReplaceType": true,
+    "ReplaceMode": true,
+    "AttackClear": false,
+    "HitClear": false,
+    "IsInherit": false,
+    "IsExitDelete": false
+  },
   "100090310": {
     "Id": 100090310,
     "Name": "",

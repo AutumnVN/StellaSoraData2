@@ -12993,6 +12993,134 @@
     "SuppressRatio": 0,
     "SuppressFix": 0
   },
+  "6310150": {
+    "Id": 6310150,
+    "TemplateId": 9054,
+    "EET": 4,
+    "ResistEET": [
+      4
+    ],
+    "WeakEET": [
+      5,
+      1
+    ],
+    "HpRatio": 0,
+    "HpFix": 0,
+    "AtkRatio": 0,
+    "AtkFix": 0,
+    "WERRatio": 0,
+    "WERFix": 250,
+    "FERRatio": 0,
+    "FERFix": 750,
+    "SERRatio": 0,
+    "SERFix": 750,
+    "AERRatio": 0,
+    "AERFix": 2000,
+    "LERRatio": 0,
+    "LERFix": 250,
+    "DERRatio": 0,
+    "DERFix": 750,
+    "ToughnessRatio": 0,
+    "ToughnessFix": 0,
+    "SuppressRatio": 0,
+    "SuppressFix": 0
+  },
+  "6310151": {
+    "Id": 6310151,
+    "TemplateId": 9055,
+    "EET": 4,
+    "ResistEET": [
+      4
+    ],
+    "WeakEET": [
+      5,
+      1
+    ],
+    "HpRatio": 0,
+    "HpFix": 0,
+    "AtkRatio": 0,
+    "AtkFix": 0,
+    "WERRatio": 0,
+    "WERFix": 250,
+    "FERRatio": 0,
+    "FERFix": 750,
+    "SERRatio": 0,
+    "SERFix": 750,
+    "AERRatio": 0,
+    "AERFix": 2000,
+    "LERRatio": 0,
+    "LERFix": 250,
+    "DERRatio": 0,
+    "DERFix": 750,
+    "ToughnessRatio": 0,
+    "ToughnessFix": 0,
+    "SuppressRatio": 0,
+    "SuppressFix": 0
+  },
+  "6310140": {
+    "Id": 6310140,
+    "TemplateId": 9052,
+    "EET": 3,
+    "ResistEET": [
+      3
+    ],
+    "WeakEET": [
+      4,
+      6
+    ],
+    "HpRatio": 0,
+    "HpFix": 0,
+    "AtkRatio": 0,
+    "AtkFix": 0,
+    "WERRatio": 0,
+    "WERFix": 750,
+    "FERRatio": 0,
+    "FERFix": 750,
+    "SERRatio": 0,
+    "SERFix": 2000,
+    "AERRatio": 0,
+    "AERFix": 250,
+    "LERRatio": 0,
+    "LERFix": 750,
+    "DERRatio": 0,
+    "DERFix": 250,
+    "ToughnessRatio": 0,
+    "ToughnessFix": 0,
+    "SuppressRatio": 0,
+    "SuppressFix": 0
+  },
+  "6310141": {
+    "Id": 6310141,
+    "TemplateId": 9053,
+    "EET": 3,
+    "ResistEET": [
+      3
+    ],
+    "WeakEET": [
+      4,
+      6
+    ],
+    "HpRatio": 0,
+    "HpFix": 0,
+    "AtkRatio": 0,
+    "AtkFix": 0,
+    "WERRatio": 0,
+    "WERFix": 750,
+    "FERRatio": 0,
+    "FERFix": 750,
+    "SERRatio": 0,
+    "SERFix": 2000,
+    "AERRatio": 0,
+    "AERFix": 250,
+    "LERRatio": 0,
+    "LERFix": 750,
+    "DERRatio": 0,
+    "DERFix": 250,
+    "ToughnessRatio": -10000,
+    "ToughnessFix": 0,
+    "SuppressRatio": 0,
+    "SuppressFix": 0
+  },
   "7100100": {
     "Id": 7100100,
     "TemplateId": 8610,

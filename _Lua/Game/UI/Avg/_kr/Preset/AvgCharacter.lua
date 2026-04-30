@@ -151,7 +151,8 @@ return {
 	{
 		id = "avg1_125",
 		name = "프리지아",
-		name_bg_color = "#90abe1"
+		name_bg_color = "#90abe1",
+		reuseL2DPose = "c"
 	},
 	{
 		id = "avg1_126",
@@ -1036,7 +1037,7 @@ return {
 	},
 	{
 		id = "avg3_207",
-		name = "미알사",
+		name = "미르사",
 		name_bg_color = "#9c8183",
 		ver = "1.8.0"
 	},

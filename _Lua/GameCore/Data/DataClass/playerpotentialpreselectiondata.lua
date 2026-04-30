@@ -175,12 +175,19 @@ function PlayerPotentialPreselectionData:UnPackPotentialData(b64Str)
 		})
 	end
 	local nMaxLevel = ConfigTable.GetConfigNumber("PotentialPreselectionMaxLevel")
-	local unpack_potential = function(tbPotential, tbAll, bSpecial)
+	local unpack_potential = function(tbPotential, tbAll, bSpecial, nSpecialCount)
 		for _, nId in ipairs(tbAll) do
 			if bSpecial then
 				local flag = read_bits(1)
 				if flag == 1 then
 					table.insert(tbPotential, {Id = nId, Level = 1})
+					if nSpecialCount then
+						nSpecialCount = nSpecialCount + 1
+						if 2 < nSpecialCount then
+							printError("特殊潜能数量超过2")
+							return false
+						end
+					end
 				end
 			else
 				local nLevel = read_bits(3)
@@ -197,14 +204,15 @@ function PlayerPotentialPreselectionData:UnPackPotentialData(b64Str)
 	end
 	for k, v in ipairs(tbCharPotential) do
 		if v.CharId > 0 then
+			local nSpecialCount = 0
 			local potentialCfg = ConfigTable.GetData("CharPotential", v.CharId)
 			if potentialCfg then
 				local bAvailable = true
 				if k == 1 then
-					bAvailable = bAvailable and unpack_potential(v.Potentials, potentialCfg.MasterSpecificPotentialIds, true)
+					bAvailable = bAvailable and unpack_potential(v.Potentials, potentialCfg.MasterSpecificPotentialIds, true, nSpecialCount)
 					bAvailable = bAvailable and unpack_potential(v.Potentials, potentialCfg.MasterNormalPotentialIds, false)
 				else
-					bAvailable = bAvailable and unpack_potential(v.Potentials, potentialCfg.AssistSpecificPotentialIds, true)
+					bAvailable = bAvailable and unpack_potential(v.Potentials, potentialCfg.AssistSpecificPotentialIds, true, nSpecialCount)
 					bAvailable = bAvailable and unpack_potential(v.Potentials, potentialCfg.AssistNormalPotentialIds, false)
 				end
 				bAvailable = bAvailable and unpack_potential(v.Potentials, potentialCfg.CommonPotentialIds, false)

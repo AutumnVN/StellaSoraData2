@@ -315,6 +315,12 @@ return {
 		ver = "1.6.0"
 	},
 	{
+		id = "avg1_163",
+		name = "***",
+		name_bg_color = "#6690de",
+		ver = "1.11.0"
+	},
+	{
 		id = "avg1_164",
 		name = "朔",
 		name_bg_color = "#5a91ca",
@@ -334,6 +340,12 @@ return {
 		id = "avg2_003",
 		name = "树树鼠·掷弹兵",
 		name_bg_color = "#0ABEC5"
+	},
+	{
+		id = "avg2_943",
+		name = "***",
+		name_bg_color = "#0ABEC5",
+		ver = "1.10.0"
 	},
 	{
 		id = "avg2_946",
@@ -1080,14 +1092,26 @@ return {
 	{
 		id = "avg3_215",
 		name = "玛蒂尔达",
-		name_bg_color = "#0ABEC5",
+		name_bg_color = "#fced8a",
 		ver = "1.9.0"
 	},
 	{
 		id = "avg3_220",
 		name = "梅尔库莉娅",
-		name_bg_color = "#0ABEC5",
+		name_bg_color = "#9787b1",
 		ver = "1.9.0"
+	},
+	{
+		id = "avg3_221",
+		name = "***",
+		name_bg_color = "#0ABEC5",
+		ver = "1.11.0"
+	},
+	{
+		id = "avg3_222",
+		name = "***",
+		name_bg_color = "#0ABEC5",
+		ver = "1.11.0"
 	},
 	{
 		id = "avg3_873",
@@ -2671,6 +2695,18 @@ return {
 		name = "通用魔女B",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg3_213"
+	},
+	{
+		id = "avg3_1292",
+		name = "火垂A",
+		name_bg_color = "#5e76ac",
+		reuse = "avg1_115"
+	},
+	{
+		id = "avg3_1293",
+		name = "朔A",
+		name_bg_color = "#5a91ca",
+		reuse = "avg1_164"
 	},
 	{
 		id = "avg4_100",
