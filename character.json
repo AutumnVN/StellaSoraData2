@@ -4463,7 +4463,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "10701_Potential_04",
                     "corner": "Round",
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 8
                 },
                 {
                     "id": 510712,
@@ -103029,7 +103030,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "14401_Potential_02",
                     "corner": "Diamond",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
                 },
                 {
                     "id": 514406,
@@ -103097,7 +103099,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "14401_Potential_01",
                     "corner": "Triangle",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
                 },
                 {
                     "id": 514407,
@@ -106805,7 +106808,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_01",
                     "corner": "Round",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
                 },
                 {
                     "id": 514508,
@@ -107557,7 +107561,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "14501_Potential_23",
                     "corner": "Diamond",
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 6
                 },
                 {
                     "id": 514530,
@@ -107640,7 +107645,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_18",
                     "corner": "Diamond",
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 6
                 },
                 {
                     "id": 514532,
@@ -129978,7 +129984,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "15801_Potential_41",
                     "corner": "Diamond",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
                 },
                 {
                     "id": 515842,
@@ -130074,7 +130081,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "15801_Potential_41",
                     "corner": "Round",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
                 }
             ],
             "supportCore": [
@@ -130603,7 +130611,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_Fire_1",
                     "corner": "Triangle",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
                 },
                 {
                     "id": 515829,
@@ -130689,7 +130698,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_15",
                     "corner": "Round",
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 6
                 }
             ]
         },
@@ -137757,7 +137767,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "16001_Potential_41",
                     "corner": "Round",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
                 }
             ],
             "supportCore": [
@@ -138198,7 +138209,8 @@
                     ],
                     "icon": "16001_Potential_23",
                     "corner": "Round",
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 6
                 },
                 {
                     "id": 516031,
@@ -138352,7 +138364,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_15",
                     "corner": "Round",
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 6
                 }
             ]
         },
