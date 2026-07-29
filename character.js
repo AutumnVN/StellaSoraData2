@@ -281,15 +281,18 @@ function getSkillEffectTypes(skillId) {
         const p = param.split(',');
 
         let buffId = +p[2];
-        if (!BUFFVALUE[buffId]) buffId += 10;
-        if (!BUFFVALUE[buffId]) continue;
+        const possibleBuffIds = [buffId, buffId + 10];
 
-        const effectIds = BUFFVALUE[buffId].Effects;
+        for (const buffId of possibleBuffIds) {
+            if (!BUFFVALUE[buffId]) continue;
 
-        for (const effectId of effectIds) {
-            if (!EFFECTVALUE[effectId]) continue;
+            const effectIds = BUFFVALUE[buffId].Effects;
 
-            params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+            for (const effectId of effectIds) {
+                if (!EFFECTVALUE[effectId]) continue;
+
+                params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+            }
         }
     }
 
@@ -297,14 +300,17 @@ function getSkillEffectTypes(skillId) {
         const p = param.split(',');
 
         let effectId = +p[2];
-        if (!EFFECTVALUE[effectId]) effectId += 10;
-        if (!EFFECTVALUE[effectId]) continue;
+        const possibleEffectIds = [effectId, effectId + 10];
 
-        let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
-        if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
-        const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+        for (const effectId of possibleEffectIds) {
+            if (!EFFECTVALUE[effectId]) continue;
 
-        effectTypes.push(formatEffectType(effectId, type, paramType));
+            let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
+            if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
+            const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+
+            effectTypes.push(formatEffectType(effectId, type, paramType));
+        }
     }
 
     return [...new Set(effectTypes)];
@@ -319,18 +325,21 @@ function getSkillAddAttrTypes(skillId) {
         const p = param.split(',');
 
         let addAttrId = +p[2];
-        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) addAttrId += 10;
-        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
+        const possibleAddAttrIds = [addAttrId, addAttrId + 10];
 
-        const element = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType1;
-        const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
-        const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
-        const element2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType2;
-        const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
-        const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+        for (const addAttrId of possibleAddAttrIds) {
+            if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
 
-        addAttrTypes.push(formatAddAttrType(type, paramType, element));
-        if (type2 && paramType2) addAttrTypes.push(formatAddAttrType(type2, paramType2, element2));
+            const element = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType1;
+            const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
+            const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
+            const element2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType2;
+            const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
+            const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+
+            addAttrTypes.push(formatAddAttrType(type, paramType, element));
+            if (type2 && paramType2) addAttrTypes.push(formatAddAttrType(type2, paramType2, element2));
+        }
     }
 
     return [...new Set(addAttrTypes)];
@@ -364,12 +373,15 @@ function getSkillBuffIcons(skillId) {
         const p = param.split(',');
 
         let buffId = +p[2];
-        if (!BUFF[buffId]) buffId += 10;
-        if (!BUFF[buffId]) continue;
+        const possibleBuffIds = [buffId, buffId + 10];
 
-        const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
+        for (const buffId of possibleBuffIds) {
+            if (!BUFF[buffId]) continue;
 
-        buffIcons.push(icon);
+            const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
+
+            buffIcons.push(icon);
+        }
     }
 
     return [...new Set(buffIcons)];
@@ -629,15 +641,18 @@ function getPotentialEffectTypes(potId) {
         const p = param.split(',');
 
         let buffId = +p[2];
-        if (!BUFFVALUE[buffId]) buffId += 10;
-        if (!BUFFVALUE[buffId]) continue;
+        const possibleBuffIds = [buffId, buffId + 10];
 
-        const effectIds = BUFFVALUE[buffId].Effects;
+        for (const buffId of possibleBuffIds) {
+            if (!BUFFVALUE[buffId]) continue;
 
-        for (const effectId of effectIds) {
-            if (!EFFECTVALUE[effectId]) continue;
+            const effectIds = BUFFVALUE[buffId].Effects;
 
-            params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+            for (const effectId of effectIds) {
+                if (!EFFECTVALUE[effectId]) continue;
+
+                params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+            }
         }
     }
 
@@ -645,14 +660,17 @@ function getPotentialEffectTypes(potId) {
         const p = param.split(',');
 
         let effectId = +p[2];
-        if (!EFFECTVALUE[effectId]) effectId += 10;
-        if (!EFFECTVALUE[effectId]) continue;
+        const possibleEffectIds = [effectId, effectId + 10];
 
-        let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
-        if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
-        const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+        for (const effectId of possibleEffectIds) {
+            if (!EFFECTVALUE[effectId]) continue;
 
-        effectTypes.push(formatEffectType(effectId, type, paramType));
+            let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
+            if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
+            const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+
+            effectTypes.push(formatEffectType(effectId, type, paramType));
+        }
     }
 
     return [...new Set(effectTypes)];
@@ -667,18 +685,21 @@ function getPotentialAddAttrTypes(potId) {
         const p = param.split(',');
 
         let addAttrId = +p[2];
-        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) addAttrId += 10;
-        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
+        const possibleAddAttrIds = [addAttrId, addAttrId + 10];
 
-        const element = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType1;
-        const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
-        const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
-        const element2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType2;
-        const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
-        const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+        for (const addAttrId of possibleAddAttrIds) {
+            if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
 
-        addAttrTypes.push(formatAddAttrType(type, paramType, element));
-        if (type2 && paramType2) addAttrTypes.push(formatAddAttrType(type2, paramType2, element2));
+            const element = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType1;
+            const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
+            const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
+            const element2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType2;
+            const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
+            const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+
+            addAttrTypes.push(formatAddAttrType(type, paramType, element));
+            if (type2 && paramType2) addAttrTypes.push(formatAddAttrType(type2, paramType2, element2));
+        }
     }
 
     return [...new Set(addAttrTypes)];
@@ -713,12 +734,15 @@ function getPotentialBuffIcons(potId) {
         const p = param.split(',');
 
         let buffId = +p[2];
-        if (!BUFF[buffId]) buffId += 10;
-        if (!BUFF[buffId]) continue;
+        const possibleBuffIds = [buffId, buffId + 10];
 
-        const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
+        for (const buffId of possibleBuffIds) {
+            if (!BUFF[buffId]) continue;
 
-        buffIcons.push(icon);
+            const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
+
+            buffIcons.push(icon);
+        }
     }
 
     return [...new Set(buffIcons)];
@@ -787,7 +811,7 @@ function getTalents(charId) {
 
             return {
                 name: LANG_TALENTGROUP[TALENTGROUP[groupId].Title],
-                boost: talentIds.map(talentId => ({
+                boost: talentIds.map((talentId, index) => ({
                     name: LANG_TALENT[TALENT[talentId].Title],
                     nameCN: CN_TALENT[TALENT[talentId].Title],
                     nameJP: JP_TALENT[TALENT[talentId].Title],
@@ -796,10 +820,10 @@ function getTalents(charId) {
                     descCN: CN_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], CN_TALENT),
                     descJP: JP_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], JP_TALENT),
                     descKR: KR_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], KR_TALENT),
-                    effectType: getTalentEffectTypes(talentId),
-                    addAttrType: getTalentAddAttrTypes(talentId),
+                    effectType: getTalentEffectTypes(talentId, index),
+                    addAttrType: getTalentAddAttrTypes(talentId, index),
                     effectData: getTalentEffectData(talentId),
-                    buffIcon: getTalentBuffIcons(talentId),
+                    buffIcon: getTalentBuffIcons(talentId, index),
                     params: getTalentParams(talentId),
                     paramsTooltips: getTalentParamsTooltips(talentId),
                 })),
@@ -817,7 +841,7 @@ function getTalentParamsTooltips(talentId) {
     return resolveParamsTooltips(params);
 }
 
-function getTalentEffectTypes(talentId) {
+function getTalentEffectTypes(talentId, index) {
     const effectTypes = [];
 
     const params = collectParamsFrom(TALENT[talentId]).filter(p => p && p.startsWith('Effect'));
@@ -828,15 +852,19 @@ function getTalentEffectTypes(talentId) {
         const p = param.split(',');
 
         let buffId = +p[2];
-        if (!BUFFVALUE[buffId]) buffId += 10;
-        if (!BUFFVALUE[buffId]) continue;
+        const possibleBuffIds = [buffId];
+        if (index === 0 || !BUFFVALUE[buffId]) possibleBuffIds.push(buffId + 10);
 
-        const effectIds = BUFFVALUE[buffId].Effects;
+        for (const buffId of possibleBuffIds) {
+            if (!BUFFVALUE[buffId]) continue;
 
-        for (const effectId of effectIds) {
-            if (!EFFECTVALUE[effectId]) continue;
+            const effectIds = BUFFVALUE[buffId].Effects;
 
-            params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+            for (const effectId of effectIds) {
+                if (!EFFECTVALUE[effectId]) continue;
+
+                params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+            }
         }
     }
 
@@ -844,20 +872,24 @@ function getTalentEffectTypes(talentId) {
         const p = param.split(',');
 
         let effectId = +p[2];
-        if (!EFFECTVALUE[effectId]) effectId += 10;
-        if (!EFFECTVALUE[effectId]) continue;
+        const possibleEffectIds = [effectId];
+        if (index === 0 || !EFFECTVALUE[effectId]) possibleEffectIds.push(effectId + 10);
 
-        let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
-        if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
-        const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+        for (const effectId of possibleEffectIds) {
+            if (!EFFECTVALUE[effectId]) continue;
 
-        effectTypes.push(formatEffectType(effectId, type, paramType));
+            let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
+            if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
+            const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+
+            effectTypes.push(formatEffectType(effectId, type, paramType));
+        }
     }
 
     return [...new Set(effectTypes)];
 }
 
-function getTalentAddAttrTypes(talentId) {
+function getTalentAddAttrTypes(talentId, index) {
     const addAttrTypes = [];
 
     const params = collectParamsFrom(TALENT[talentId]).filter(p => p && p.startsWith('OnceAdditionalAttribute'));
@@ -865,18 +897,22 @@ function getTalentAddAttrTypes(talentId) {
     for (const param of params) {
         const p = param.split(',');
         let addAttrId = +p[2];
-        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) addAttrId += 10;
-        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
+        const possibleAddAttrIds = [addAttrId];
+        if (index === 0 || !ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) possibleAddAttrIds.push(addAttrId + 10);
 
-        const element = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType1;
-        const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
-        const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
-        const element2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType2;
-        const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
-        const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+        for (const addAttrId of possibleAddAttrIds) {
+            if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
 
-        addAttrTypes.push(formatAddAttrType(type, paramType, element));
-        if (type2 && paramType2) addAttrTypes.push(formatAddAttrType(type2, paramType2, element2));
+            const element = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType1;
+            const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
+            const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
+            const element2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType2;
+            const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
+            const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+
+            addAttrTypes.push(formatAddAttrType(type, paramType, element));
+            if (type2 && paramType2) addAttrTypes.push(formatAddAttrType(type2, paramType2, element2));
+        }
     }
 
     return [...new Set(addAttrTypes)];
@@ -902,7 +938,7 @@ function getTalentEffectData(talentId) {
     return [...new Set(effectDatas)];
 }
 
-function getTalentBuffIcons(talentId) {
+function getTalentBuffIcons(talentId, index) {
     const buffIcons = [];
 
     const params = collectParamsFrom(TALENT[talentId]).filter(p => p && (p.startsWith('Buff') || p.startsWith('Effect') || p.startsWith('OnceAdditionalAttribute')));
@@ -911,12 +947,16 @@ function getTalentBuffIcons(talentId) {
         const p = param.split(',');
 
         let buffId = +p[2];
-        if (!BUFF[buffId]) buffId += 10;
-        if (!BUFF[buffId]) continue;
+        const possibleBuffIds = [buffId];
+        if (index === 0 || !BUFF[buffId]) possibleBuffIds.push(buffId + 10);
 
-        const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
+        for (const buffId of possibleBuffIds) {
+            if (!BUFF[buffId]) continue;
 
-        buffIcons.push(icon);
+            const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
+
+            buffIcons.push(icon);
+        }
     }
 
     return [...new Set(buffIcons)];
