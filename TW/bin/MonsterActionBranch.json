@@ -29608,7 +29608,7 @@
     "Priority": 10,
     "Weight": 1,
     "Rate": 10000,
-    "CD": 90000,
+    "CD": 60000,
     "InitialCDPool": [
       0,
       10000,
@@ -29641,7 +29641,7 @@
     "Priority": 8,
     "Weight": 1,
     "Rate": 10000,
-    "CD": 90000,
+    "CD": 60000,
     "InitialCDPool": [
       30000,
       40000
@@ -29672,7 +29672,7 @@
     "Priority": 8,
     "Weight": 1,
     "Rate": 10000,
-    "CD": 20000,
+    "CD": 10000,
     "InitialCDPool": [
       0
     ],

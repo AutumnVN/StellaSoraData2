@@ -24280,6 +24280,108 @@
     "IsInherit": false,
     "IsExitDelete": false
   },
+  "631020010": {
+    "Id": 631020010,
+    "Name": "",
+    "Sort": 99,
+    "Effects": [
+      631020011,
+      631020012
+    ],
+    "BuffEffects": [],
+    "Time": 80000,
+    "LaminatedNum": 8,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 2,
+    "ReplaceType": true,
+    "ReplaceMode": true,
+    "AttackClear": false,
+    "HitClear": false,
+    "IsInherit": false,
+    "IsExitDelete": false
+  },
+  "631020020": {
+    "Id": 631020020,
+    "Name": "",
+    "Sort": 99,
+    "Effects": [
+      631020021,
+      631020022
+    ],
+    "BuffEffects": [],
+    "Time": 80000,
+    "LaminatedNum": 8,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 2,
+    "ReplaceType": true,
+    "ReplaceMode": true,
+    "AttackClear": false,
+    "HitClear": false,
+    "IsInherit": false,
+    "IsExitDelete": false
+  },
+  "631019010": {
+    "Id": 631019010,
+    "Name": "",
+    "Sort": 0,
+    "Effects": [
+      631019010
+    ],
+    "BuffEffects": [],
+    "Time": 100000,
+    "LaminatedNum": 10,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 1,
+    "ReplaceType": true,
+    "ReplaceMode": true,
+    "AttackClear": false,
+    "HitClear": false,
+    "IsInherit": false,
+    "IsExitDelete": false
+  },
+  "631019020": {
+    "Id": 631019020,
+    "Name": "",
+    "Sort": 0,
+    "Effects": [
+      631019020
+    ],
+    "BuffEffects": [],
+    "Time": -10000,
+    "LaminatedNum": 1,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 1,
+    "ReplaceType": true,
+    "ReplaceMode": true,
+    "AttackClear": false,
+    "HitClear": false,
+    "IsInherit": false,
+    "IsExitDelete": false
+  },
+  "631019030": {
+    "Id": 631019030,
+    "Name": "",
+    "Sort": 0,
+    "Effects": [
+      631019030
+    ],
+    "BuffEffects": [],
+    "Time": -10000,
+    "LaminatedNum": 1,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 1,
+    "ReplaceType": true,
+    "ReplaceMode": true,
+    "AttackClear": false,
+    "HitClear": false,
+    "IsInherit": false,
+    "IsExitDelete": false
+  },
   "100090310": {
     "Id": 100090310,
     "Name": "",
