@@ -1802,7 +1802,7 @@
     "EvIdsA": [],
     "EvIdsB": [],
     "StoryIdA": [
-      "STm08_BT01"
+      "BAm08_01"
     ],
     "StoryIdB": [],
     "PlayerWorldLevel": 0,
@@ -1932,7 +1932,7 @@
     "EvIdsA": [],
     "EvIdsB": [],
     "StoryIdA": [
-      "STm08_BT02"
+      "BAm08_02"
     ],
     "StoryIdB": [],
     "PlayerWorldLevel": 0,
@@ -1994,7 +1994,9 @@
     "Id": 917,
     "ConditionId": "C08_16_a",
     "Comment": "",
-    "EvIdsA": [],
+    "EvIdsA": [
+      "E901"
+    ],
     "EvIdsB": [],
     "StoryIdA": [
       "STm08_15"
@@ -2007,7 +2009,9 @@
     "Id": 918,
     "ConditionId": "C08_16_b",
     "Comment": "",
-    "EvIdsA": [],
+    "EvIdsA": [
+      "E902"
+    ],
     "EvIdsB": [],
     "StoryIdA": [
       "STm08_15"
@@ -2127,7 +2131,7 @@
     "EvIdsA": [],
     "EvIdsB": [],
     "StoryIdA": [
-      "STm08_BT03"
+      "BAm08_03"
     ],
     "StoryIdB": [],
     "PlayerWorldLevel": 0,
