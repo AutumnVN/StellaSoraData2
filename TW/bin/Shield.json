@@ -125,6 +125,20 @@
     "NotRemove": false,
     "NotShieldScale": true
   },
+  "180110301": {
+    "Id": 180110301,
+    "Name": "",
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0,
+    "BindEffect": "Actor/Monster/18011LiMingFaShi/Buff/fx_m18011_buff_skill01_Shield",
+    "ShieldTag1": 0,
+    "ShieldTag2": 0,
+    "ShieldTag3": 0,
+    "TimeSuperposition": 1,
+    "NotRemove": false,
+    "NotShieldScale": true
+  },
   "250100601": {
     "Id": 250100601,
     "Name": "",
