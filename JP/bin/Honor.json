@@ -116,6 +116,19 @@
     "Sort": 0,
     "BGType": 2
   },
+  "111010": {
+    "Id": 111010,
+    "Name": "Honor.111010.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 1,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_Story_010_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_Story_010_S",
+    "Sort": 0,
+    "BGType": 2
+  },
   "114001": {
     "Id": 114001,
     "Name": "Honor.114001.1",
