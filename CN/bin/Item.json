@@ -41209,6 +41209,28 @@
     "Icon": "Icon/Item/item_111009",
     "Icon2": ""
   },
+  "111010": {
+    "Id": 111010,
+    "Title": "Item.111010.1",
+    "Desc": "Item.111010.2",
+    "Literary": "Item.111010.3",
+    "Type": 13,
+    "Stype": 43,
+    "Rarity": 1,
+    "Stack": false,
+    "PositionLimit": 0,
+    "ExpireType": 0,
+    "ExpireDate": "",
+    "UseMode": 0,
+    "UseAction": 0,
+    "UseArgs": "",
+    "Display": true,
+    "DisHaving": true,
+    "ObtainWays": "",
+    "JumpTo": [],
+    "Icon": "Icon/Item/item_111010",
+    "Icon2": ""
+  },
   "112103": {
     "Id": 112103,
     "Title": "Item.112103.1",

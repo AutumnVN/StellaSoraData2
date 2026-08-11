@@ -1163,8 +1163,14 @@ return {
 		ver = "1.9.0"
 	},
 	{
+		id = "avg3_216",
+		name = "冈希尔德",
+		name_bg_color = "#caaee2",
+		ver = "1.13.2"
+	},
+	{
 		id = "avg3_217",
-		name = "***",
+		name = "160号",
 		name_bg_color = "#fffdf5",
 		ver = "1.13.2"
 	},
@@ -1254,7 +1260,7 @@ return {
 	},
 	{
 		id = "avg3_232",
-		name = "***",
+		name = "天穹保险公司代表男",
 		name_bg_color = "#0ABEC5",
 		ver = "1.13.2"
 	},
