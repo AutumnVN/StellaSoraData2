@@ -17,6 +17,14 @@
         "cnCv": "Si Bai",
         "jpCv": "Yuuki Takada",
         "birthday": "August 8th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Card Photo Capturer",
             "Reflective Photo Capturer",
@@ -3688,6 +3696,14 @@
         "cnCv": "Chen Yu",
         "jpCv": "Rumi Okubo",
         "birthday": "November 18th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Whisper Wind Spinner",
             "Chilling Wind Spinner",
@@ -7604,6 +7620,14 @@
         "cnCv": "Li Chanfei",
         "jpCv": "Yasuno Kiyono",
         "birthday": "October 8th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -11256,6 +11280,14 @@
         "cnCv": "Zi Yin",
         "jpCv": "Chiwa Saito",
         "birthday": "November 16th",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -15008,6 +15040,14 @@
         "cnCv": "Chen Zhang",
         "jpCv": "Yuko Natsuyoshi",
         "birthday": "May 1st",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Stellanite Enchantment",
             "Moonlit Companion",
@@ -19079,6 +19119,14 @@
         "cnCv": "Kiyo",
         "jpCv": "Riona Imaizumi",
         "birthday": "June 21st",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -22677,6 +22725,14 @@
         "cnCv": "Chen Yang",
         "jpCv": "Ari Ozawa",
         "birthday": "July 6th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Stellanite Enchantment",
             "Moonlit Companion",
@@ -26534,6 +26590,14 @@
         "cnCv": "Raby",
         "jpCv": "Ayane Sakura",
         "birthday": "August 5th",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -30419,6 +30483,14 @@
         "cnCv": "Liu Wen",
         "jpCv": "Maria Naganawa",
         "birthday": "May 5th",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Card Photo Capturer",
             "Reflective Photo Capturer",
@@ -34273,6 +34345,14 @@
         "cnCv": "Zhang Kaixuan",
         "jpCv": "Kero Nanase",
         "birthday": "September 22nd",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Portable Blower",
             "Exquisite Blower",
@@ -38011,6 +38091,14 @@
         "cnCv": "Han Jiaojiao",
         "jpCv": "Saran Tajima",
         "birthday": "May 10th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Summer Chill Crushed Ice",
             "Fragrant Ice Delight",
@@ -41786,6 +41874,14 @@
         "cnCv": "Zhou Yuhan",
         "jpCv": "Yuka Saito",
         "birthday": "October 15th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Card Photo Capturer",
             "Reflective Photo Capturer",
@@ -45510,6 +45606,14 @@
         "cnCv": "Dou Nai",
         "jpCv": "Satomi Sato",
         "birthday": "April 20th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Whisper Wind Spinner",
             "Chilling Wind Spinner",
@@ -49176,6 +49280,14 @@
         "cnCv": "Liang Shuang",
         "jpCv": "Megumi Toyoguchi",
         "birthday": "January 22nd",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -52861,6 +52973,14 @@
         "cnCv": "Jing Chen",
         "jpCv": "Rina Hidaka",
         "birthday": "June 1st",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Stellanite Enchantment",
             "Moonlit Companion",
@@ -56617,6 +56737,14 @@
         "cnCv": "Zhang Ye",
         "jpCv": "Lynn",
         "birthday": "September 9th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Portable Blower",
             "Exquisite Blower",
@@ -60751,6 +60879,14 @@
         "cnCv": "Mu Fei",
         "jpCv": "Ikumi Hasegawa",
         "birthday": "September 5th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -64488,6 +64624,14 @@
         "cnCv": "Jing Liu",
         "jpCv": "Manaka Iwami",
         "birthday": "February 21st",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -68233,6 +68377,14 @@
         "cnCv": "Su Wan",
         "jpCv": "Kana Asumi",
         "birthday": "October 9th",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Portable Blower",
             "Exquisite Blower",
@@ -72447,6 +72599,14 @@
         "cnCv": "Yang Qingjiang",
         "jpCv": "Ai Fairouz",
         "birthday": "Date missing",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -76232,6 +76392,14 @@
         "cnCv": "Liu Fourteen",
         "jpCv": "Shizuka Itoh",
         "birthday": "June 17th",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Whisper Wind Spinner",
             "Chilling Wind Spinner",
@@ -80011,6 +80179,14 @@
         "cnCv": "Liu Yilei",
         "jpCv": "Chika Anzai",
         "birthday": "January 31st",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Card Photo Capturer",
             "Reflective Photo Capturer",
@@ -83806,6 +83982,14 @@
         "cnCv": "Wu Zheru",
         "jpCv": "Aoi Koga",
         "birthday": "November 8th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Card Photo Capturer",
             "Reflective Photo Capturer",
@@ -87517,6 +87701,14 @@
         "cnCv": "Song Zhengnan",
         "jpCv": "Ayane Kudo",
         "birthday": "July 26th",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Stellanite Enchantment",
             "Moonlit Companion",
@@ -91383,6 +91575,14 @@
         "cnCv": "Tang Xiafang",
         "jpCv": "Sora Tokui",
         "birthday": "April 10th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Card Photo Capturer",
             "Reflective Photo Capturer",
@@ -95038,6 +95238,14 @@
         "cnCv": "Tang Meng",
         "jpCv": "Moe Kahara",
         "birthday": "May 2nd",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Card Photo Capturer",
             "Reflective Photo Capturer",
@@ -98880,6 +99088,14 @@
         "cnCv": "Wang Meixin",
         "jpCv": "Minami Takahashi",
         "birthday": "December 24th",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -102619,6 +102835,14 @@
         "cnCv": "Zhang Mengjiao",
         "jpCv": "Hika Tsukishiro",
         "birthday": "November 3rd",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -106363,6 +106587,14 @@
         "cnCv": "Zhang Anqi",
         "jpCv": "Ai Kakuma",
         "birthday": "January 14",
+        "source": [
+            "Exclusive",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Gilded Ceramic Bowl",
             "Blossom Porcelain Cup",
@@ -109969,6 +110201,14 @@
         "cnCv": "Cai Shujin",
         "jpCv": "Sayumi Suzushiro",
         "birthday": "November 11th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Rising Star",
             "Emerging Talent",
@@ -113719,6 +113959,14 @@
         "cnCv": "Jing Chen",
         "jpCv": "Yukari Amane",
         "birthday": "March 28th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -117496,6 +117744,14 @@
         "cnCv": "Song Yuanyuan",
         "jpCv": "Aimi Tanaka",
         "birthday": "August 20th",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Whisper Wind Spinner",
             "Chilling Wind Spinner",
@@ -121199,6 +121455,14 @@
         "cnCv": "Vila",
         "jpCv": "Yui Horie",
         "birthday": "August 26th",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Portable Blower",
             "Exquisite Blower",
@@ -125363,6 +125627,14 @@
         "cnCv": "Xie Ying",
         "jpCv": "Moe Ehara",
         "birthday": "March 3rd",
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "loveGift": [
             "Love Candle",
             "Blazing Wings",
@@ -129165,6 +129437,14 @@
         "cnCv": "Song Yuanyuan",
         "jpCv": "Aimi Tanaka",
         "birthday": "August 20th",
+        "source": [
+            "Exclusive",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Portable Blower",
             "Exquisite Blower",
@@ -133097,6 +133377,14 @@
         "cnCv": "Zhou Yuhan",
         "jpCv": "Yuka Saito",
         "birthday": "October 15th",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Card Photo Capturer",
             "Reflective Photo Capturer",
@@ -136800,6 +137088,14 @@
         "cnCv": "mace",
         "jpCv": "Hitomi Nabatame",
         "birthday": "December 14th",
+        "source": [
+            "Exclusive",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "loveGift": [
             "Whisper Wind Spinner",
             "Chilling Wind Spinner",

@@ -32,6 +32,14 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Pummel": 3
@@ -548,6 +556,14 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Pummel": 3
@@ -1064,6 +1080,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Skill": 3
@@ -1580,6 +1604,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Skill": 3
@@ -2096,6 +2128,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Ultimate": 3
@@ -2612,6 +2652,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Ultimate": 3
@@ -3129,6 +3177,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Stamina": 3
@@ -3646,6 +3702,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Stamina": 3
@@ -4161,6 +4225,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Focus": 3
@@ -4675,6 +4747,14 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Stamina": 3
@@ -5190,6 +5270,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Focus": 3
@@ -5704,6 +5792,14 @@
             "icon": "DiscSkill_13",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Ignis": 3
@@ -6218,6 +6314,14 @@
             "icon": "DiscSkill_14",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Lux": 3
@@ -6730,6 +6834,14 @@
             "icon": "DiscSkill_9",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Ventus": 3
@@ -7242,6 +7354,14 @@
             "icon": "DiscSkill_12",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Aqua": 3
@@ -7754,6 +7874,14 @@
             "icon": "DiscSkill_10",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Umbra": 3
@@ -8266,6 +8394,14 @@
             "icon": "DiscSkill_11",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "supportNote": [
             {
                 "Melody of Terra": 3
@@ -8786,6 +8922,13 @@
             "icon": "DiscSkill_3",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Shadow Siege",
+            "SS",
+            "Hunter Medal",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30011,
             "name": "Flowing Amber",
@@ -9371,6 +9514,13 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Shadow Siege",
+            "SS",
+            "Hunter Medal",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30021,
             "name": "Drowsy Delights",
@@ -9957,6 +10107,14 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30031,
             "name": "Lingering Heatwave",
@@ -10534,6 +10692,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30041,
             "name": "Twin Moons' Waltz",
@@ -11113,6 +11279,14 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30051,
             "name": "Shining Burst",
@@ -11694,6 +11868,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30061,
             "name": "Tranquil Light",
@@ -12271,6 +12453,14 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30071,
             "name": "Evening Breeze",
@@ -12852,6 +13042,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30081,
             "name": "Companion's Bond",
@@ -13429,6 +13627,14 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30091,
             "name": "Silken Raindrops",
@@ -14009,6 +14215,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30101,
             "name": "Shroud of Mist",
@@ -14589,6 +14803,14 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30111,
             "name": "Dancing Shadows",
@@ -15168,6 +15390,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30121,
             "name": "Moonlit Taps",
@@ -15747,6 +15977,14 @@
             "icon": "DiscSkill_1",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30131,
             "name": "Snuggle Up",
@@ -16326,6 +16564,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30141,
             "name": "Engine Lubrication",
@@ -16906,6 +17152,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30151,
             "name": "Caressing Breeze",
@@ -17488,6 +17742,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30161,
             "name": "Thorning Rose",
@@ -18068,6 +18330,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30171,
             "name": "Spinning Light",
@@ -18650,6 +18920,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30181,
             "name": "Chilling Coolness",
@@ -19232,6 +19510,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30191,
             "name": "Fleeting Dreams",
@@ -19814,6 +20100,14 @@
             "icon": "DiscSkill_4",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30201,
             "name": "Startling Moment",
@@ -20391,6 +20685,13 @@
             "icon": "DiscSkill_7",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Journey Ticket",
+            "JT",
+            "Ascension",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30211,
             "name": "Squall",
@@ -20968,6 +21269,13 @@
             "icon": "DiscSkill_7",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Journey Ticket",
+            "JT",
+            "Ascension",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30221,
             "name": "Surge of Flame",
@@ -21545,6 +21853,13 @@
             "icon": "DiscSkill_7",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Journey Ticket",
+            "JT",
+            "Ascension",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30231,
             "name": "Holy Glow",
@@ -22122,6 +22437,13 @@
             "icon": "DiscSkill_7",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Journey Ticket",
+            "JT",
+            "Ascension",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30241,
             "name": "Sweet Creek",
@@ -22699,6 +23021,13 @@
             "icon": "DiscSkill_7",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Journey Ticket",
+            "JT",
+            "Ascension",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30251,
             "name": "Phantom Realm",
@@ -23276,6 +23605,13 @@
             "icon": "DiscSkill_7",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Journey Ticket",
+            "JT",
+            "Ascension",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 30261,
             "name": "Livestream Prep",
@@ -23864,6 +24200,11 @@
             "icon": "DiscSkill_214001",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Battle Pass",
+            "BP",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40011,
             "name": "Cat God's Penalty",
@@ -24499,6 +24840,11 @@
             "icon": "DiscSkill_214002",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Battle Pass",
+            "BP",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40021,
             "name": "Snowpetal Storm",
@@ -25126,6 +25472,11 @@
             "icon": "DiscSkill_214003",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40031,
             "name": "Destiny Unleashed",
@@ -25752,6 +26103,15 @@
             "icon": "DiscSkill_214004",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40041,
             "name": "Graceful Essence",
@@ -26375,6 +26735,15 @@
             "icon": "DiscSkill_214005",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Signature",
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40051,
             "name": "Tears of Joy",
@@ -27008,6 +27377,15 @@
             "icon": "DiscSkill_214006",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Signature",
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40061,
             "name": "Spectral Fragrance",
@@ -27650,6 +28028,15 @@
             "icon": "DiscSkill_214007",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Signature",
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40071,
             "name": "Decisive Strike",
@@ -28280,6 +28667,15 @@
             "icon": "DiscSkill_214008",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40081,
             "name": "Balloon of Joy",
@@ -28902,6 +29298,13 @@
             "icon": "DiscSkill_214009",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "A Finale Echoing",
+            "AFE",
+            "Whispers of Decay",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40091,
             "name": "Starlit Winds",
@@ -29525,6 +29928,13 @@
             "icon": "DiscSkill_214010",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "A Finale Echoing",
+            "AFE",
+            "Whispers of Decay",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40101,
             "name": "Light of Mercy",
@@ -30155,6 +30565,13 @@
             "icon": "DiscSkill_214011",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "A Finale Echoing",
+            "AFE",
+            "Whispers of Decay",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40111,
             "name": "Frosted Blossom",
@@ -30785,6 +31202,13 @@
             "icon": "DiscSkill_214012",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "A Finale Echoing",
+            "AFE",
+            "Whispers of Decay",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40121,
             "name": "Dark Reckoning",
@@ -31413,6 +31837,13 @@
             "icon": "DiscSkill_214013",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "A Finale Echoing",
+            "AFE",
+            "Whispers of Decay",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40131,
             "name": "Raging Wildfire",
@@ -32040,6 +32471,13 @@
             "icon": "DiscSkill_214014",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "A Finale Echoing",
+            "AFE",
+            "Whispers of Decay",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40141,
             "name": "Fruity & Fragrant",
@@ -32671,6 +33109,15 @@
             "icon": "DiscSkill_214015",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40151,
             "name": "Dreamflow Breeze",
@@ -33295,6 +33742,15 @@
             "icon": "DiscSkill_214016",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40161,
             "name": "Vernal Zephyr",
@@ -33920,6 +34376,15 @@
             "icon": "DiscSkill_214017",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40171,
             "name": "Warmth in the Arms",
@@ -34544,6 +35009,13 @@
             "icon": "DiscSkill_214018",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Cataclysm Survivor",
+            "CS",
+            "Defender's Medal",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40181,
             "name": "Subtle Influence",
@@ -35169,6 +35641,13 @@
             "icon": "DiscSkill_214019",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Cataclysm Survivor",
+            "CS",
+            "Defender's Medal",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40191,
             "name": "Windbreaking Shots",
@@ -35797,6 +36276,13 @@
             "icon": "DiscSkill_214020",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Cataclysm Survivor",
+            "CS",
+            "Defender's Medal",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40201,
             "name": "Flashing Memories",
@@ -36425,6 +36911,13 @@
             "icon": "DiscSkill_214021",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Cataclysm Survivor",
+            "CS",
+            "Defender's Medal",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40211,
             "name": "Unbreakable Trio",
@@ -37052,6 +37545,13 @@
             "icon": "DiscSkill_214022",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Cataclysm Survivor",
+            "CS",
+            "Defender's Medal",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40221,
             "name": "Moment of Terror",
@@ -37671,6 +38171,13 @@
             "icon": "DiscSkill_214023",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Cataclysm Survivor",
+            "CS",
+            "Defender's Medal",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40231,
             "name": "Street Spirit",
@@ -38304,6 +38811,11 @@
             "icon": "DiscSkill_214024",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40241,
             "name": "Graceful Dive",
@@ -38932,6 +39444,15 @@
             "icon": "DiscSkill_214026",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40261,
             "name": "Splashing Moves",
@@ -39559,6 +40080,15 @@
             "icon": "DiscSkill_214027",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Signature",
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40271,
             "name": "Wild Brushstrokes",
@@ -40191,6 +40721,15 @@
             "icon": "DiscSkill_214028",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Signature",
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40281,
             "name": "Fragrant Illusion",
@@ -40818,6 +41357,15 @@
             "icon": "DiscSkill_214029",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40291,
             "name": "Meowth's Curse",
@@ -41444,6 +41992,11 @@
             "icon": "DiscSkill_214030",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Battle Pass",
+            "BP",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40301,
             "name": "Falling Gleam",
@@ -42076,6 +42629,11 @@
             "icon": "DiscSkill_214031",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Battle Pass",
+            "BP",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40311,
             "name": "Surging Slash",
@@ -42713,6 +43271,11 @@
             "icon": "DiscSkill_214032",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Battle Pass",
+            "BP",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40321,
             "name": "Veiled Negative",
@@ -43347,6 +43910,11 @@
             "icon": "DiscSkill_214033",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Battle Pass",
+            "BP",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40331,
             "name": "Truth Digger",
@@ -43979,6 +44547,15 @@
             "icon": "DiscSkill_214036",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Signature",
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40361,
             "name": "Iron Love Embrace",
@@ -44608,6 +45185,15 @@
             "icon": "DiscSkill_214037",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Signature",
+            "Permanent",
+            "Standard",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40371,
             "name": "Lucky Clip",
@@ -45235,6 +45821,15 @@
             "icon": "DiscSkill_214038",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40381,
             "name": "Dance of Shimmers",
@@ -45863,6 +46458,11 @@
             "icon": "DiscSkill_214039",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40391,
             "name": "Azure Horizon",
@@ -46492,6 +47092,11 @@
             "icon": "DiscSkill_214040",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40401,
             "name": "Passion of the Captain",
@@ -47121,6 +47726,11 @@
             "icon": "DiscSkill_214041",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40411,
             "name": "Salutes Boomed",
@@ -47745,6 +48355,11 @@
             "icon": "DiscSkill_214042",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40421,
             "name": "Eternal Pulse",
@@ -48370,6 +48985,11 @@
             "icon": "DiscSkill_214043",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40431,
             "name": "Shadow Mastermind",
@@ -48993,6 +49613,15 @@
             "icon": "DiscSkill_214044",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40441,
             "name": "The Sovereign Elixir",
@@ -49619,6 +50248,15 @@
             "icon": "DiscSkill_214045",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Signature",
+            "Exclusive",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40451,
             "name": "Fading Petals",
@@ -50243,6 +50881,11 @@
             "icon": "DiscSkill_214046",
             "iconBg": "db_DiscSkill_4"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40461,
             "name": "Weightless Tread",
@@ -50867,6 +51510,11 @@
             "icon": "DiscSkill_214047",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40471,
             "name": "Words into Longing",
@@ -51490,6 +52138,15 @@
             "icon": "DiscSkill_214048",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Signature",
+            "Exclusive",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40481,
             "name": "Kingdom of Fries",
@@ -52108,6 +52765,10 @@
             "icon": "DiscSkill_214049",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Login Reward",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40491,
             "name": "Starlight Journey",
@@ -52731,6 +53392,11 @@
             "icon": "DiscSkill_214050",
             "iconBg": "db_DiscSkill_6"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40501,
             "name": "Umbral Harmony",
@@ -53356,6 +54022,15 @@
             "icon": "DiscSkill_214051",
             "iconBg": "db_DiscSkill_3"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40511,
             "name": "Start Conversation",
@@ -53981,6 +54656,11 @@
             "icon": "DiscSkill_214052",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40521,
             "name": "Sky of Fantasy",
@@ -54603,6 +55283,11 @@
             "icon": "DiscSkill_214053",
             "iconBg": "db_DiscSkill_1"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40531,
             "name": "Meowth's Triumph",
@@ -55228,6 +55913,15 @@
             "icon": "DiscSkill_214054",
             "iconBg": "db_DiscSkill_2"
         },
+        "source": [
+            "Signature",
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40541,
             "name": "Clockwork Waltz",
@@ -55852,6 +56546,15 @@
             "icon": "DiscSkill_214055",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Signature",
+            "Exclusive",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
         "secondarySkill1": {
             "id": 40551,
             "name": "Azure Echo",
@@ -56478,6 +57181,11 @@
             "icon": "DiscSkill_214056",
             "iconBg": "db_DiscSkill_5"
         },
+        "source": [
+            "Event",
+            "Shop",
+            "f2p"
+        ],
         "secondarySkill1": {
             "id": 40561,
             "name": "Summer Time Whispers",
