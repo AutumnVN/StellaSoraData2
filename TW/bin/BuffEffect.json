@@ -178,5 +178,15 @@
     "Param3": "",
     "Param4": "",
     "Param5": ""
+  },
+  "15700001": {
+    "Id": 15700001,
+    "Name": "",
+    "BuffEffectType": 1,
+    "Param1": "157000002",
+    "Param2": "0.5",
+    "Param3": "",
+    "Param4": "",
+    "Param5": ""
   }
 }

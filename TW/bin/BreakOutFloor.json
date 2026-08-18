@@ -20,9 +20,11 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
+      0,
       0,
       0,
       0,
@@ -44,7 +46,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 400401
@@ -70,13 +73,15 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       0,
       2,
       8,
       2,
+      0,
       0,
       0,
       0,
@@ -94,7 +99,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 400402
@@ -120,7 +126,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       0,
@@ -130,6 +137,7 @@
       0,
       0,
       2,
+      0,
       0,
       0,
       0
@@ -144,7 +152,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 400403
@@ -170,7 +179,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       2,
@@ -180,6 +190,7 @@
       0,
       0,
       2,
+      0,
       0,
       0,
       0
@@ -194,7 +205,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 0
@@ -220,7 +232,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       2,
@@ -229,6 +242,7 @@
       0,
       2,
       2,
+      0,
       0,
       0,
       0,
@@ -244,7 +258,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 0
@@ -270,7 +285,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       2,
@@ -279,6 +295,7 @@
       0,
       2,
       2,
+      0,
       0,
       0,
       0,
@@ -294,7 +311,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 400404
@@ -320,7 +338,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       1,
@@ -330,6 +349,7 @@
       0,
       1,
       1,
+      0,
       0,
       0,
       0
@@ -344,7 +364,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 0
@@ -370,7 +391,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       2,
@@ -380,6 +402,7 @@
       0,
       1,
       1,
+      0,
       0,
       0,
       0
@@ -394,7 +417,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 0
@@ -420,9 +444,11 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
+      0,
       0,
       0,
       0,
@@ -444,7 +470,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 400401
@@ -470,13 +497,15 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       0,
       2,
       6,
       2,
+      0,
       0,
       0,
       0,
@@ -494,7 +523,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 400402
@@ -520,7 +550,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       0,
@@ -530,6 +561,7 @@
       0,
       0,
       2,
+      0,
       0,
       0,
       0
@@ -544,7 +576,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 400403
@@ -570,7 +603,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       0,
@@ -581,6 +615,7 @@
       0,
       2,
       2,
+      0,
       0,
       0
     ],
@@ -594,7 +629,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 0
@@ -620,7 +656,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       1,
@@ -632,7 +669,8 @@
       2,
       1,
       0,
-      1
+      1,
+      0
     ],
     "DropParam": [
       0,
@@ -644,7 +682,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 0
@@ -670,7 +709,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       1,
@@ -682,7 +722,8 @@
       2,
       1,
       1,
-      1
+      1,
+      0
     ],
     "DropParam": [
       0,
@@ -694,7 +735,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 400404
@@ -720,7 +762,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       1,
@@ -732,7 +775,8 @@
       2,
       1,
       1,
-      1
+      1,
+      0
     ],
     "DropParam": [
       0,
@@ -744,7 +788,8 @@
       1,
       6,
       1,
-      8
+      8,
+      0
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 0
@@ -770,7 +815,8 @@
       117,
       129,
       131,
-      130
+      130,
+      137
     ],
     "Counts": [
       1,
@@ -782,7 +828,8 @@
       1,
       1,
       1,
-      1
+      1,
+      0
     ],
     "DropParam": [
       0,
@@ -794,7 +841,432 @@
       1,
       6,
       1,
-      8
+      8,
+      0
+    ],
+    "IntroCutscene": "EnterCamera_BreakOut",
+    "DictionaryID": 0
+  },
+  "82021": {
+    "Id": 82021,
+    "SceneName": "Levels/BreakOut/BreakOut_3_1",
+    "ConfigPrefabName": "BreakOut_3_1",
+    "Theme": 2,
+    "BGM": "breakout_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_endlessTower_all_stop",
+    "MonsterLv": 1,
+    "Time": 120,
+    "Heart": 8,
+    "Score": 800,
+    "Drops": [
+      115,
+      113,
+      116,
+      114,
+      118,
+      121,
+      117,
+      129,
+      131,
+      130,
+      137
+    ],
+    "Counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "DropParam": [
+      0,
+      50,
+      10,
+      1,
+      1,
+      2,
+      1,
+      6,
+      1,
+      8,
+      15
+    ],
+    "IntroCutscene": "EnterCamera_BreakOut",
+    "DictionaryID": 400405
+  },
+  "82022": {
+    "Id": 82022,
+    "SceneName": "Levels/BreakOut/BreakOut_3_2",
+    "ConfigPrefabName": "BreakOut_3_2",
+    "Theme": 2,
+    "BGM": "breakout_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_endlessTower_all_stop",
+    "MonsterLv": 1,
+    "Time": 120,
+    "Heart": 8,
+    "Score": 1100,
+    "Drops": [
+      115,
+      113,
+      116,
+      114,
+      118,
+      121,
+      117,
+      129,
+      131,
+      130,
+      137
+    ],
+    "Counts": [
+      0,
+      2,
+      8,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "DropParam": [
+      0,
+      50,
+      20,
+      1,
+      1,
+      2,
+      1,
+      6,
+      1,
+      8,
+      15
+    ],
+    "IntroCutscene": "EnterCamera_BreakOut",
+    "DictionaryID": 0
+  },
+  "82023": {
+    "Id": 82023,
+    "SceneName": "Levels/BreakOut/BreakOut_3_3",
+    "ConfigPrefabName": "BreakOut_3_3",
+    "Theme": 2,
+    "BGM": "breakout_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_endlessTower_all_stop",
+    "MonsterLv": 1,
+    "Time": 120,
+    "Heart": 8,
+    "Score": 1100,
+    "Drops": [
+      115,
+      113,
+      116,
+      114,
+      118,
+      121,
+      117,
+      129,
+      131,
+      130,
+      137
+    ],
+    "Counts": [
+      0,
+      2,
+      8,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    "DropParam": [
+      0,
+      50,
+      20,
+      1,
+      1,
+      2,
+      1,
+      6,
+      1,
+      8,
+      15
+    ],
+    "IntroCutscene": "EnterCamera_BreakOut",
+    "DictionaryID": 400406
+  },
+  "82024": {
+    "Id": 82024,
+    "SceneName": "Levels/BreakOut/BreakOut_3_4",
+    "ConfigPrefabName": "BreakOut_3_4",
+    "Theme": 2,
+    "BGM": "breakout_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_endlessTower_all_stop",
+    "MonsterLv": 1,
+    "Time": 120,
+    "Heart": 8,
+    "Score": 1700,
+    "Drops": [
+      115,
+      113,
+      116,
+      114,
+      118,
+      121,
+      117,
+      129,
+      131,
+      130,
+      137
+    ],
+    "Counts": [
+      2,
+      2,
+      8,
+      3,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "DropParam": [
+      0,
+      50,
+      20,
+      1,
+      1,
+      2,
+      1,
+      6,
+      1,
+      8,
+      15
+    ],
+    "IntroCutscene": "EnterCamera_BreakOut",
+    "DictionaryID": 0
+  },
+  "82025": {
+    "Id": 82025,
+    "SceneName": "Levels/BreakOut/BreakOut_3_5",
+    "ConfigPrefabName": "BreakOut_3_5",
+    "Theme": 2,
+    "BGM": "breakout_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_endlessTower_all_stop",
+    "MonsterLv": 1,
+    "Time": 120,
+    "Heart": 6,
+    "Score": 1200,
+    "Drops": [
+      115,
+      113,
+      116,
+      114,
+      118,
+      121,
+      117,
+      129,
+      131,
+      130,
+      137
+    ],
+    "Counts": [
+      2,
+      2,
+      8,
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "DropParam": [
+      0,
+      50,
+      20,
+      1,
+      1,
+      2,
+      1,
+      6,
+      1,
+      8,
+      15
+    ],
+    "IntroCutscene": "EnterCamera_BreakOut",
+    "DictionaryID": 0
+  },
+  "82026": {
+    "Id": 82026,
+    "SceneName": "Levels/BreakOut/BreakOut_3_6",
+    "ConfigPrefabName": "BreakOut_3_6",
+    "Theme": 2,
+    "BGM": "breakout_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_endlessTower_all_stop",
+    "MonsterLv": 1,
+    "Time": 120,
+    "Heart": 6,
+    "Score": 1100,
+    "Drops": [
+      115,
+      113,
+      116,
+      114,
+      118,
+      121,
+      117,
+      129,
+      131,
+      130,
+      137
+    ],
+    "Counts": [
+      2,
+      2,
+      7,
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "DropParam": [
+      0,
+      50,
+      20,
+      1,
+      1,
+      2,
+      1,
+      6,
+      1,
+      8,
+      15
+    ],
+    "IntroCutscene": "EnterCamera_BreakOut",
+    "DictionaryID": 0
+  },
+  "82027": {
+    "Id": 82027,
+    "SceneName": "Levels/BreakOut/BreakOut_3_7",
+    "ConfigPrefabName": "BreakOut_3_7",
+    "Theme": 2,
+    "BGM": "breakout_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_endlessTower_all_stop",
+    "MonsterLv": 1,
+    "Time": 120,
+    "Heart": 6,
+    "Score": 1300,
+    "Drops": [
+      115,
+      113,
+      116,
+      114,
+      118,
+      121,
+      117,
+      129,
+      131,
+      130,
+      137
+    ],
+    "Counts": [
+      2,
+      2,
+      7,
+      3,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2
+    ],
+    "DropParam": [
+      0,
+      50,
+      20,
+      1,
+      1,
+      2,
+      1,
+      6,
+      1,
+      8,
+      15
+    ],
+    "IntroCutscene": "EnterCamera_BreakOut",
+    "DictionaryID": 0
+  },
+  "82028": {
+    "Id": 82028,
+    "SceneName": "Levels/BreakOut/BreakOut_3_8",
+    "ConfigPrefabName": "BreakOut_3_8",
+    "Theme": 2,
+    "BGM": "breakout_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_endlessTower_all_stop",
+    "MonsterLv": 1,
+    "Time": 120,
+    "Heart": 8,
+    "Score": 2300,
+    "Drops": [
+      115,
+      113,
+      116,
+      114,
+      118,
+      121,
+      117,
+      129,
+      131,
+      130,
+      137
+    ],
+    "Counts": [
+      2,
+      2,
+      7,
+      3,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2
+    ],
+    "DropParam": [
+      0,
+      50,
+      20,
+      1,
+      1,
+      2,
+      1,
+      6,
+      1,
+      8,
+      15
     ],
     "IntroCutscene": "EnterCamera_BreakOut",
     "DictionaryID": 0
