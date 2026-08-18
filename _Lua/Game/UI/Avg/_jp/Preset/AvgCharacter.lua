@@ -208,7 +208,8 @@ return {
 	{
 		id = "avg1_137",
 		name = "エレノア",
-		name_bg_color = "#e78fab"
+		name_bg_color = "#e78fab",
+		reuseL2DPose = "b"
 	},
 	{
 		id = "avg1_138",
@@ -350,13 +351,13 @@ return {
 	},
 	{
 		id = "avg2_938",
-		name = "***",
+		name = "冻冻公爵",
 		name_bg_color = "#0ABEC5",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg2_939",
-		name = "***",
+		name = "水塔楼星骸",
 		name_bg_color = "#0ABEC5",
 		ver = "1.14.0"
 	},
@@ -1266,13 +1267,13 @@ return {
 	},
 	{
 		id = "avg3_233",
-		name = "***",
+		name = "希娅兔子玩偶",
 		name_bg_color = "#0ABEC5",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_234",
-		name = "***",
+		name = "地理协会职员（女）",
 		name_bg_color = "#0ABEC5",
 		ver = "1.14.0"
 	},
@@ -3025,38 +3026,45 @@ return {
 	},
 	{
 		id = "avg3_1314",
-		name = "***",
+		name = "冻冻A",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_975",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_1315",
-		name = "***",
+		name = "冻冻B",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_975",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_1316",
-		name = "***",
+		name = "冻冻C",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_975",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_1317",
-		name = "***",
+		name = "寄居蟹A",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_945",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_1318",
-		name = "***",
+		name = "寄居蟹B",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_945",
 		ver = "1.14.0"
+	},
+	{
+		id = "avg3_1319",
+		name = "***",
+		name_bg_color = "#0ABEC5",
+		reuse = "avg1_136",
+		ver = "1.16.0"
 	},
 	{
 		id = "avg4_100",

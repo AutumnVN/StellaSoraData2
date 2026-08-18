@@ -270,5 +270,37 @@
     "OtherExchangeItem1": [],
     "OtherExchangeItem2": [],
     "OtherExchangeItem3": []
+  },
+  "1015": {
+    "Id": 1015,
+    "Type": 0,
+    "Name": "ActivityShop.1015.1",
+    "Sequence": 1,
+    "RefreshTimeType": 0,
+    "RefreshInterval": 0,
+    "UnlockCondType": 0,
+    "UnlockCondParams": "",
+    "CurrencyItemId": 73114,
+    "ExchangeItemId": 1,
+    "Rate": 300.0,
+    "OtherExchangeItem1": [],
+    "OtherExchangeItem2": [],
+    "OtherExchangeItem3": []
+  },
+  "3003": {
+    "Id": 3003,
+    "Type": 0,
+    "Name": "ActivityShop.3003.1",
+    "Sequence": 1,
+    "RefreshTimeType": 0,
+    "RefreshInterval": 0,
+    "UnlockCondType": 0,
+    "UnlockCondParams": "",
+    "CurrencyItemId": 73202,
+    "ExchangeItemId": 1,
+    "Rate": 1500.0,
+    "OtherExchangeItem1": [],
+    "OtherExchangeItem2": [],
+    "OtherExchangeItem3": []
   }
 }

@@ -117,5 +117,19 @@
     "CtrlName": "",
     "PopUpUIAssets": "",
     "FastEntranceIcon": ""
+  },
+  "18": {
+    "ActivityId": 1011003,
+    "UIAssets": "",
+    "CtrlName": "",
+    "PopUpUIAssets": "",
+    "FastEntranceIcon": ""
+  },
+  "19": {
+    "ActivityId": 3010302,
+    "UIAssets": "",
+    "CtrlName": "",
+    "PopUpUIAssets": "",
+    "FastEntranceIcon": ""
   }
 }

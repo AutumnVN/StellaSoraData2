@@ -1688,6 +1688,20 @@
     "DelayShow": false,
     "HideHome": false
   },
+  "ThrowGiftPanel_400015": {
+    "Id": "ThrowGiftPanel_400015",
+    "Title": "TopBar.ThrowGiftPanel_400015.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73114
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
   "JointDrillBuildList_Mode2": {
     "Id": "JointDrillBuildList_Mode2",
     "Title": "TopBar.JointDrillBuildList_Mode2.1",
@@ -2647,7 +2661,7 @@
     "CoinIds": [],
     "HideCoinAdd": false,
     "DelayShow": false,
-    "HideHome": false
+    "HideHome": true
   },
   "SoldierRecommendPanel": {
     "Id": "SoldierRecommendPanel",
@@ -2659,7 +2673,7 @@
     "CoinIds": [],
     "HideCoinAdd": false,
     "DelayShow": false,
-    "HideHome": false
+    "HideHome": true
   },
   "SoldierHandbookSelectPanel": {
     "Id": "SoldierHandbookSelectPanel",
@@ -2671,7 +2685,7 @@
     "CoinIds": [],
     "HideCoinAdd": false,
     "DelayShow": false,
-    "HideHome": false
+    "HideHome": true
   },
   "SoldierRecommendDetailPanel": {
     "Id": "SoldierRecommendDetailPanel",
@@ -2681,6 +2695,122 @@
     "Energy": false,
     "Coin": false,
     "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": true
+  },
+  "BreakOutThemePanel_S3": {
+    "Id": "BreakOutThemePanel_S3",
+    "Title": "TopBar.BreakOutThemePanel_S3.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73202
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "Shop_30103": {
+    "Id": "Shop_30103",
+    "Title": "TopBar.Shop_30103.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "Task_30103": {
+    "Id": "Task_30103",
+    "Title": "TopBar.Task_30103.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73202
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "BreakOutLevelDetailPanelS3": {
+    "Id": "BreakOutLevelDetailPanelS3",
+    "Title": "TopBar.BreakOutLevelDetailPanelS3.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "ActivityLevelsSelectPanel_10110": {
+    "Id": "ActivityLevelsSelectPanel_10110",
+    "Title": "TopBar.ActivityLevelsSelectPanel_10110.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": true,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "Shop_10110": {
+    "Id": "Shop_10110",
+    "Title": "TopBar.Shop_10110.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "Task_10110": {
+    "Id": "Task_10110",
+    "Title": "TopBar.Task_10110.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73114
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "SummerAdvStory_10110": {
+    "Id": "SummerAdvStory_10110",
+    "Title": "TopBar.SummerAdvStory_10110.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "SummerAdvPanel": {
+    "Id": "SummerAdvPanel",
+    "Title": "TopBar.SummerAdvPanel.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73114
+    ],
     "HideCoinAdd": false,
     "DelayShow": false,
     "HideHome": false

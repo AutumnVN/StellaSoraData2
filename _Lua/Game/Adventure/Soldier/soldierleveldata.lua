@@ -1342,7 +1342,6 @@ end
 function SoldierLevelData:OpenSandTable()
 	if self.bOpenSandTable then
 		EventManager.Hit("EnterStandTable")
-		self:SendDeploySync()
 	end
 	self.bOpenSandTable = false
 end
