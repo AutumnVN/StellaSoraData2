@@ -3135,7 +3135,7 @@ return {
 		cmd = "SetTalk",
 		param = {
 			9,
-			"avg3_210",
+			"avg3_100",
 			"",
 			1,
 			"",
