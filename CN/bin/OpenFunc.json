@@ -525,5 +525,22 @@
     "Param4": "",
     "Param5": "",
     "Param6": ""
+  },
+  "33": {
+    "Id": 33,
+    "Name": "OpenFunc.EnergyBattery.1",
+    "NeedWorldClass": 2,
+    "NeedConditions": 0,
+    "NeedRoguelike": 0,
+    "PopWindows": false,
+    "Desc": "OpenFunc.EnergyBattery.2",
+    "Icon": "",
+    "Tips": "OpenFunc.EnergyBattery.3",
+    "Param1": "0",
+    "Param2": "",
+    "Param3": "",
+    "Param4": "",
+    "Param5": "",
+    "Param6": ""
   }
 }
