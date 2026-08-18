@@ -129419,6 +129419,3848 @@
             }
         ]
     },
+    "157": {
+        "id": 157,
+        "name": "Karin",
+        "desc": "Karin carries her fishing harpoon and charges in alongside the fierce Boss Shark. Together, they'll raise havoc on the battlefield!",
+        "star": 5,
+        "element": "Umbra",
+        "class": "Vanguard",
+        "attackType": "Ranged",
+        "style": "Creative",
+        "force": "Freelance Trekker",
+        "tag": [
+            "Vanguard",
+            "Creative",
+            "Freelance Trekker"
+        ],
+        "cnCv": "Karin",
+        "jpCv": "Yui Ogura",
+        "birthday": "September 1st",
+        "source": [
+            "Limited",
+            "Premium",
+            "Recruit",
+            "Gacha",
+            "Banner",
+            "p2w"
+        ],
+        "loveGift": [
+            "Card Photo Capturer",
+            "Reflective Photo Capturer",
+            "Ultra-Precision Photo Capturer",
+            "Portable Blower",
+            "Exquisite Blower",
+            "Deluxe Blower",
+            "Whisper Wind Spinner",
+            "Chilling Wind Spinner",
+            "Blazing Wind Spinner"
+        ],
+        "hateGift": [
+            "Love Candle",
+            "Blazing Wings",
+            "Fiery Honeypot"
+        ],
+        "date": [
+            {
+                "id": 157301,
+                "name": "A Sailor's Foresight",
+                "clue": "Visit the Port to unlock",
+                "secondChoice": "How about doing some night fishing?"
+            },
+            {
+                "id": 157302,
+                "name": "Cute Instinct",
+                "clue": "Visit Hot Spring Resort to unlock",
+                "secondChoice": "Let’s go soak in the hot springs."
+            }
+        ],
+        "fixedStat": {
+            "Charge Rate": "Medium",
+            "Energy Cost": "Medium",
+            "Attack Range": 8,
+            "Walk Speed": 4.875,
+            "Run Speed": 6.5
+        },
+        "normalAtk": {
+            "id": 15710000,
+            "name": "Fisher's Hunt",
+            "nameCN": "渔狩追猎",
+            "nameJP": "怒涛の追撃",
+            "nameKR": "항해자의 추적",
+            "energyLimit": 3.3388,
+            "desc": "Fires cuttlefish shells, each dealing <color=#ec6d21>&Param1&</color> of ATK as AoE Umbra Auto Attack DMG.\nKarin has ##Hunting Energy#4045# and can automatically consume 100 ##Hunting Energy#4045# to throw a chain, inflicting ##Hunter's Mark#4046# on the target and forming a link. While the chain is active, increases Karin's &Param2& by <color=#ec6d21>&Param3&</color>.",
+            "descCN": "发射墨鱼弹，每次造成攻击力<color=#ec6d21>&Param1&</color>的范围暗系普攻伤害。\n花铃拥有##狩能#4045#，可自动消耗100点##狩能#4045#抛出锁链，为目标附加##猎标#4046#并形成连线。连线期间，花铃的&Param2&提升<color=#ec6d21>&Param3&</color>。",
+            "descJP": "イカ墨弾を1発発射し、範囲内に攻撃力の<color=#ec6d21>&Param1&</color>の闇属性の通常攻撃ダメージを与える。\nカリンが##狩猟本能#4045#を保有時、自動的に##狩猟本能#4045#を100消費して鎖を放ち、敵1体に##デスデス#4046#を付与してチェインを形成する。チェイン持続中、カリンの&Param2&が<color=#ec6d21>&Param3&</color>増加する。",
+            "descKR": "먹물탄을 발사해 매회 공격력 <color=#ec6d21>&Param1&</color>의 어둠 속성 범위 일반 공격 피해를 입힌다. \n카린이 ##사냥 능력#4045#을 보유하며, 자동으로 ##사냥 능력#4045# 100포인트를 소모해 사슬을 던져 목표에게 ##사냥 표식#4046#을 부여하고 연결할 수 있다. 연결 기간 중, 카린의 &Param2_kr1& <color=#ec6d21>&Param3&</color> 증가한다.\u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype)",
+            "damageType": [
+                "Auto Attack (3.3388e, from Normal attack, scale with Normal attack)"
+            ],
+            "effectType": [
+                "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+            ],
+            "addAttrType": [],
+            "effectData": [],
+            "buffIcon": [
+                "No Icon"
+            ],
+            "params": [
+                "49%/56%/64%/86%/92%/99%/113%/119%/125%/136%/146%/156%/166%",
+                "Auto Attack DMG",
+                "5.8%/6.7%/7.6%/10.2%/11.1%/11.9%/13.5%/14.2%/15%/16.4%/17.5%/18.7%/20%"
+            ],
+            "paramsTooltips": [
+                {
+                    "damageType": "Auto Attack (3.3388e, from Normal attack, scale with Normal attack)"
+                },
+                {
+                    "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                    "buffIcon": "No Icon"
+                },
+                {
+                    "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                    "buffIcon": "No Icon"
+                }
+            ],
+            "icon": "15701_Normal"
+        },
+        "skill": {
+            "id": 15731000,
+            "name": "Bait and Catch",
+            "nameCN": "愿者上钩",
+            "nameJP": "入れ食いタイム",
+            "nameKR": "미끼에 걸린 자",
+            "cooldown": "10s",
+            "energyLimit": 30,
+            "desc": "Leaps into the air and launches a fishcake, dealing <color=#ec6d21>&Param1&</color> of ATK as AoE Umbra Auto ATK DMG, then summons Boss Shark to devour the target, dealing <color=#ec6d21>&Param2&</color> of ATK as Umbra Ultimate DMG in a large area. Bait and Catch (Main Skill) can trigger ##Umbra Mark#1019#, dealing &Param3& of ATK as Umbra Mark DMG and inflicting ##Dark Burn#4051#.",
+            "descCN": "跃起发射鱼饼干造成攻击力<color=#ec6d21>&Param1&</color>的范围暗系普攻伤害，随后引来「鲨老大」吞食造成攻击力<color=#ec6d21>&Param2&</color>的大范围暗系绝招伤害。主控技「愿者上钩」可触发##暗系印记#1019#，造成攻击力&Param3&的暗系印记伤害，附加##暗灼#4051#。",
+            "descJP": "跳躍してイカせんべいを発射し、範囲内に攻撃力の<color=#ec6d21>&Param1&</color>の闇属性の通常攻撃ダメージを与える。その後、サメ大将を呼び寄せ、丸呑み攻撃を行い、広範囲に攻撃力の<color=#ec6d21>&Param2&</color>の闇属性の必殺技ダメージを与える。\u000b主力スキルは##闇属性の印#1019#を発動させることができる。発動した時、攻撃力の&Param3&の闇属性の印ダメージを与え、##暗灼#4051#を付与する。",
+            "descKR": "점프하며 물고기 쿠키를 발사해 공격력 <color=#ec6d21>&Param1&</color>의 어둠 속성 범위 일반 공격 피해를 입힌다. 이후 「상어 대장」이 삼키도록 유도해 큰 범위에 공격력 <color=#ec6d21>&Param2&</color>의 어둠 속성 필살기 피해를 입힌다. 메인 스킬 「미끼에 걸린 자」가 ##어둠 속성 표식#1019#을 발동할 수 있고, 공격력 &Param3&의 어둠 속성 표식 피해를 입히며, ##어둠 작열#4051#을 부여한다.",
+            "damageType": [
+                "Auto Attack (15e, from Skill, scale with Skill)",
+                "Ultimate (15e, from Skill, scale with Skill)",
+                "Mark"
+            ],
+            "effectType": [],
+            "addAttrType": [],
+            "effectData": [],
+            "buffIcon": [],
+            "params": [
+                "190%/218%/246%/332%/358%/385%/438%/461%/483%/529%/567%/605%/643%",
+                "300%/345%/390%/525%/566%/608%/692%/728%/764%/836%/896%/956%/1016%",
+                "38%/49%/61%/72%/83%/95%/106%/117%/129%"
+            ],
+            "paramsTooltips": [
+                {
+                    "damageType": "Auto Attack (15e, from Skill, scale with Skill)"
+                },
+                {
+                    "damageType": "Ultimate (15e, from Skill, scale with Skill)"
+                },
+                {
+                    "damageType": "Mark"
+                }
+            ],
+            "icon": "15701_Skill_Main"
+        },
+        "supportSkill": {
+            "id": 15732000,
+            "name": "Raging Sea",
+            "nameCN": "怒海翻腾",
+            "nameJP": "レイジングタイド",
+            "nameKR": "광폭한 바다의 파도",
+            "cooldown": "12s",
+            "desc": "Swings the harpoon chain repeatedly, dealing <color=#ec6d21>&Param1& x4</color> of ATK as AoE Umbra Skill DMG. During the skill, summons Boss Shark multiple times to pursue and devour targets, dealing <color=#ec6d21>&Param2& x4</color> of ATK as AoE Umbra Ultimate DMG. Finally, rides Boss Shark and performs a diving slam, dealing <color=#ec6d21>&Param3&</color> of ATK as Umbra Ultimate DMG in a large area. Raging Sea (Support Skill) can trigger ##Umbra Mark#1019#, dealing &Param4& of ATK as Umbra Mark DMG and inflicting ##Dark Burn#4051#.",
+            "descCN": "连续挥舞鱼枪锁链，造成攻击力<color=#ec6d21>&Param1&x4</color>的范围暗系技能伤害，期间多次引来「鲨老大」追逐吞食，造成攻击力<color=#ec6d21>&Param2&x4</color>的范围暗系绝招伤害。最终骑乘「鲨老大」飞跃砸地造成攻击力<color=#ec6d21>&Param3&</color>的大范围暗系绝招伤害。援护技「怒海翻腾」可触发##暗系印记#1019#，造成攻击力&Param4&的暗系印记伤害，附加##暗灼#4051#。",
+            "descJP": "鎖を連続で振り回し、範囲内に攻撃力の<color=#ec6d21>&Param1&x4</color>の闇属性のスキルダメージを与える。同時にサメ大将が何度も追いかけて丸呑み攻撃を行い、広範囲に攻撃力の<color=#ec6d21>&Param2&x4</color>の闇属性の必殺技ダメージを与える。最後にサメ大将に乗り込んで飛び上がり、地面へ叩きつけ攻撃を行い、広範囲に攻撃力の<color=#ec6d21>&Param3&</color>の闇属性の必殺技ダメージを与える。支援スキルは##闇属性の印#1019#を発動できる。発動した時、攻撃力の&Param4&の闇属性の印ダメージを与え、##暗灼#4051#を付与する。",
+            "descKR": "작살총 사슬을 연속으로 휘둘러 공격력 <color=#ec6d21>&Param1&x4</color>의 어둠 속성 범위 필살기 피해를 입힌다. 기간 중 여러 차례 「상어 대장」을 불러 추격하며 삼켜 공격력 <color=#ec6d21>&Param2&x4</color>의 어둠 속성 범위 필살기 피해를 입힌다.\r\n최종적으로 「상어 대장」을 타고 도약해 땅을 내려 찍어 큰 범위에 공격력 <color=#ec6d21>&Param3&</color>의 어둠 속성 필살기 피해를 입힌다. 지원 스킬 「광폭한 바다의 파도」가 ##어둠 속성 표식#1019#을 발동해 공격력 &Param4&의 어둠 속성 표식 피해를 입힐 수 있고, ##어둠 작열#4051#을 부여한다.",
+            "damageType": [
+                "Skill (from Skill, scale with Skill)",
+                "Ultimate (from Skill, scale with Skill)",
+                "Mark"
+            ],
+            "effectType": [],
+            "addAttrType": [],
+            "effectData": [],
+            "buffIcon": [],
+            "params": [
+                "49%/56%/64%/86%/93%/100%/113%/119%/125%/137%/147%/156%/166%",
+                "38%/43%/49%/66%/71%/76%/87%/91%/96%/105%/113%/120%/128%",
+                "240%/276%/313%/421%/454%/488%/555%/584%/613%/671%/719%/767%/815%",
+                "38%/49%/61%/72%/83%/95%/106%/117%/129%"
+            ],
+            "paramsTooltips": [
+                {
+                    "damageType": "Skill (from Skill, scale with Skill)"
+                },
+                {
+                    "damageType": "Ultimate (from Skill, scale with Skill)"
+                },
+                {
+                    "damageType": "Ultimate (from Skill, scale with Skill)"
+                },
+                {
+                    "damageType": "Mark"
+                }
+            ],
+            "icon": "15701_Skill_Support"
+        },
+        "ultimate": {
+            "id": 15740000,
+            "name": "Shark Assault",
+            "nameCN": "狂鲨强袭",
+            "nameJP": "シャークパニッシュ",
+            "nameKR": "분노한 상어의 습격",
+            "cooldown": "30s",
+            "energy": 300,
+            "desc": "Karin and Boss Shark clash in a ferocious fight, dealing <color=#ec6d21>&Param1& x14</color> of ATK as Umbra Ultimate DMG in a large area. Shark Assault (Ultimate) can trigger ##Umbra Mark#1019#, dealing &Param2& of ATK as Umbra Mark DMG and inflicting ##Dark Burn#4051#.",
+            "descCN": "花铃和「鲨老大」激烈缠斗，造成攻击力<color=#ec6d21>&Param1&x14</color>的大范围暗系绝招伤害。绝招「狂鲨强袭」可触发##暗系印记#1019#，造成攻击力&Param2&的暗系印记伤害，附加##暗灼#4051#。",
+            "descJP": "カリンとサメ大将が激しくもつれ合い、広範囲に攻撃力の<color=#ec6d21>&Param1&x14</color>の闇属性の必殺技ダメージを与える。必殺技は##闇属性の印#1019#を発動できる。発動した時、攻撃力の&Param2&の闇属性の印ダメージを与え、##暗灼#4051#を付与する。",
+            "descKR": "카린과 「상어 대장」이 격렬하게 붙어 싸우며 큰 범위에 공격력 <color=#ec6d21>&Param1&x14</color>의 어둠 속성 필살기 피해를 입힌다. 필살기 「분노한 상어의 습격」이 ##어둠 속성 표식#1019#을 발동하여, 공격력 &Param2&의 어둠 속성 표식 피해를 입힐 수 있고, ##어둠 작열#4051#을 부여한다.",
+            "damageType": [
+                "Ultimate (from Ultimate, scale with Ultimate)",
+                "Mark"
+            ],
+            "effectType": [],
+            "addAttrType": [],
+            "effectData": [],
+            "buffIcon": [],
+            "params": [
+                "109%/125%/142%/191%/206%/221%/252%/265%/278%/304%/326%/348%/370%",
+                "38%/49%/61%/72%/83%/95%/106%/117%/129%"
+            ],
+            "paramsTooltips": [
+                {
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate)"
+                },
+                {
+                    "damageType": "Mark"
+                }
+            ],
+            "icon": "15701_Ultra"
+        },
+        "potential": {
+            "mainCore": [
+                {
+                    "id": 515701,
+                    "name": "Predator's Vortex",
+                    "nameCN": "猎群涡流",
+                    "nameJP": "フィッシュネード",
+                    "nameKR": "포식자의 소용돌이",
+                    "desc": "Boss Shark's attacks summon a vortex of fish, dealing <color=#0abec5>&Param1& x7</color> of ATK as AoE Umbra Ultimate DMG and triggering ##Umbra Mark#1019#. This effect can only be triggered once every &Param4&s. Increases Karin's &Param2& against targets inflicted with ##Dark Burn#2028# by <color=#0abec5>&Param3&</color>.",
+                    "descCN": "「鲨老大」发动攻击可引来鱼群涡流，造成攻击力<color=#0abec5>&Param1&x7</color>的范围暗系绝招伤害并触发##暗系印记#1019#，该效果每&Param4&秒可触发1次。花铃对附带##暗灼#2028#的目标造成的&Param2&提升<color=#0abec5>&Param3&</color>。",
+                    "descJP": "サメ大将が攻撃を行うと魚群の渦を呼び寄せ、範囲内に攻撃力の<color=#0abec5>&Param1&x7</color>の闇属性の必殺技ダメージを与え、##闇属性の印#1019#を発動させることができる。この効果は&Param4&秒ごとに1回発動できる。\nカリンは##暗灼#2028#が付与された敵に対して&Param2&が<color=#0abec5>&Param3&</color>上昇する。",
+                    "descKR": "「상어 대장」이 공격을 발동해 물고기떼 소용돌이를 일으켜 공격력 <color=#0abec5>&Param1&x7</color>의 어둠 속성 범위 필살기 피해를 입히며 ##어둠 속성 표식#1019#을 발동한다. 해당 효과는 &Param4&초마다 1회 발동할 수 있다. 카린이 ##어둠 작열#2028#을 보유한 목표에게 입히는 &Param2_kr1& <color=#0abec5>&Param3&</color> 증가한다.\u000bParam2: &Param2& (OnceAdditionalAttributeValue,AttributeType1)",
+                    "damageType": [
+                        "Ultimate (from Skill, scale with Skill)"
+                    ],
+                    "effectType": [],
+                    "addAttrType": [
+                        "(Umbra) Ultimate Crit Rate (base)"
+                    ],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "39%/44%/50%/68%/73%/78%/89%/94%/99%/108%/116%/123%/131%",
+                        "Ultimate Crit Rate",
+                        "12%",
+                        1.5
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "damageType": "Ultimate (from Skill, scale with Skill)"
+                        },
+                        {
+                            "addAttrType": "(Umbra) Ultimate Crit Rate (base)"
+                        },
+                        {
+                            "addAttrType": "(Umbra) Ultimate Crit Rate (base)"
+                        },
+                        {}
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_01",
+                    "rarity": "core"
+                },
+                {
+                    "id": 515702,
+                    "name": "Shark Ambush",
+                    "nameCN": "鲨影潜袭",
+                    "nameJP": "シャークアタック",
+                    "nameKR": "상어 그림자의 습격",
+                    "desc": "After casting the Main Skill, Karin summons Boss Shark to follow her for <color=#0abec5>8</color>s. During this time, Boss Shark periodically lunges at the Main Trekker's target, dealing <color=#0abec5>&Param1&</color> of ATK as AoE Umbra Ultimate DMG and triggering ##Umbra Mark#1019#. Increases Karin's &Param2& by <color=#0abec5>&Param3&</color>.",
+                    "descCN": "花铃施放主控技后引来「鲨老大」跟随，持续时间<color=#0abec5>8</color>秒。期间「鲨老大」每隔一定时间对主控目标发动飞扑攻击，造成攻击力<color=#0abec5>&Param1&</color>的范围暗系绝招伤害并触发##暗系印记#1019#。花铃的&Param2&提升<color=#0abec5>&Param3&</color>。",
+                    "descJP": "カリンが主力スキルを発動時、<color=#0abec5>8</color>秒間、サメ大将がカリンを追従するようになる。追従中、サメ大将は一定時間ごとに敵へ飛びかかり攻撃を行い、範囲内に攻撃力の<color=#0abec5>&Param1&</color>の闇属性の必殺技ダメージを与え、##闇属性の印#1019#を発動させることができる。\nカリンの&Param2&が<color=#0abec5>&Param3&</color>上昇する。",
+                    "descKR": "카린이 메인 스킬을 시전한 후 「상어 대장」이 따라다닌다. <color=#0abec5>8</color>초간 지속된다. 기간 중 「상어 대장」이 일정 시간마다 메인 목표에게 덮치며 공격해 공격력 <color=#0abec5>&Param1&</color>의 어둠 속성 범위 필살기 피해를 입히며 ##어둠 속성 표식#1019#을 발동한다. 카린의 &Param2_kr1& <color=#0abec5>&Param3&</color> 증가한다.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype)",
+                    "damageType": [
+                        "Ultimate (from Skill, scale with Skill)"
+                    ],
+                    "effectType": [
+                        "Ultimate Crit Rate (base)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "No Icon"
+                    ],
+                    "params": [
+                        "192%/221%/249%/336%/363%/389%/443%/466%/489%/535%/574%/612%/650%",
+                        "Ultimate Crit Rate",
+                        "18%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "damageType": "Ultimate (from Skill, scale with Skill)"
+                        },
+                        {
+                            "effectType": "Ultimate Crit Rate (base)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "effectType": "Ultimate Crit Rate (base)",
+                            "buffIcon": "No Icon"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_02",
+                    "rarity": "core"
+                },
+                {
+                    "id": 515703,
+                    "name": "Scatter Shot",
+                    "nameCN": "猎弹散布",
+                    "nameJP": "スキャッター",
+                    "nameKR": "곳곳에 흩어진 탄환",
+                    "desc": "When Karin hits a target inflicted with ##Hunter's Mark#4046# with Auto Attacks, she can additionally fire lob shots, dealing <color=#0abec5>&Param1&</color> of ATK as AoE Umbra Auto ATK DMG. When Karin inflicts ##Hunter's Mark#4046# on a target, she instantly gains <color=#0abec5>3</color> buff stacks. After that, she loses <color=#0abec5>1</color> buff stack every <color=#0abec5>2</color>s. <color=#0abec5>Each</color> stack increases the number of bullets fired by Karin's Auto Attacks by <color=#0abec5>1</color>. When there is a target inflicted with ##Hunter's Mark#4046# on the field, increases Karin's &Param2& by <color=#0abec5>&Param3&</color> and &Param4& by <color=#0abec5>&Param5&</color>.",
+                    "descCN": "花铃对附带##猎标#4046#的目标普攻时，可额外发动吊射弹，造成攻击力<color=#0abec5>&Param1&</color>的范围暗系普攻伤害。花铃对目标附加##猎标#4046#时，立刻获得<color=#0abec5>3</color>层增益，之后每<color=#0abec5>2</color>秒减少<color=#0abec5>1</color>层，每<color=#0abec5>1</color>层增益使花铃普攻发射的子弹数量增加<color=#0abec5>1</color>枚。场中有附带##猎标#4046#的目标时，花铃的&Param2&提升<color=#0abec5>&Param3&</color>，&Param4&提升<color=#0abec5>&Param5&</color>",
+                    "descJP": "カリンは##デスデス#4046#が付与された敵に通常攻撃時、追加で曲射攻撃を行うようになり、範囲内に攻撃力の<color=#0abec5>&Param1&</color>の闇属性の通常攻撃ダメージを与える。カリンが敵に##デスデス#4046#を付与した時、即座にバフ効果を<color=#0abec5>3</color>獲得する。バフ効果は<color=#0abec5>2</color>秒ごとに<color=#0abec5>1</color>減少し、<color=#0abec5>1</color>につきカリンの通常攻撃で発射されるイカ墨弾の数が<color=#0abec5>1</color>発増加する。フィールド上に##デスデス#4046#が付与された敵が存在時、カリンの&Param2&が<color=#0abec5>&Param3&</color>上昇し、&Param4&が<color=#0abec5>&Param5&</color>増加する。",
+                    "descKR": "카린이 ##사냥 표식#4046#을 보유한 목표에게 일반 공격을 시전하면, 낙하 사격 총알을 추가로 발사해 공격력 <color=#0abec5>&Param1&</color>의 어둠 속성 범위 일반 공격 피해를 입힌다. 카린이 목표에게 ##사냥 표식#4046#을 부여하면 즉시 버프 <color=#0abec5>3</color>스택을 획득한다. 이후 <color=#0abec5>2</color>초마다 <color=#0abec5>1</color>스택 감소한다. 버프 <color=#0abec5>1</color>스택마다 카린의 일반 공격이 발사하는 총알이 <color=#0abec5>1</color>개 증가한다. 필드에 ##사냥 표식#4046#을 보유한 목표가 있으면, 카린의 &Param2_kr1& <color=#0abec5>&Param3&</color> 증가하고, &Param4_kr1& <color=#0abec5>&Param5&</color> 증가한다.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam4: &Param4& (EffectValue,EffectTypeFirstSubtype)",
+                    "damageType": [
+                        "Auto Attack (from Skill, scale with Skill)"
+                    ],
+                    "effectType": [
+                        "ATK (%)",
+                        "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "No Icon"
+                    ],
+                    "params": [
+                        "26%/30%/33%/45%/49%/52%/59%/63%/66%/72%/77%/82%/87%",
+                        "ATK",
+                        "12%",
+                        "Auto Attack DMG",
+                        "15%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "damageType": "Auto Attack (from Skill, scale with Skill)"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                            "buffIcon": "No Icon"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_03",
+                    "rarity": "core"
+                },
+                {
+                    "id": 515704,
+                    "name": "Hunting Dark Shackle",
+                    "nameCN": "追猎暗锁",
+                    "nameJP": "チェインハント",
+                    "nameKR": "추적의 어둠 사슬",
+                    "desc": "Extends the duration of ##Hunter's Mark#4046# by <color=#0abec5>&Param1&</color>s. While Karin is linked to a target inflicted with ##Hunter's Mark#4046#, she deals <color=#0abec5>&Param2&</color> of ATK as AoE Umbra Auto ATK DMG to all targets along the link path and restores <color=#0abec5>10</color> ##Hunting Energy#4045# <color=#0abec5>per second</color>, which can trigger ##Umbra Mark#1019#. When Karin inflicts ##Hunter's Mark#4046# on a target, increases her &Param3& by <color=#0abec5>&Param4&</color> and &Param5& by <color=#0abec5>&Param6&</color> for &Param7&s.",
+                    "descCN": "##猎标#4046#的持续时间延长<color=#0abec5>&Param1&</color>秒。花铃和附带##猎标#4046#的目标连线期间，每<color=#0abec5>1</color>秒对连线路径上的目标造成攻击力<color=#0abec5>&Param2&</color>范围暗系普攻伤害，并回复花铃<color=#0abec5>10</color>点##狩能#4045#，该伤害可触发##暗系印记#1019#。花铃对目标附加##猎标#4046#时，自身的&Param3&提升<color=#0abec5>&Param4&</color>，&Param5&提升<color=#0abec5>&Param6&</color>，持续&Param7&秒。",
+                    "descJP": "##デスデス#4046#の持続時間が<color=#0abec5>&Param1&</color>秒延長される。\nカリンと##デスデス#4046#が付与された敵が連結中、鎖に触れた敵へ<color=#0abec5>1</color>秒ごと、攻撃力の<color=#0abec5>&Param2&</color>の範囲闇属性の通常攻撃ダメージを与え、##闇属性の印#1019#を発動させることができ、さらにカリンの##狩猟本能#4045#が<color=#0abec5>10</color>回復する。\nカリンが敵に##デスデス#4046#を付与した時、&Param7&秒間、自身の&Param3&が<color=#0abec5>&Param4&</color>上昇し、&Param5&が<color=#0abec5>&Param6&</color>増加する。",
+                    "descKR": "##사냥 표식#4046#의 지속 시간이 <color=#0abec5>&Param1&</color>초 연장된다. 카린과 ##사냥 표식#4046#을 보유한 목표가 연결되는 동안 <color=#0abec5>1</color>초마다 연결 경로 상의 목표에게 공격력 <color=#0abec5>&Param2&</color>의 어둠 속성 범위 일반 공격 피해를 입히고, 카린의 ##사냥 능력#4045# <color=#0abec5>10</color>포인트를 회복한다. 해당 피해는 ##어둠 속성 표식#1019#을 발동할 수 있다. 카린이 목표에게 ##사냥 표식#4046#을 부여하면, 자신의 &Param3_kr1& <color=#0abec5>&Param4&</color> 증가하고, &Param5_kr1& <color=#0abec5>&Param6&</color> 증가한다. &Param7&초간 지속된다.\u000bParam3: &Param3& (EffectValue,EffectTypeFirstSubtype) \u000bParam5: &Param5& (EffectValue,EffectTypeFirstSubtype)",
+                    "damageType": [
+                        "Auto Attack (from Skill, scale with Skill)"
+                    ],
+                    "effectType": [
+                        "ATK (%)",
+                        "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        3,
+                        "174%/200%/226%/304%/328%/353%/401%/422%/443%/485%/520%/554%/589%",
+                        "ATK",
+                        "15%",
+                        "Auto Attack DMG",
+                        "12%",
+                        7
+                    ],
+                    "paramsTooltips": [
+                        {},
+                        {
+                            "damageType": "Auto Attack (from Skill, scale with Skill)"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_04",
+                    "rarity": "core"
+                }
+            ],
+            "mainNormal": [
+                {
+                    "id": 515705,
+                    "name": "Crashing Wave",
+                    "nameCN": "滔天巨浪",
+                    "nameJP": "タイダルバースト",
+                    "nameKR": "솟구치는 거대한 파도",
+                    "desc": "After Karin deals Ultimate DMG 5 times, Boss Shark follows up with a tail strike, dealing <color=#ec6d21>&Param1&</color> of ATK as AoE Umbra Ultimate DMG  and triggering ##Umbra Mark#1019#. This effect can only be triggered once every &Param2&s. Increases Karin's &Param3& by <color=#ec6d21>&Param4&</color>.",
+                    "descCN": "花铃累计造成5次绝招伤害时，引来「鲨老大」的尾击，造成攻击力<color=#ec6d21>&Param1&</color>的范围暗系绝招伤害并触发##暗系印记#1019#，该效果每&Param2&秒可触发1次。花铃的&Param3&提升<color=#ec6d21>&Param4&</color>",
+                    "descJP": "カリンが累計5回必殺技ダメージを与えた時、サメ大将を呼び寄せ、尻尾で追撃し、範囲内に攻撃力の<color=#ec6d21>&Param1&</color>の闇属性の必殺技ダメージを与え、##闇属性の印#1019#を発動させることができる。この効果は&Param2&秒ごとに1回のみ発動する。\nカリンの&Param3&が<color=#ec6d21>&Param4&</color>上昇する。",
+                    "descKR": "카린이 필살기 피해를 누적 5회 입히면, 「상어 대장」의 꼬리 공격을 유도해 공격력 <color=#ec6d21>&Param1&</color>의 어둠 속성 범위 필살기 피해를 입히며 ##어둠 속성 표식#1019#을 발동한다. 해당 효과는 &Param2&초마다 1회 발동할 수 있다. 카린의 &Param3_kr1& <color=#ec6d21>&Param4&</color> 증가한다.\u000bParam3: &Param3& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [
+                        "Ultimate (from Skill)"
+                    ],
+                    "effectType": [
+                        "Ultimate Crit Rate (base)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "163%/261%/359%/457%/555%/652%/750%/848%/946%",
+                        2,
+                        "Ultimate Crit Rate",
+                        "3.7%/6%/8.2%/10.5%/12.7%/15%/16%/17%/18%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "damageType": "Ultimate (from Skill)"
+                        },
+                        {},
+                        {
+                            "effectType": "Ultimate Crit Rate (base)"
+                        },
+                        {
+                            "effectType": "Ultimate Crit Rate (base)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_05",
+                    "corner": "Diamond",
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 6
+                },
+                {
+                    "id": 515706,
+                    "name": "Twin Predator",
+                    "nameCN": "双影狩猎",
+                    "nameJP": "ツインチェイス",
+                    "nameKR": "두 개의 그림자",
+                    "desc": "When Boss Shark deals DMG, increases Karin's &Param1& by <color=#ec6d21>&Param2&</color> and the &Param3& of Umbra Versatile Trekkers by <color=#ec6d21>&Param4&</color> for &Param5&s.",
+                    "descCN": "「鲨老大」造成伤害时，花铃的&Param1&提升<color=#ec6d21>&Param2&</color>，暗系均衡角色的&Param3&提升<color=#ec6d21>&Param4&</color>，持续&Param5&秒。",
+                    "descJP": "サメ大将がダメージを与えた時、&Param5&秒間、カリンの&Param1&が<color=#ec6d21>&Param2&</color>増加し、闇属性のバランサー巡遊者の&Param3&が<color=#ec6d21>&Param4&</color>増加する。",
+                    "descKR": "「상어 대장」이 피해를 입히면 카린의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가하고, 어둠 속성 밸런스 캐릭터의 &Param3_kr1& <color=#ec6d21>&Param4&</color> 증가한다. &Param5&초간 지속된다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype) \u000bParam3: &Param3& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "Ultimate Crit DMG (base)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        "Ultimate Crit DMG",
+                        "7.5%/12%/16.5%/21%/25.5%/30%/34%/38%/42%",
+                        "Ultimate Crit DMG",
+                        "15%/24%/33%/42%/51%/60%/64%/68%/72%",
+                        5
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "Ultimate Crit DMG (base)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "Ultimate Crit DMG (base)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "Ultimate Crit DMG (base)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "Ultimate Crit DMG (base)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_16",
+                    "corner": "Triangle",
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
+                },
+                {
+                    "id": 515707,
+                    "name": "Hunter's Command",
+                    "nameCN": "追猎指示",
+                    "nameJP": "ハントシグナル",
+                    "nameKR": "추격 지시",
+                    "desc": "In an all-Umbra squad, increases the &Param1& dealt by Boss Shark to targets inflicted with ##Dark Burn#2028# by <color=#ec6d21>&Param2&</color>.",
+                    "descCN": "全队都为暗系角色时，「鲨老大」对附带##暗灼#2028#的目标造成的&Param1&提升<color=#ec6d21>&Param2&</color>。",
+                    "descJP": "チーム内に闇属性巡遊者が3体いる時、サメ大将は##暗灼#2028#が付与された敵に与える&Param1&が<color=#ec6d21>&Param2&</color>増加する。",
+                    "descKR": "팀 전체가 어둠 속성 캐릭터일 경우, 「상어 대장」이 ##어둠 작열#2028#을 보유한 목표에게 입히는 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)",
+                    "damageType": [],
+                    "effectType": [],
+                    "addAttrType": [
+                        "Skill Intensity (base)"
+                    ],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "Skill Intensity",
+                        "5.2%/8.4%/11.5%/14.7%/17.8%/21%/22%/23%/24%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "addAttrType": "Skill Intensity (base)"
+                        },
+                        {
+                            "addAttrType": "Skill Intensity (base)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_23",
+                    "corner": "Round",
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
+                },
+                {
+                    "id": 515708,
+                    "name": "Dark Shackle Detonation",
+                    "nameCN": "暗锁溢爆",
+                    "nameJP": "チェインバースト",
+                    "nameKR": "어둠 사슬의 폭발",
+                    "desc": "When an enemy target loses ##Hunter's Mark#4046#, deals <color=#ec6d21>&Param1&</color> of Karin's ATK as AoE Umbra Auto ATK DMG and triggering ##Umbra Mark#1019#. Increases Karin's &Param2& by <color=#ec6d21>&Param3&</color> for &Param4&s.",
+                    "descCN": "敌方目标失去##猎标#4046#时，造成花铃攻击力<color=#ec6d21>&Param1&</color>的范围暗系普攻伤害并触发##暗系印记#1019#，同时花铃的&Param2&提升<color=#ec6d21>&Param3&</color>，持续&Param4&秒.",
+                    "descJP": "敵に付与した##デスデス#4046#が消失時、範囲内にカリンの攻撃力の<color=#ec6d21>&Param1&</color>の闇属性の通常攻撃ダメージを与え、##闇属性の印#1019#を発動させることができ、さらに&Param4&秒間、カリンの&Param2&が<color=#ec6d21>&Param3&</color>増加する。",
+                    "descKR": "적 목표가 ##사냥 표식#4046#을 잃으면 카린 공격력 <color=#ec6d21>&Param1&</color>의 어둠 속성 범위 일반 공격 피해를 받으며, ##어둠 속성 표식#1019#이 발동된다. 또한 카린의 &Param2_kr1& <color=#ec6d21>&Param3&</color> 증가한다. &Param4&초간 지속된다.\u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [
+                        "Auto Attack (from Skill)"
+                    ],
+                    "effectType": [
+                        "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        "268%/429%/590%/751%/911%/1072%/1233%/1394%/1555%",
+                        "Auto Attack DMG",
+                        "11.2%/18%/24.7%/31.5%/38.2%/45%/49%/52%/55%",
+                        8
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "damageType": "Auto Attack (from Skill)"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_08",
+                    "corner": "Diamond",
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 7
+                },
+                {
+                    "id": 515709,
+                    "name": "High-Threat Target",
+                    "nameCN": "高危目标",
+                    "nameJP": "トローリング",
+                    "nameKR": "고위험 목표",
+                    "desc": "In an all-Umbra squad, when Bait and Catch (Main Skill) is on cooldown, increases the &Param1& dealt by Karin's Auto Attacks to targets inflicted with ##Dark Burn#2028# by <color=#ec6d21>&Param2&</color>.",
+                    "descCN": "全队都为暗系角色时，在主控技「愿者上钩」冷却期间，花铃的普攻对附带##暗灼#2028#的目标造成的&Param1&提升<color=#ec6d21>&Param2&</color>。",
+                    "descJP": "チーム内に闇属性巡遊者が3体おり、かつ主力スキルのクールタイム中である時、カリンの通常攻撃が##暗灼#2028#の付与された敵に与える&Param1&が<color=#ec6d21>&Param2&</color>増加する。",
+                    "descKR": "팀 전체가 어둠 속성 캐릭터이면, 메인 스킬 「미끼에 걸린 자」 쿨타임 중 카린의 일반 공격이 ##어둠 작열#2028#을 보유한 목표에게 입히는 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)",
+                    "damageType": [],
+                    "effectType": [],
+                    "addAttrType": [
+                        "Skill Intensity (base)"
+                    ],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "Skill Intensity",
+                        "10%/16%/22%/28%/34%/40%/42%/44%/45%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "addAttrType": "Skill Intensity (base)"
+                        },
+                        {
+                            "addAttrType": "Skill Intensity (base)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_4",
+                    "corner": "Triangle",
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
+                },
+                {
+                    "id": 515711,
+                    "name": "Confidence Booster",
+                    "nameCN": "信心倍增",
+                    "nameJP": "夜釣り",
+                    "nameKR": "사기 충전",
+                    "desc": "When Karin triggers an ##Umbra Mark#1019#, increases her &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times.",
+                    "descCN": "花铃触发##暗系印记#1019#时，&Param1&提升<color=#ec6d21>&Param2&</color>，持续&Param3&秒，可叠加&Param4&层。",
+                    "descJP": "カリンが##闇属性の印#1019#を発動させた時、&Param3&秒間、&Param1&が<color=#ec6d21>&Param2&</color>上昇する。この効果は&Param4&回まで重複できる。",
+                    "descKR": "카린이 ##어둠 속성 표식#1019#을 발동하면 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다. &Param3&초간 지속되며, 최대 &Param4&스택 중첩된다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "ATK (%)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        "ATK",
+                        "6%/9.6%/13.2%/16.8%/20.4%/24%/27.6%/31.2%/34.8%",
+                        5,
+                        2
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_10",
+                    "corner": "Diamond",
+                    "rarity": "common"
+                },
+                {
+                    "id": 515713,
+                    "name": "Aura of Unity",
+                    "nameCN": "同谐气场",
+                    "nameJP": "サビキ釣り",
+                    "nameKR": "조화로운 기세",
+                    "desc": "Each Umbra Trekker in the squad increases Karin's &Param1& by <color=#ec6d21>&Param2&</color> and all Umbra Trekkers' &Param3& by <color=#ec6d21>&Param4&</color>.",
+                    "descCN": "队伍中每1名暗系角色，使花铃的&Param1&提升<color=#ec6d21>&Param2&</color>，全队暗系角色的&Param3&提升<color=#ec6d21>&Param4&</color>。",
+                    "descJP": "チーム内に闇属性巡遊者が1名存在するごとに、カリンは&Param1&が<color=#ec6d21>&Param2&</color>増加し、チーム全体の闇属性巡遊者の&Param3&が<color=#ec6d21>&Param4&</color>増加する。",
+                    "descKR": "팀 내 어둠 속성 캐릭터 1명마다 카린의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가하고, 팀 전체 어둠 속성 캐릭터의 &Param3_kr1& <color=#ec6d21>&Param4&</color> 증가한다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype) \u000bParam3: &Param3& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "Umbra DMG (base)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "No Icon"
+                    ],
+                    "params": [
+                        "Umbra DMG",
+                        "3.2%/5.2%/7.1%/9.1%/11%/13%/14.9%/16.9%/18.8%",
+                        "Umbra DMG",
+                        "3.2%/5.2%/7.1%/9.1%/11%/13%/14.9%/16.9%/18.8%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "Umbra DMG (base)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "effectType": "Umbra DMG (base)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "effectType": "Umbra DMG (base)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "effectType": "Umbra DMG (base)",
+                            "buffIcon": "No Icon"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_20",
+                    "corner": "Round",
+                    "rarity": "rare"
+                },
+                {
+                    "id": 515710,
+                    "name": "Hunting Suppression",
+                    "nameCN": "狩猎压制",
+                    "nameJP": "素潜り漁",
+                    "nameKR": "사냥 제압",
+                    "desc": "When Karin triggers ##Umbra Mark#1019# on a target with ##Hunter's Mark#4046#, increases her &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times.",
+                    "descCN": "花铃对附带##猎标#4046#的目标触发##暗系印记#1019#时，花铃的&Param1&提升<color=#ec6d21>&Param2&</color>，持续&Param3&秒，可叠加&Param4&层。",
+                    "descJP": "カリンは##デスデス#4046#が付与された敵に##闇属性の印#1019#を発動させた時、&Param3&秒間、カリンの&Param1&が<color=#ec6d21>&Param2&</color>増加する。この効果は&Param4&回まで重複できる。",
+                    "descKR": "카린이 ##사냥 표식#4046#을 보유한 목표에게 ##어둠 속성 표식#1019#을 발동하면, 카린의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다. &Param3&초간 지속되며, 최대 &Param4&스택 중첩된다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        "Auto Attack DMG",
+                        "5%/8%/11%/14%/17%/20%/22%/24%/26%",
+                        5,
+                        3
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_Dark_1",
+                    "corner": "Round",
+                    "rarity": "common"
+                },
+                {
+                    "id": 515712,
+                    "name": "Pursuit of the Shadow",
+                    "nameCN": "猎影追踪",
+                    "nameJP": "シャークチェイス",
+                    "nameKR": "그림자 추적",
+                    "desc": "Karin can dodge one more time. When dodging, increases Karin's &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s.",
+                    "descCN": "闪避技能次数增加1次。闪避时，花铃的&Param1&提升<color=#ec6d21>&Param2&</color>，持续&Param3&秒。",
+                    "descJP": "カリンの回避の発動可能回数が1回増加する。\u000b回避時、&Param3&秒間、カリンの&Param1&が<color=#ec6d21>&Param2&</color>上昇する。",
+                    "descKR": "회피 횟수가 1회 증가한다. 회피 시 카린의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다. &Param3&초간 지속된다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "ATK (%)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        "ATK",
+                        "10%/16%/22%/28%/34%/40%/46%/52%/58%",
+                        3
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_2",
+                    "corner": "Triangle",
+                    "rarity": "common"
+                }
+            ],
+            "common": [
+                {
+                    "id": 515741,
+                    "name": "Unyielding Spirit",
+                    "nameCN": "不屈的精神",
+                    "nameJP": "渦潮",
+                    "nameKR": "불굴의 정신",
+                    "desc": "Increases the &Param1& dealt by Shark Assault (Ultimate) to elite or higher-tier targets by <color=#ec6d21>&Param2&</color>. Increases Karin's &Param3& by <color=#ec6d21>&Param4&</color>.",
+                    "descCN": "绝招「狂鲨强袭」对精英及以上目标造成的&Param1&提升<color=#ec6d21>&Param2&</color>。花铃的&Param3&提升<color=#ec6d21>&Param4&</color>。",
+                    "descJP": "カリンの必殺技がエリート以上の敵に与える&Param1&が<color=#ec6d21>&Param2&</color>増加する。\nカリンの&Param3&が<color=#ec6d21>&Param4&</color>上昇する。",
+                    "descKR": "필살기 「분노한 상어의 습격」이 정예 이상 목표에게 입히는 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다. 카린의 &Param3_kr1& <color=#ec6d21>&Param4&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1) \u000bParam3: &Param3& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "ATK (%)"
+                    ],
+                    "addAttrType": [
+                        "Umbra DMG (base)"
+                    ],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "Umbra DMG",
+                        "10%/16%/22%/28%/34%/40%/44%/47%/50%",
+                        "ATK",
+                        "5%/8%/11%/14%/17%/20%/23%/26%/29%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "addAttrType": "Umbra DMG (base)"
+                        },
+                        {
+                            "addAttrType": "Umbra DMG (base)"
+                        },
+                        {
+                            "effectType": "ATK (%)"
+                        },
+                        {
+                            "effectType": "ATK (%)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_41",
+                    "corner": "Diamond",
+                    "rarity": "common"
+                },
+                {
+                    "id": 515742,
+                    "name": "Deep-Sea Conflict",
+                    "nameCN": "绝海的斗争",
+                    "nameJP": "ディープシー",
+                    "nameKR": "외딴 바다의 투쟁",
+                    "desc": "While Shark Assault (Ultimate) is active, shoots <color=#ec6d21>&Param1&</color> bubbles every once in a while, each bubble dealing <color=#ec6d21>&Param2&</color> of ATK as AoE Umbra Ultimate DMG and triggering ##Umbra Mark#1019#. Increases Karin's &Param3& by <color=#ec6d21>&Param4&</color>.",
+                    "descCN": "绝招「狂鲨强袭」期间，每隔一段时间喷出<color=#ec6d21>&Param1&</color>个水泡，每个水泡造成攻击力<color=#ec6d21>&Param2&</color>的范围暗系绝招伤害并触发##暗系印记#1019#。花铃的&Param3&提升<color=#ec6d21>&Param4&</color>。",
+                    "descJP": "カリンの必殺技発動中、持続的に泡を<color=#ec6d21>&Param1&</color>つ噴射して範囲内に攻撃力の<color=#ec6d21>&Param2&</color>の闇属性の必殺技ダメージを与え、##闇属性の印#1019#を発動させることができる。\nカリンの&Param3&が<color=#ec6d21>&Param4&</color>増加する。",
+                    "descKR": "필살기 「분노한 상어의 습격」 기간 중 일정 시간마다 물방울 <color=#ec6d21>&Param1&</color>개를 분출한다. 각 물방울은 공격력 <color=#ec6d21>&Param2&</color>의 어둠 속성 범위 필살기 피해를 입히며, ##어둠 속성 표식#1019#을 발동한다. 카린의 &Param3_kr1& <color=#ec6d21>&Param4&</color> 증가한다.\u000bParam3: &Param3& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [
+                        "Ultimate (from Ultimate)"
+                    ],
+                    "effectType": [
+                        "ELEMENTTYPE_:(Umbra) Ultimate DMG"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "1/1/2/2/3/3/3/3/3",
+                        "27%/43%/59%/75%/91%/107%/123%/139%/155%",
+                        "Ultimate DMG",
+                        "14.5%/23.2%/31.9%/40.6%/49.3%/58%/65%/70%/75%"
+                    ],
+                    "paramsTooltips": [
+                        {},
+                        {
+                            "damageType": "Ultimate (from Ultimate)"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Ultimate DMG"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Ultimate DMG"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_42",
+                    "corner": "Triangle",
+                    "rarity": "common"
+                },
+                {
+                    "id": 515743,
+                    "name": "Self-Transcend",
+                    "nameCN": "自我的超越",
+                    "nameJP": "海底火山",
+                    "nameKR": "자아 초월",
+                    "desc": "When casting Shark Assault (Ultimate), increases Karin's &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s. Increases Karin's &Param4& by <color=#ec6d21>&Param5&</color>.",
+                    "descCN": "施放绝招「狂鲨强袭」时，花铃的&Param1&提升<color=#ec6d21>&Param2&</color>，持续&Param3&秒。花铃的&Param4&提升<color=#ec6d21>&Param5&</color>",
+                    "descJP": "カリンの必殺技発動時、&Param3&秒間、カリンの&Param1&が<color=#ec6d21>&Param2&</color>上昇する。\u000bカリンの&Param4&が<color=#ec6d21>&Param5&</color>上昇する。",
+                    "descKR": "필살기 「분노한 상어의 습격」 시전 시, 카린의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다. &Param3&초간 지속된다. 카린의 &Param4_kr1& <color=#ec6d21>&Param5&</color> 증가한다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype) \u000bParam4: &Param4& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "ATK (%)",
+                        "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        "ATK",
+                        "17.5%/28%/38.5%/49%/59.5%/70%/80%/90%/100%",
+                        30,
+                        "Auto Attack DMG",
+                        "8.7%/14%/19.2%/24.5%/29.7%/35%/40%/45%/50%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+                        },
+                        {
+                            "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_41",
+                    "corner": "Round",
+                    "rarity": "common"
+                }
+            ],
+            "supportCore": [
+                {
+                    "id": 515721,
+                    "name": "Shark's Phantom",
+                    "nameCN": "巨鲨连影",
+                    "nameJP": "ギガシャーク",
+                    "nameKR": "거대 상어의 잔상",
+                    "desc": "Boss Shark summoned by Raging Sea (Support Skill) can repeatedly bite the target, dealing <color=#0abec5>extra instances</color> of DMG to large targets.",
+                    "descCN": "援护技「怒海翻腾」的「鲨老大」可连续撕咬，对大型目标造成<color=#0abec5>额外次数</color>的伤害。",
+                    "descJP": "支援スキルのサメ大将が連続で丸呑み攻撃を行うようになる。サイズの大きい敵には、与えるダメージ回数が<color=#0abec5>より多く</color>なる。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」의 「상어 대장」이 연속으로 물어뜯어, 대형 목표에게 <color=#0abec5>추가 횟수</color>의 피해를 입힌다.",
+                    "damageType": [],
+                    "effectType": [],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [],
+                    "paramsTooltips": [],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_21",
+                    "rarity": "core"
+                },
+                {
+                    "id": 515722,
+                    "name": "Dark Bite Mark",
+                    "nameCN": "猎咬暗痕",
+                    "nameJP": "ダークバイト",
+                    "nameKR": "물어뜯은 흔적",
+                    "desc": "Boss Shark summoned by Raging Sea (Support Skill) leaves bite marks for 1s when dealing DMG. When Boss Shark deals DMG to a target with a bite mark, it detonates the bite mark, dealing <color=#0abec5>&Param1&</color> of ATK as single-target Umbra Ultimate DMG and triggering ##Umbra Mark#1019#.",
+                    "descCN": "援护技「怒海翻腾」的「鲨老大」造成伤害时产生齿痕，持续1秒。「鲨老大」对存在齿痕的目标造成伤害时，可引爆齿痕造成攻击力<color=#0abec5>&Param1&</color>的单体暗系绝招伤害并触发##暗系印记#1019#。",
+                    "descJP": "支援スキルのサメ大将がダメージを与えた時、1秒間持続する、噛み跡を付与する。サメ大将は噛み跡が付与されている敵にダメージを与えた時、噛み跡が爆発し、単体に攻撃力の<color=#0abec5>&Param1&</color>の闇属性の必殺技ダメージを与え、##闇属性の印#1019#を発動させることができる。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」의 「상어 대장」이 피해를 입히면 이빨 자국을 생성한다. 1초간 지속된다. 「상어 대장」이 이빨 자국을 보유한 목표에게 피해를 입히면 이빨 자국을 폭발시켜 공격력 <color=#0abec5>&Param1&</color>의 어둠 속성 단일 필살기 피해를 입히며, ##어둠 속성 표식#1019#을 발동한다.",
+                    "damageType": [
+                        "Ultimate (from Skill, scale with Skill)"
+                    ],
+                    "effectType": [],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "151%/174%/197%/265%/286%/307%/350%/368%/386%/422%/452%/483%/513%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "damageType": "Ultimate (from Skill, scale with Skill)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_22",
+                    "rarity": "core"
+                },
+                {
+                    "id": 515723,
+                    "name": "Tidal Lash",
+                    "nameCN": "怒涛鞭策",
+                    "nameJP": "ハニーウィップ",
+                    "nameKR": "성난 파도의 채찍질",
+                    "desc": "When casting Raging Sea (Support Skill), Karin can swing additional chains, dealing <color=#0abec5>&Param1&</color> of ATK as AoE Umbra Skill DMG.",
+                    "descCN": "援护技「怒海翻腾」可额外挥舞更多锁链，额外挥动的锁链造成攻击力<color=#0abec5>&Param1&</color>的暗系范围技能伤害。",
+                    "descJP": "カリンの支援スキルは、より多くの鎖を振り回すようになり、追加の鎖は範囲内に攻撃力の<color=#0abec5>&Param1&</color>の闇属性のスキルダメージを与える。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」가 더 많은 사슬을 추가로 휘두른다. 추가로 휘두른 사슬이 공격력 <color=#0abec5>&Param1&</color>의 어둠 속성 범위 스킬 피해를 입힌다.",
+                    "damageType": [
+                        "Skill (from Skill, scale with Skill)"
+                    ],
+                    "effectType": [],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "49%/56%/64%/86%/93%/100%/113%/119%/125%/137%/147%/156%/166%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "damageType": "Skill (from Skill, scale with Skill)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_23",
+                    "rarity": "core"
+                },
+                {
+                    "id": 515724,
+                    "name": "Undercurrent Blast",
+                    "nameCN": "暗流震爆",
+                    "nameJP": "アンダーサージ",
+                    "nameKR": "암류의 충격",
+                    "desc": "When Karin swings the chain to deal DMG during Raging Sea (Support Skill), triggers explosions that deal <color=#0abec5>&Param1&</color> of ATK as AoE Umbra Skill DMG and triggering ##Umbra Mark#1019#. This effect can be triggered up to <color=#0abec5>4</color> times per chain swing.",
+                    "descCN": "援护技「怒海翻腾」挥舞锁链造成伤害时产生爆炸，造成攻击力<color=#0abec5>&Param1&</color>的暗系范围技能伤害并触发##暗系印记#1019#。该效果每次挥动时最多触发<color=#0abec5>4</color>次。",
+                    "descJP": "カリンの支援スキルで鎖を振り回してダメージを与えた時、爆発を発生させて範囲内に攻撃力の<color=#0abec5>&Param1&</color>の闇属性のスキルダメージを与え、##闇属性の印#1019#を発動させることができる。この効果は鎖を1回振るごとに最大<color=#0abec5>4</color>回まで発動する。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」가 사슬을 휘둘러 피해를 입히면 폭파가 일어나 공격력 <color=#0abec5>&Param1&</color>의 어둠 속성 범위 스킬 피해를 입히며 ##어둠 속성 표식#1019#을 발동한다. 해당 효과는 휘두를 때마다 최대 <color=#0abec5>4</color>회 발동한다.",
+                    "damageType": [
+                        "Skill (from Skill, scale with Skill)"
+                    ],
+                    "effectType": [],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "106%/122%/137%/185%/200%/215%/244%/257%/269%/295%/316%/337%/358%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "damageType": "Skill (from Skill, scale with Skill)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_24",
+                    "rarity": "core"
+                }
+            ],
+            "supportNormal": [
+                {
+                    "id": 515725,
+                    "name": "Ocean Aftershock",
+                    "nameCN": "大海余震",
+                    "nameJP": "アフターショック",
+                    "nameKR": "바다의 여진",
+                    "desc": "Boss Shark summoned by Raging Sea (Support Skill) triggers bubble explosions along its charge path, with each explosion dealing <color=#ec6d21>&Param1&</color> of ATK as AoE Umbra Ultimate DMG and triggering ##Umbra Mark#1019#. Increases the &Param2& dealt by Boss Shark by <color=#ec6d21>&Param3&</color>.",
+                    "descCN": "援护技「怒海翻腾」的「鲨老大」冲锋路径上会引发水泡爆炸，每次爆炸造成攻击力<color=#ec6d21>&Param1&</color>的暗系范围绝招伤害并触发##暗系印记#1019#。「鲨老大」造成的&Param2&提升<color=#ec6d21>&Param3&</color>",
+                    "descJP": "支援スキルのサメ大将の進路上に泡の爆発を引き起こし、爆発ごとに範囲内に攻撃力の<color=#ec6d21>&Param1&</color>の闇属性の必殺技ダメージを与え、##闇属性の印#1019#を発動させることができる。サメ大将が与える&Param2&が<color=#ec6d21>&Param3&</color>増加する。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」의 「상어 대장」 돌진 경로 위에 물방울 폭파가 일어난다. 폭파마다 공격력 <color=#ec6d21>&Param1&</color>의 어둠 속성 범위 필살기 피해를 입히며 ##어둠 속성 표식#1019#을 발동한다. 「상어 대장」이 입히는 &Param2_kr1& <color=#ec6d21>&Param3&</color> 증가한다.\u000bParam2: &Param2& (OnceAdditionalAttribute,AttributeType1)",
+                    "damageType": [
+                        "Ultimate (from Skill)"
+                    ],
+                    "effectType": [],
+                    "addAttrType": [
+                        "(Umbra) Ultimate DMG (base)"
+                    ],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "21%/34%/46%/59%/72%/84%/97%/110%/122%",
+                        "Ultimate DMG",
+                        "10%/16%/22%/28%/34%/40%/46%/52%/58%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "damageType": "Ultimate (from Skill)"
+                        },
+                        {
+                            "addAttrType": "(Umbra) Ultimate DMG (base)"
+                        },
+                        {
+                            "addAttrType": "(Umbra) Ultimate DMG (base)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_25",
+                    "corner": "Diamond",
+                    "rarity": "rare"
+                },
+                {
+                    "id": 515726,
+                    "name": "Pack Pursuit",
+                    "nameCN": "同猎追击",
+                    "nameJP": "ジョイントハント",
+                    "nameKR": "협동 추격",
+                    "desc": "When Boss Shark from Raging Sea (Support Skill) deals DMG, increases Karin's &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times.",
+                    "descCN": "援护技「怒海翻腾」的「鲨老大」造成伤害时，花铃的&Param1&提升<color=#ec6d21>&Param2&</color>，持续&Param3&秒，可叠加&Param4&层。",
+                    "descJP": "支援スキルのサメ大将がダメージを与えた時、&Param3&秒間、カリンの&Param1&が<color=#ec6d21>&Param2&</color>上昇する。この効果は&Param4&回まで重複できる。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」의 「상어 대장」이 피해를 입히면 카린의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다. &Param3&초간 지속되며, 최대 &Param4&스택 중첩된다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "ATK (%)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        "ATK",
+                        "2.5%/4%/5.5%/7%/8.5%/10%/11.5%/13%/14.5%",
+                        5,
+                        7
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_5",
+                    "corner": "Triangle",
+                    "rarity": "common"
+                },
+                {
+                    "id": 515727,
+                    "name": "Apex Dominance",
+                    "nameCN": "上位压制",
+                    "nameJP": "水の利",
+                    "nameKR": "우위 제압",
+                    "desc": "Increases the &Param1& dealt by Boss Shark summoned by Raging Sea (Support Skill) to elite or lower-tier targets by <color=#ec6d21>&Param2&</color>.",
+                    "descCN": "援护技「怒海翻腾」的「鲨老大」对精英及以下目标造成的&Param1&提升<color=#ec6d21>&Param2&</color>。",
+                    "descJP": "支援スキルのサメ大将がエリート以下の敵に与える&Param1&が<color=#ec6d21>&Param2&</color>増加する。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」의 「상어 대장」이 정예 이하 목표에게 입히는 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)",
+                    "damageType": [],
+                    "effectType": [],
+                    "addAttrType": [
+                        "(Umbra) Ultimate DMG (base)"
+                    ],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "Ultimate DMG",
+                        "15%/24%/33%/42%/51%/60%/69%/78%/87%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "addAttrType": "(Umbra) Ultimate DMG (base)"
+                        },
+                        {
+                            "addAttrType": "(Umbra) Ultimate DMG (base)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_4",
+                    "corner": "Round",
+                    "rarity": "common"
+                },
+                {
+                    "id": 515728,
+                    "name": "Surging Rhythm",
+                    "nameCN": "汹涌节奏",
+                    "nameJP": "サージングリズム",
+                    "nameKR": "격동의 리듬",
+                    "desc": "When Karin swings the chain to deal DMG during Raging Sea (Support Skill), increases the &Param1& dealt by subsequent chain hits of this skill by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times.",
+                    "descCN": "援护技「怒海翻腾」挥舞锁链造成伤害时，本次技能后续锁链造成的&Param1&提升<color=#ec6d21>&Param2&</color>，持续&Param3&秒，可叠加&Param4&层。",
+                    "descJP": "カリンの支援スキルで鎖を振り回してダメージを与えるたびに、&Param3&秒間、以降に放たれる鎖が与える&Param1&が<color=#ec6d21>&Param2&</color>増加する。この効果は&Param4&回まで重複できる。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」가 사슬을 휘둘러 피해를 입히면 이번 스킬 후속의 사슬이 입히는 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다. &Param3&초간 지속되며, 최대 &Param4&스택 중첩된다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)",
+                    "damageType": [],
+                    "effectType": [],
+                    "addAttrType": [
+                        "(Umbra) Skill DMG (base)"
+                    ],
+                    "effectData": [],
+                    "buffIcon": [
+                        "No Icon"
+                    ],
+                    "params": [
+                        "Skill DMG",
+                        "2%/3.3%/4.5%/5.8%/7%/8.3%/9.5%/10.8%/12%",
+                        2,
+                        9
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "addAttrType": "(Umbra) Skill DMG (base)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "addAttrType": "(Umbra) Skill DMG (base)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "buffIcon": "No Icon"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_24",
+                    "corner": "Diamond",
+                    "rarity": "rare"
+                },
+                {
+                    "id": 515730,
+                    "name": "Undercurrent Surge",
+                    "nameCN": "暗流翻涌",
+                    "nameJP": "ダークウェイブ",
+                    "nameKR": "들끊는 암류",
+                    "desc": "When any Umbra Trekker casts a Main Skill or Support Skill, increases Karin's &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times.",
+                    "descCN": "任意暗系角色施放主控技或援护技时，花铃的&Param1&提升<color=#ec6d21>&Param2&</color>，持续&Param3&秒，可叠加&Param4&层。",
+                    "descJP": "チーム内の闇属性巡遊者が主力スキルまたは支援スキルを発動した時、&Param3&秒間、カリンの&Param1&が<color=#ec6d21>&Param2&</color>上昇する。この効果は&Param4&回まで重複できる。",
+                    "descKR": "어둠 속성 캐릭터가 메인 스킬 또는 지원 스킬 시전 시, 카린의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다. &Param3&초간 지속되며, 최대 &Param4&스택 중첩된다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "ATK (%)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        "ATK",
+                        "3%/4.8%/6.6%/8.4%/10.2%/12%/13.8%/15.6%/17.4%",
+                        12,
+                        5
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_11",
+                    "corner": "Round",
+                    "rarity": "common"
+                },
+                {
+                    "id": 515731,
+                    "name": "Awkward Inspiration",
+                    "nameCN": "别扭鼓舞",
+                    "nameJP": "航海士の心得",
+                    "nameKR": "쑥스러운 격려",
+                    "desc": "Increases all Umbra Trekkers' &Param1& by <color=#ec6d21>&Param2&</color>.",
+                    "descCN": "全队暗系角色的&Param1&提升<color=#ec6d21>&Param2&</color>。",
+                    "descJP": "チーム内の闇属性巡遊者の&Param1&が<color=#ec6d21>&Param2&</color>上昇する。",
+                    "descKR": "팀 전체 어둠 속성 캐릭터의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "ATK (%)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "No Icon"
+                    ],
+                    "params": [
+                        "ATK",
+                        "12%/19.2%/26.4%/33.6%/40.8%/48%/55.2%/62.4%/69.6%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "effectType": "ATK (%)",
+                            "buffIcon": "No Icon"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_12",
+                    "corner": "Diamond",
+                    "rarity": "rare"
+                },
+                {
+                    "id": 515732,
+                    "name": "Competitive Spirit",
+                    "nameCN": "竞争心理",
+                    "nameJP": "ライバル心",
+                    "nameKR": "경쟁심리",
+                    "desc": "When casting Raging Sea (Support Skill), increases Karin's &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s.",
+                    "descCN": "施放援护技「怒海翻腾」时，花铃的&Param1&提升<color=#ec6d21>&Param2&</color>，持续&Param3&秒。",
+                    "descJP": "カリンの支援スキル発動時、&Param3&秒間、カリンの&Param1&が<color=#ec6d21>&Param2&</color>上昇する。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」 시전 시, 카린의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다. &Param3&초간 지속된다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "Umbra DMG (base)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "Icon_CommonBuff_AttackUp"
+                    ],
+                    "params": [
+                        "Umbra DMG",
+                        "12%/19.2%/26.4%/33.6%/40.8%/48%/55.2%/62.4%/69.6%",
+                        15
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "Umbra DMG (base)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "effectType": "Umbra DMG (base)",
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        },
+                        {
+                            "buffIcon": "Icon_CommonBuff_AttackUp"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_15",
+                    "corner": "Triangle",
+                    "rarity": "common"
+                },
+                {
+                    "id": 515729,
+                    "name": "Against the Tide",
+                    "nameCN": "迎浪而上",
+                    "nameJP": "波に乗って",
+                    "nameKR": "파도를 거슬러",
+                    "desc": "Increases the &Param1& dealt by chain swings during Raging Sea (Support Skill) to elite or higher-tier targets by <color=#ec6d21>&Param2&</color>.",
+                    "descCN": "援护技「怒海翻腾」挥舞锁链对精英及以上目标造成的&Param1&提升<color=#ec6d21>&Param2&</color>。",
+                    "descJP": "カリンの支援スキルの鎖の振り回し攻撃がエリート以上の敵に与える&Param1&が<color=#ec6d21>&Param2&</color>増加する。",
+                    "descKR": "지원 스킬 「광폭한 바다의 파도」가 사슬을 휘둘러 정예 이상 목표에게 입히는 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)",
+                    "damageType": [],
+                    "effectType": [],
+                    "addAttrType": [
+                        "(Umbra) Skill DMG (base)"
+                    ],
+                    "effectData": [],
+                    "buffIcon": [],
+                    "params": [
+                        "Skill DMG",
+                        "15%/24%/33%/42%/51%/60%/69%/78%/87%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "addAttrType": "(Umbra) Skill DMG (base)"
+                        },
+                        {
+                            "addAttrType": "(Umbra) Skill DMG (base)"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "15701_Potential_23",
+                    "corner": "Triangle",
+                    "rarity": "common"
+                },
+                {
+                    "id": 515733,
+                    "name": "Moonlit Bond",
+                    "nameCN": "月夜同色",
+                    "nameJP": "超深海層",
+                    "nameKR": "달빛에 물든 밤",
+                    "desc": "For each Umbra Trekker in the squad, increases Karin's &Param1& by <color=#ec6d21>&Param2&</color>.",
+                    "descCN": "全队每1名暗系角色，提升花铃的&Param1&提升<color=#ec6d21>&Param2&</color>。",
+                    "descJP": "チーム内に闇属性巡遊者が1名存在するごとに、カリンは&Param1&が<color=#ec6d21>&Param2&</color>増加する。",
+                    "descKR": "팀 전체 어둠 속성 캐릭터 1명마다 카린의 &Param1_kr1& <color=#ec6d21>&Param2&</color> 증가한다.\u000bParam1: &Param1& (Effect,EffectTypeFirstSubtype)",
+                    "damageType": [],
+                    "effectType": [
+                        "Umbra DMG (base)"
+                    ],
+                    "addAttrType": [],
+                    "effectData": [],
+                    "buffIcon": [
+                        "No Icon"
+                    ],
+                    "params": [
+                        "Umbra DMG",
+                        "4%/6.4%/8.8%/11.2%/13.6%/16%/18.4%/20.8%/23.2%"
+                    ],
+                    "paramsTooltips": [
+                        {
+                            "effectType": "Umbra DMG (base)",
+                            "buffIcon": "No Icon"
+                        },
+                        {
+                            "effectType": "Umbra DMG (base)",
+                            "buffIcon": "No Icon"
+                        }
+                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
+                    "icon": "Common_Potential_20",
+                    "corner": "Round",
+                    "rarity": "common"
+                }
+            ]
+        },
+        "talent": [
+            {
+                "name": "Ripples of Grace",
+                "boost": [
+                    {
+                        "name": "Ripples of Grace",
+                        "nameCN": "清波荡漾时",
+                        "nameJP": "波揺らぐ時",
+                        "nameKR": "맑은 물결 일렁일 때",
+                        "desc": "When any Trekker applies an ##Umbra Mark#1019# on a target, increases Karin's Ultimate DMG by <color=#0abec5>&Param1&</color> for &Param2&s, up to &Param3& stacks.",
+                        "descCN": "任意角色对目标附加##暗系印记#1019#后，花铃的绝招伤害提升<color=#0abec5>&Param1&</color>，持续&Param2&秒，可叠加&Param3&层。",
+                        "descJP": "チーム内の巡遊者が敵に##闇属性の印#1019#を付与した後、&Param2&秒間、カリンの必殺技ダメージが<color=#0abec5>&Param1&</color>増加する。この効果は&Param3&回まで重複できる。",
+                        "descKR": "캐릭터가 목표에게 ##어둠 속성 표식#1019#을 부여한 후, 카린의 필살기 피해가 <color=#0abec5>&Param1&</color> 증가한다. &Param2&초간 지속되며, 최대 &Param3&스택 중첩된다.",
+                        "effectType": [
+                            "ELEMENTTYPE_:(Umbra) Ultimate DMG"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [
+                            "No Icon"
+                        ],
+                        "params": [
+                            "5%",
+                            5,
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ELEMENTTYPE_:(Umbra) Ultimate DMG",
+                                "buffIcon": "No Icon"
+                            },
+                            {
+                                "buffIcon": "No Icon"
+                            },
+                            {
+                                "buffIcon": "No Icon"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ocean's Echo",
+                "boost": [
+                    {
+                        "name": "Ocean's Echo",
+                        "nameCN": "远海的潮鸣",
+                        "nameJP": "遠海からの潮鳴り",
+                        "nameKR": "먼 바다의 파도 소리",
+                        "desc": "When Karin deals Auto Attack DMG or Ultimate DMG, increases her Crit DMG by <color=#0abec5>&Param1&</color> for &Param2&s.",
+                        "descCN": "花铃造成普攻或绝招伤害时，暴击伤害提升<color=#0abec5>&Param1&</color>，持续&Param2&秒。",
+                        "descJP": "カリンが通常攻撃または必殺技ダメージを与えた時、&Param2&秒間、会心ダメージが<color=#0abec5>&Param1&</color>増加する。",
+                        "descKR": "카린이 일반 공격 또는 필살기 피해를 입힌 후 치명타 피해가 <color=#0abec5>&Param1&</color> 증가한다. &Param2&초간 지속된다.",
+                        "effectType": [
+                            "Crit DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [
+                            "No Icon"
+                        ],
+                        "params": [
+                            "40%",
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Crit DMG (base)",
+                                "buffIcon": "No Icon"
+                            },
+                            {
+                                "buffIcon": "No Icon"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Twilight's End",
+                "boost": [
+                    {
+                        "name": "Twilight's End",
+                        "nameCN": "霞光落幕处",
+                        "nameJP": "夕陽沈む地",
+                        "nameKR": "노을빛 내리는 곳",
+                        "desc": "When Karin triggers an Umbra Mark, increases her Auto Attack DMG by <color=#0abec5>&Param1&</color> and Ultimate DMG by <color=#0abec5>&Param2&</color> for &Param3&s.",
+                        "descCN": "花铃触发暗系印记后，普攻伤害提升<color=#0abec5>&Param1&</color>，绝招伤害提升<color=#0abec5>&Param2&</color>，持续&Param3&秒。",
+                        "descJP": "カリンが闇属性の印を発動させた後の&Param3&秒間、通常攻撃ダメージが<color=#0abec5>&Param1&</color>増加し、必殺技ダメージが<color=#0abec5>&Param2&</color>増加する。",
+                        "descKR": "카린이 어둠 속성 표식을 발동한 후 일반 공격 피해가 <color=#0abec5>&Param1&</color> 증가하고, 필살기 피해가 <color=#0abec5>&Param2&</color> 증가한다. &Param3&초간 지속된다.",
+                        "effectType": [
+                            "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                            "ELEMENTTYPE_:(Umbra) Ultimate DMG"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [
+                            "No Icon"
+                        ],
+                        "params": [
+                            "40%",
+                            "20%",
+                            6
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
+                                "buffIcon": "No Icon"
+                            },
+                            {
+                                "effectType": "ELEMENTTYPE_:(Umbra) Ultimate DMG"
+                            },
+                            {
+                                "buffIcon": "No Icon"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Calm Summer Night",
+                "boost": [
+                    {
+                        "name": "Calm Summer Night",
+                        "nameCN": "静驻在夏夜",
+                        "nameJP": "夏夜に佇みて",
+                        "nameKR": "여름밤에 머무르며",
+                        "desc": "When Karin casts her Ultimate, increases her ATK by <color=#0abec5>&Param1&</color> for &Param2&s.",
+                        "descCN": "花铃施放绝招后，攻击力提升<color=#0abec5>&Param1&</color>，持续&Param2&秒。",
+                        "descJP": "カリンが必殺技発動後、&Param2&秒間、攻撃力が<color=#0abec5>&Param1&</color>上昇する。",
+                        "descKR": "카린이 필살기를 시전한 후 공격력이 <color=#0abec5>&Param1&</color> 증가한다. &Param2&초간 지속된다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [
+                            "No Icon"
+                        ],
+                        "params": [
+                            "27%",
+                            25
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)",
+                                "buffIcon": "No Icon"
+                            },
+                            {
+                                "buffIcon": "No Icon"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Heart as Waves",
+                "boost": [
+                    {
+                        "name": "Heart as Waves",
+                        "nameCN": "海浪似我心",
+                        "nameJP": "波寄せる心",
+                        "nameKR": "내 마음 같은 파도",
+                        "desc": "Increases Karin's Umbra DMG dealt to elite or higher-tier targets by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "花铃对精英及以上目标造成的暗系伤害提升<color=#0abec5>&Param1&</color>。",
+                        "descJP": "カリンはエリート以上の敵に与える闇属性ダメージが<color=#0abec5>&Param1&</color>増加する。",
+                        "descKR": "카린이 정예 및 이상 목표에게 입히는 어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [],
+                        "addAttrType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "30%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "addAttrType": "Umbra DMG (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases Base ATK by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础攻击提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 공격이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            60
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DEF Enhancement",
+                        "nameCN": "防御强化",
+                        "nameJP": "防御力強化",
+                        "nameKR": "방어 강화",
+                        "desc": "Increases Base DEF by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础防御提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎防御力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "기본 방어가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "DEF (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            10
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "DEF (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HP Enhancement",
+                        "nameCN": "生命强化",
+                        "nameJP": "HP強化",
+                        "nameKR": "HP 강화",
+                        "desc": "Increases Base HP by <color=#0abec5>&Param1&</color>.",
+                        "descCN": "基础生命提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "基礎HPが<color=#0abec5>&Param1&</color>増加する",
+                        "descKR": "기본 HP가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "HP (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            690
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "HP (base)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ATK Enhancement",
+                        "nameCN": "攻击强化",
+                        "nameJP": "攻撃力強化",
+                        "nameKR": "공격 강화",
+                        "desc": "Increases ATK by <color=#0abec5>&Param1&</color>",
+                        "descCN": "攻击力提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "攻撃力が<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "공격력이 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "ATK (%)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "ATK (%)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Umbra DMG Boost",
+                        "nameCN": "暗系伤害提升",
+                        "nameJP": "闇属性ダメージ強化",
+                        "nameKR": "어둠 속성 피해 증가",
+                        "desc": "Increases Umbra DMG by <color=#0abec5>&Param1&</color>",
+                        "descCN": "暗系伤害提升<color=#0abec5>&Param1&</color>",
+                        "descJP": "闇属性ダメージが<color=#0abec5>&Param1&</color>上昇する",
+                        "descKR": "어둠 속성 피해가 <color=#0abec5>&Param1&</color> 증가한다.",
+                        "effectType": [
+                            "Umbra DMG (base)"
+                        ],
+                        "addAttrType": [],
+                        "effectData": [],
+                        "buffIcon": [],
+                        "params": [
+                            "1.5%"
+                        ],
+                        "paramsTooltips": [
+                            {
+                                "effectType": "Umbra DMG (base)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "stat": [
+            {
+                "Level": 1,
+                "HP": 795,
+                "ATK": 115,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 2,
+                "HP": 1033,
+                "ATK": 150,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 3,
+                "HP": 1271,
+                "ATK": 184,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 4,
+                "HP": 1510,
+                "ATK": 219,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 5,
+                "HP": 1748,
+                "ATK": 254,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 6,
+                "HP": 1987,
+                "ATK": 288,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 7,
+                "HP": 2225,
+                "ATK": 323,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 8,
+                "HP": 2463,
+                "ATK": 357,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 9,
+                "HP": 2702,
+                "ATK": 392,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 10,
+                "HP": 2940,
+                "ATK": 427,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 10,
+                "HP": 3528,
+                "ATK": 512,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 11,
+                "HP": 3767,
+                "ATK": 546,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 12,
+                "HP": 4005,
+                "ATK": 581,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 13,
+                "HP": 4243,
+                "ATK": 616,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 14,
+                "HP": 4482,
+                "ATK": 650,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 15,
+                "HP": 4720,
+                "ATK": 685,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 16,
+                "HP": 4959,
+                "ATK": 719,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 17,
+                "HP": 5197,
+                "ATK": 754,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 18,
+                "HP": 5435,
+                "ATK": 789,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 19,
+                "HP": 5674,
+                "ATK": 823,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 20,
+                "HP": 5912,
+                "ATK": 858,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 20,
+                "HP": 7096,
+                "ATK": 1029,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 21,
+                "HP": 7335,
+                "ATK": 1064,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 22,
+                "HP": 7573,
+                "ATK": 1099,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 23,
+                "HP": 7811,
+                "ATK": 1133,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 24,
+                "HP": 8050,
+                "ATK": 1168,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 25,
+                "HP": 8288,
+                "ATK": 1202,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 26,
+                "HP": 8526,
+                "ATK": 1237,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 27,
+                "HP": 8765,
+                "ATK": 1272,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 28,
+                "HP": 9003,
+                "ATK": 1306,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 29,
+                "HP": 9242,
+                "ATK": 1341,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 30,
+                "HP": 9480,
+                "ATK": 1375,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 30,
+                "HP": 11379,
+                "ATK": 1651,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 31,
+                "HP": 11618,
+                "ATK": 1685,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 32,
+                "HP": 11856,
+                "ATK": 1720,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 33,
+                "HP": 12094,
+                "ATK": 1755,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 34,
+                "HP": 12333,
+                "ATK": 1789,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 35,
+                "HP": 12571,
+                "ATK": 1824,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 36,
+                "HP": 12810,
+                "ATK": 1858,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 37,
+                "HP": 13048,
+                "ATK": 1893,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 38,
+                "HP": 13286,
+                "ATK": 1927,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 39,
+                "HP": 13525,
+                "ATK": 1962,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 40,
+                "HP": 13763,
+                "ATK": 1997,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 40,
+                "HP": 16513,
+                "ATK": 2396,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 41,
+                "HP": 16751,
+                "ATK": 2430,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 42,
+                "HP": 16989,
+                "ATK": 2465,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 43,
+                "HP": 17228,
+                "ATK": 2499,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 44,
+                "HP": 17466,
+                "ATK": 2534,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 45,
+                "HP": 17705,
+                "ATK": 2568,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 46,
+                "HP": 17943,
+                "ATK": 2603,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 47,
+                "HP": 18181,
+                "ATK": 2638,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 48,
+                "HP": 18420,
+                "ATK": 2672,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 49,
+                "HP": 18658,
+                "ATK": 2707,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 50,
+                "HP": 18897,
+                "ATK": 2741,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 50,
+                "HP": 22679,
+                "ATK": 3290,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 51,
+                "HP": 22917,
+                "ATK": 3325,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 52,
+                "HP": 23156,
+                "ATK": 3359,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 53,
+                "HP": 23394,
+                "ATK": 3394,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 54,
+                "HP": 23633,
+                "ATK": 3428,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 55,
+                "HP": 23871,
+                "ATK": 3463,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 56,
+                "HP": 24109,
+                "ATK": 3498,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 57,
+                "HP": 24348,
+                "ATK": 3532,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 58,
+                "HP": 24586,
+                "ATK": 3567,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 59,
+                "HP": 24825,
+                "ATK": 3601,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 60,
+                "HP": 25063,
+                "ATK": 3636,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 60,
+                "HP": 30077,
+                "ATK": 4363,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 61,
+                "HP": 30316,
+                "ATK": 4398,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 62,
+                "HP": 30554,
+                "ATK": 4433,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 63,
+                "HP": 30792,
+                "ATK": 4467,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 64,
+                "HP": 31031,
+                "ATK": 4502,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 65,
+                "HP": 31269,
+                "ATK": 4536,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 66,
+                "HP": 31507,
+                "ATK": 4571,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 67,
+                "HP": 31746,
+                "ATK": 4605,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 68,
+                "HP": 31984,
+                "ATK": 4640,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 69,
+                "HP": 32223,
+                "ATK": 4675,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 70,
+                "HP": 32461,
+                "ATK": 4709,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 70,
+                "HP": 38953,
+                "ATK": 5651,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 71,
+                "HP": 39192,
+                "ATK": 5686,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 72,
+                "HP": 39430,
+                "ATK": 5720,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 73,
+                "HP": 39668,
+                "ATK": 5755,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 74,
+                "HP": 39907,
+                "ATK": 5789,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 75,
+                "HP": 40145,
+                "ATK": 5824,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 76,
+                "HP": 40384,
+                "ATK": 5859,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 77,
+                "HP": 40622,
+                "ATK": 5893,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 78,
+                "HP": 40860,
+                "ATK": 5928,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 79,
+                "HP": 41099,
+                "ATK": 5962,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 80,
+                "HP": 41337,
+                "ATK": 5997,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 80,
+                "HP": 49601,
+                "ATK": 7196,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 81,
+                "HP": 49840,
+                "ATK": 7230,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 82,
+                "HP": 50078,
+                "ATK": 7265,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 83,
+                "HP": 50317,
+                "ATK": 7300,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 84,
+                "HP": 50555,
+                "ATK": 7334,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 85,
+                "HP": 50793,
+                "ATK": 7369,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 86,
+                "HP": 51032,
+                "ATK": 7403,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 87,
+                "HP": 51270,
+                "ATK": 7438,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 88,
+                "HP": 51509,
+                "ATK": 7472,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 89,
+                "HP": 51747,
+                "ATK": 7507,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 90,
+                "HP": 51985,
+                "ATK": 7542,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            },
+            {
+                "Level": 91,
+                "HP": 51985,
+                "ATK": 7542,
+                "DEF": 190,
+                "Crit Rate": "5%",
+                "Crit DMG": "150%",
+                "Resilience Break Efficiency": "150%"
+            }
+        ],
+        "upgrade": [
+            {
+                "Faint Wick": 5,
+                "Dorra": 7900
+            },
+            {
+                "Faint Wick": 5,
+                "Lumen Essence": 10,
+                "Dorra": 19800
+            },
+            {
+                "Faint Wick": 10,
+                "Lumen Essence": 15,
+                "Dorra": 44400
+            },
+            {
+                "Faint Wick": 15,
+                "Lumen Essence": 25,
+                "Dorra": 66600
+            },
+            {
+                "Faint Wick": 20,
+                "Lumen Essence": 40,
+                "Dorra": 146100
+            },
+            {
+                "Faint Wick": 30,
+                "Lumen Essence": 55,
+                "Eternal Gloom Core": 20,
+                "Dorra": 291600
+            },
+            {
+                "Lumen Essence": 75,
+                "Eternal Gloom Core": 30,
+                "Dorra": 560200
+            },
+            {
+                "Lumen Essence": 95,
+                "Eternal Gloom Core": 50,
+                "Dorra": 1121300
+            }
+        ],
+        "skillUpgrade": [
+            {
+                "Shooter Game Cartridge": 6,
+                "Chess Piece of Skill": 2,
+                "Dorra": 13300
+            },
+            {
+                "Shooter Game Cartridge": 12,
+                "Chess Piece of Skill": 6,
+                "Dorra": 17600
+            },
+            {
+                "Shooter Game Cartridge": 24,
+                "Barrage Game Cartridge": 3,
+                "Chess Piece of Skill": 10,
+                "Dorra": 49800
+            },
+            {
+                "Shooter Game Cartridge": 38,
+                "Barrage Game Cartridge": 8,
+                "Chess Piece of Skill": 24,
+                "Dorra": 100000
+            },
+            {
+                "Shooter Game Cartridge": 70,
+                "Barrage Game Cartridge": 14,
+                "Demon Bee Game Cartridge": 6,
+                "Chess Piece of Skill": 55,
+                "Dorra": 400000
+            },
+            {
+                "Crimson Tempter": 1,
+                "Barrage Game Cartridge": 50,
+                "Demon Bee Game Cartridge": 18,
+                "Chess Piece of Skill": 232,
+                "Dorra": 900000
+            },
+            {
+                "Crimson Tempter": 2,
+                "Barrage Game Cartridge": 90,
+                "Demon Bee Game Cartridge": 34,
+                "Chess Piece of Skill": 323,
+                "Dorra": 1600000
+            },
+            {
+                "Crimson Tempter": 3,
+                "Barrage Game Cartridge": 140,
+                "Demon Bee Game Cartridge": 50,
+                "Chess Piece of Skill": 478,
+                "Dorra": 2300000
+            },
+            {
+                "Crimson Tempter": 6,
+                "Barrage Game Cartridge": 200,
+                "Demon Bee Game Cartridge": 70,
+                "Chess Piece of Skill": 927,
+                "Dorra": 3400000
+            }
+        ]
+    },
     "158": {
         "id": 158,
         "name": "Snowish Laru",
