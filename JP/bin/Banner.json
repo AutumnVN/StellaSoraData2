@@ -490,5 +490,41 @@
     "Param5": "",
     "Param6": "",
     "Param7": ""
+  },
+  "51": {
+    "Id": 51,
+    "BannerType": 5,
+    "BannerName": "banner_pack_10110_lang",
+    "Param1": "2026-08-18T12:00:00+08:00",
+    "Param2": "2026-09-08T10:59:59+08:00",
+    "Param3": "73",
+    "Param4": "",
+    "Param5": "",
+    "Param6": "",
+    "Param7": ""
+  },
+  "52": {
+    "Id": 52,
+    "BannerType": 6,
+    "BannerName": "banner_skin_13504_lang",
+    "Param1": "2026-08-18T12:00:00+08:00",
+    "Param2": "2026-09-08T10:59:59+08:00",
+    "Param3": "skin.98.14",
+    "Param4": "",
+    "Param5": "",
+    "Param6": "",
+    "Param7": ""
+  },
+  "53": {
+    "Id": 53,
+    "BannerType": 6,
+    "BannerName": "banner_skin_13403_lang",
+    "Param1": "2026-09-01T12:00:00+08:00",
+    "Param2": "2026-09-22T10:59:59+08:00",
+    "Param3": "skin.98.04.1",
+    "Param4": "",
+    "Param5": "",
+    "Param6": "",
+    "Param7": ""
   }
 }
