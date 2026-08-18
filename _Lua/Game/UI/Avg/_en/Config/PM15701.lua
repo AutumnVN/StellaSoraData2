@@ -7,13 +7,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Here! My contact info.",
+			"Finally",
 			""
 		}
 	},
@@ -21,32 +21,15 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Don't you dare delete it!",
+			"Seriously, we've known each other for a while now. Why are we only adding each other now?",
 			""
 		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceBegin",
-		param = {
-			"1",
-			"Got it, great Chaton.",
-			"Who are you?",
-			"",
-			"",
-			"",
-			"",
-			"avg3_100"
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "1"}
 	},
 	{
 		cmd = "SetPhoneMsg",
@@ -58,7 +41,7 @@ return {
 			"",
 			false,
 			"",
-			"Got it, great Chaton.",
+			"Because all kinds of stuff kept getting in the way!",
 			""
 		}
 	},
@@ -66,33 +49,15 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Hmph. Just what I'd expect from a fellow wielder of the dark power.",
+			"I don't care. Next time, you're not allowed to forget",
 			""
 		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			3,
-			"avg1_114",
-			"emoji_cranky_a",
-			"0",
-			"",
-			false,
-			"",
-			"",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "2"}
 	},
 	{
 		cmd = "SetPhoneMsg",
@@ -104,7 +69,35 @@ return {
 			"",
 			false,
 			"",
-			"Who are you?",
+			"How would there even be a next time after we've already added each other?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"When you get a new phone?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Or if I delete...",
 			""
 		}
 	},
@@ -112,13 +105,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"HUH?!!!",
+			"Aahh!",
 			""
 		}
 	},
@@ -126,13 +119,41 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"It's ME, THE GREAT CHATION!!!!",
+			"Don't you dare!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"The point is, don't forget that I'm on your friends list now!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Remember to talk to me!",
 			""
 		}
 	},
@@ -140,8 +161,8 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			3,
-			"avg1_114",
-			"emoji_punch_a",
+			"avg1_157",
+			"emoji_angry_a",
 			"0",
 			"",
 			false,
@@ -151,62 +172,16 @@ return {
 		}
 	},
 	{
-		cmd = "SetPhoneMsgChoiceEnd",
-		param = {"1"}
-	},
-	{
 		cmd = "SetPhoneMsg",
 		param = {
-			0,
-			"avg1_114",
+			1,
+			"avg3_100",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Anyway!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I'll hit you up if I need anything.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Don't delete me!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			3,
-			"avg1_114",
-			"emoji_bye_a",
-			"0",
-			"",
-			false,
-			"",
-			"",
+			"Roger that~",
 			""
 		}
 	},
@@ -218,13 +193,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Hey! Guess what the great Chaton is up to right now?",
+			"Hey~",
 			""
 		}
 	},
@@ -232,188 +207,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"I just smashed my own record in the Monolith!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Pretty amazing, right?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Just as I thought—the only one who can beat me is myself!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Well? Are you bowing down in awe yet?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceBegin",
-		param = {
-			"1",
-			"... You pretty much said it all yourself.",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"avg3_100"
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"... You pretty much said it all yourself.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceEnd",
-		param = {"1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"What? You got a problem with that?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"That's because you take forever to reply!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"A Tyrant can't be this bad at texting, you know?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"If you go up against someone as fast as me...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"You won't even be able to get a word in",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"See?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Literally speechless, hahahaha!",
+			"Stand right there don't move",
 			""
 		}
 	},
@@ -427,7 +227,7 @@ return {
 			"",
 			false,
 			"",
-			"...",
+			"What's up?",
 			""
 		}
 	},
@@ -441,7 +241,7 @@ return {
 			"",
 			false,
 			"",
-			"Yeah, definitely.",
+			"You are literally standing right across from me right now",
 			""
 		}
 	},
@@ -455,7 +255,7 @@ return {
 			"",
 			false,
 			"",
-			"But anyway, congrats on breaking your record again.",
+			"Why are you texting me?",
 			""
 		}
 	},
@@ -463,41 +263,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"??????????",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Wh-Why are you saying that all of a sudden?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I'm gonna go celebrate! Done talking to you!",
+			"Because I'm practicing—",
 			""
 		}
 	},
@@ -511,7 +283,91 @@ return {
 			"",
 			false,
 			"",
-			"...?",
+			"Practicing what?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Why did you suddenly walk away?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"This distance is perfect",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			4,
+			"avg3_100",
+			"emoji_question_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Perfect for what?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"My target practice",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			4,
+			"avg3_100",
+			"emoji_surprise_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
 			""
 		}
 	},
@@ -523,13 +379,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"I tried a new game.",
+			"Heeey—",
 			""
 		}
 	},
@@ -537,41 +393,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"The games coming out of the Monolith lately are a total letdown.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Beat it without even trying.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Couldn't even hold the great Chaton's attention!",
+			"You were sneaking glances at me just now, weren't you?",
 			""
 		}
 	},
@@ -585,7 +413,7 @@ return {
 			"",
 			false,
 			"",
-			"That's just because you're too good.",
+			"Nah",
 			""
 		}
 	},
@@ -593,13 +421,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"...",
+			"Yes, you were. I noticed",
 			""
 		}
 	},
@@ -613,7 +441,7 @@ return {
 			"",
 			false,
 			"",
-			"?",
+			"I was only looking at Shia. She's right next to you",
 			""
 		}
 	},
@@ -621,13 +449,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Obviously the great Chaton is the best!",
+			"!!!",
 			""
 		}
 	},
@@ -635,13 +463,27 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Don't think flattery will get you anywhere!",
+			"Don't look!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Close your eyes!",
 			""
 		}
 	},
@@ -655,7 +497,35 @@ return {
 			"",
 			false,
 			"",
-			"Yeah, yeah.",
+			"Then I won't be able to walk, will I?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Then I'll hold your hand and lead you",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"That's right, you're basically a pet, so I have to keep an eye on you or you'll get into trouble!",
 			""
 		}
 	},
@@ -669,7 +539,7 @@ return {
 			"",
 			false,
 			"",
-			"Then here's hoping the next one actually gives the great Chaton a real challenge!",
+			"Usually, the seeing-eye dog is the one doing the leading...",
 			""
 		}
 	},
@@ -677,13 +547,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Oh, right!",
+			"!!!",
 			""
 		}
 	},
@@ -691,13 +561,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Actually, there's one more game I haven't touched yet.",
+			"Ugggh...!",
 			""
 		}
 	},
@@ -705,27 +575,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Pretty sure it's co-op.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"When I boot it up, you're playing it with me!",
+			"Why are you snickering?!",
 			""
 		}
 	},
@@ -739,49 +595,63 @@ return {
 			"",
 			false,
 			"",
-			"Wait, what?",
+			"Now you're the one stealing glances at me",
 			""
 		}
 	},
 	{
 		cmd = "SetPhoneMsg",
 		param = {
-			0,
-			"avg1_114",
-			"",
+			3,
+			"avg1_157",
+			"emoji_angry_a",
 			"0",
 			"",
 			false,
 			"",
-			"It's settled!",
+			"",
 			""
 		}
 	},
 	{
 		cmd = "SetPhoneMsg",
 		param = {
-			0,
-			"avg1_114",
-			"",
+			3,
+			"avg1_157",
+			"emoji_angry_a",
 			"0",
 			"",
 			false,
 			"",
-			"If you dare stand me up...",
+			"",
 			""
 		}
 	},
 	{
 		cmd = "SetPhoneMsg",
 		param = {
-			0,
-			"avg1_114",
+			3,
+			"avg1_157",
+			"emoji_angry_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"I'll have the White Cat Troupe hunt you across the entire continent!",
+			"Hehe~",
 			""
 		}
 	},
@@ -793,13 +663,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"The great Chaton read the stars tonight, and beheld a profound darkness looming in the cosmos!",
+			"Pop quiz!",
 			""
 		}
 	},
@@ -807,13 +677,27 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Which is why I've decided to pull off something huge.",
+			"Give me the realest, rawest, most unfiltered, straight-to-the-point answer I've ever heard!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"What kind of dessert do you like?",
 			""
 		}
 	},
@@ -821,8 +705,8 @@ return {
 		cmd = "SetPhoneMsgChoiceBegin",
 		param = {
 			"1",
-			"?? What are you up to?",
-			"Isn't the night sky always dark?",
+			"Sea-salt cake",
+			"Squid crackers",
 			"",
 			"",
 			"",
@@ -844,7 +728,7 @@ return {
 			"",
 			false,
 			"",
-			"?? What are you up to?",
+			"Sea-salt cake, I guess",
 			""
 		}
 	},
@@ -852,13 +736,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Heh heh...",
+			"Heh...",
 			""
 		}
 	},
@@ -866,13 +750,55 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Let's go monster hunting!",
+			"Isn't that for little kids?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Not a fan?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I do like it, but...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"That's got nothing to do with it!",
 			""
 		}
 	},
@@ -890,7 +816,7 @@ return {
 			"",
 			false,
 			"",
-			"Isn't the night sky always dark?",
+			"Squid crackers",
 			""
 		}
 	},
@@ -898,115 +824,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"No, no, no...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"It's different! The darkness of dark power is like...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"A brilliantly colorful black!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Anyway! It's just different!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"So let's go monster hunting!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceEnd",
-		param = {"1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Monster hunting?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"What? Got your attention?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I knew the Tyrant shared my dark resonance!",
+			"Ehhhh? You like those...?",
 			""
 		}
 	},
@@ -1020,7 +844,35 @@ return {
 			"",
 			false,
 			"",
-			"...",
+			"What's wrong with that? I'm a savory-snack person",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Those are sometimes used as fish bait, you know...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			4,
+			"avg3_100",
+			"emoji_surprise_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
 			""
 		}
 	},
@@ -1034,7 +886,7 @@ return {
 			"",
 			false,
 			"",
-			"Sure, maybe...",
+			"Ugh! Why didn't you tell me earlier?!",
 			""
 		}
 	},
@@ -1042,13 +894,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Then what are we waiting for?",
+			"Pfft... Hahahaha~ Look at your face~",
 			""
 		}
 	},
@@ -1056,220 +908,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Hurry up and get out of Loxy!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Or I'm blowing it up!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"When did you even get here?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Just now!",
-			""
-		}
-	},
-	{
-		cmd = "SetGroupId",
-		param = {"05"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Heh heh! The great Chaton pulled off something EPIC today!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceBegin",
-		param = {
-			"1",
-			"What is it?",
-			"What kind of trouble did you stir this time?",
-			"Is Kasimira blowing you off again?",
-			"",
-			"",
-			"",
-			"avg3_100"
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"What is it?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Hehe~",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I taught those crooked shooting gallery scammers a lesson they won't forget!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"The great Chaton is straight-up a hero today!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "2"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"What kind of trouble did you stir this time?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Hey! What's THAT supposed to mean?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I saw something shady going down and had to step in!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I helped a little girl get her prize back from those dirty scammers!",
+			"If it really was fish bait, would they actually sell it to people?",
 			""
 		}
 	},
@@ -1287,7 +932,7 @@ return {
 			"",
 			false,
 			"",
-			"Is Kasimira blowing you off again?",
+			"Karin-brand snacks",
 			""
 		}
 	},
@@ -1295,13 +940,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"This has NOTHING to do with Kasimira!",
+			"Never heard of that",
 			""
 		}
 	},
@@ -1309,13 +954,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"I was just walking past a street shooting gallery this afternoon",
+			"HOLD ON!!!",
 			""
 		}
 	},
@@ -1323,13 +968,55 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"And decided to teach those cheating cheapskates a lesson!",
+			"Don't make it weird!!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I was just kidding",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"What I meant was, I'll go with whatever you like",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"... That makes absolutely zero sense",
 			""
 		}
 	},
@@ -1347,7 +1034,7 @@ return {
 			"",
 			false,
 			"",
-			"Oh? What exactly did you do?",
+			"So why are you asking me this all of a sudden?",
 			""
 		}
 	},
@@ -1355,41 +1042,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Just called them out on their little scam.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"And guess what else?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I wiped the floor with them!",
+			"I'm in town, and I figured I'd pick up some snacks to bring back",
 			""
 		}
 	},
@@ -1403,7 +1062,7 @@ return {
 			"",
 			false,
 			"",
-			"That's not exactly something to brag about!",
+			"Then you don't need to ask me. You should ask Shia, right?",
 			""
 		}
 	},
@@ -1411,27 +1070,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"You gotta hit 'em hard so they don't even think about trying it again.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"A Tyrant like you gets that logic, right?",
+			"I already know what Shia likes. I'm asking you",
 			""
 		}
 	},
@@ -1445,21 +1090,417 @@ return {
 			"",
 			false,
 			"",
-			"Alright... You make a fair point...",
+			"I haven't even been staying at your place that long, though...",
 			""
 		}
 	},
 	{
 		cmd = "SetPhoneMsg",
 		param = {
-			3,
-			"avg1_114",
-			"emoji_rose",
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Stay longer, then!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Finish the snacks before you leave!",
+			""
+		}
+	},
+	{
+		cmd = "SetGroupId",
+		param = {"05"}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"That was pretty dangerous, really...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Why did you take up swimming all of a sudden?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Seeing how amazing you and Shia are makes me feel a bit wistful",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You idiot",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Just think about how long we've been training",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Besides, when we practiced, we had each other watching our backs",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Though, honestly, it was mostly Shia watching mine...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Yeah, I'm sorry...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			4,
+			"avg3_100",
+			"emoji_sad_a",
 			"0",
 			"",
 			false,
 			"",
 			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Come on, cheer up",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You wanted to practice, right?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Fine, I'll practice with you",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Really!?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Think of it as a reward for how well you've been behaving lately...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"But the tide's coming in now, so the beach isn't a good place for it",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Oh, I know. You can practice your form in the inflatable pool",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Are you getting in the pool, too?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Of course. I have to hold your hand, don't I?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			4,
+			"avg3_100",
+			"emoji_distract_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Mhm...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"What's wrong? Are you getting cold feet?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"No, I mean... It just occurred to me, but...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Does this count as bathing together?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"fjio!!...gs**fds^!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Pervert!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I can't believe it!!!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Boss, you're such a pervert!!!!",
 			""
 		}
 	},
@@ -1471,13 +1512,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Yo Tyrant, you got any cash on you?",
+			"Ugh...",
 			""
 		}
 	},
@@ -1485,13 +1526,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Bring me some.",
+			"My eyes...",
 			""
 		}
 	},
@@ -1499,1378 +1540,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Quick.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Meet me at that street we always hit up.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceBegin",
-		param = {
-			"1",
-			"Huh??? Is this some kind of ... scam?",
-			"What's going on? Is everything alright??",
-			"",
-			"",
-			"",
-			"",
-			"avg3_100"
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Huh??? Is this some kind of ... scam?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"It's NOT a scam, okay?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Just get over here already!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Bring some Dorra.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I need about 100000.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "2"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"What's going on? Is everything alright??",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Nothing! I just don't have enough cash on me!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Hurry up and get here!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I'll kick your butt if you're late!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceEnd",
-		param = {"1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Alright, alright...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"But you could at least tell me what happened?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"My gun accidentally went off and shattered a dessert shop's window.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Do NOT tell anyone! Or I'll murder you!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Accidentally...?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"You gotta believe me! It really was an accident!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Anyway, just get over here NOW!!",
-			""
-		}
-	},
-	{
-		cmd = "SetGroupId",
-		param = {"07"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Tyrant",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"You know where Kasimira is?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceBegin",
-		param = {
-			"1",
-			"???",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"avg3_100"
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"???",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceEnd",
-		param = {"1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"No idea. Why?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"We were supposed to have a showdown at the training grounds today.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Is she seriously standing me up again?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Why are you always trying to duel Kasimira?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Hmph. Beating her is the only way I'll become the strongest in the White Cat Troupe!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"And prove I'm worthy of my sacred title—the sole inheritor of the dark power within the White Cat Troupe",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"You're always going on about being an \"inheritor\"",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"So who exactly did you inherit this dark power from?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Because there's no one else like you in the Troupe right now.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"There used to be...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"But for some reason, they aren't around anymore.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Which is exactly why the great Chaton has another important mission:",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"To act as the spark and restore the dark power to the White Cat Troupe!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"... That makes absolutely zero sense.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Whatever. I'm sick of waiting. I wanna go hang out in the Monolith.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Wanna come?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceBegin",
-		param = {
-			"2",
-			"I need to go, too?",
-			"Alright, let's go.",
-			"",
-			"",
-			"",
-			"",
-			"avg3_100"
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"2", "1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I need to go, too?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Yeah.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"2", "2"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Alright, let's go.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Catch you at the usual spot then!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceEnd",
-		param = {"2"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Don't take forever! Get going now!",
-			""
-		}
-	},
-	{
-		cmd = "SetGroupId",
-		param = {"08"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Seriously, you still haven't texted me?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Don't tell me you actually forgot?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceBegin",
-		param = {
-			"1",
-			"Forgot what?",
-			"Ah... I was literally just about to text you.",
-			"",
-			"",
-			"",
-			"",
-			"avg3_100"
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Forgot what?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Ugh, obviously!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"It's the great Chaton's birthday!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"So where's my present? And my birthday blessings?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "2"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Ah... I was literally just about to text you.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Oh, really?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Because if you weren't texting me for my birthday...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I'd show up right behind you with my rifle loaded...!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceEnd",
-		param = {"1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"You're so impatient. How am I supposed to surprise you now?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"A surprise?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Wait, you actually got me a surprise?!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Where is it?! What kind of present is it??",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Well, it's not a surprise if I just tell you!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Anyway, Happy Birthday.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"As for your present, you'll have to come get it yourself!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Fine, since you actually put some effort in, the great Chaton shall forgive your insolence.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I expect cake today.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Make sure you've got some ready for me!",
-			""
-		}
-	},
-	{
-		cmd = "SetGroupId",
-		param = {"09"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Ugh, training is the worst...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I'm already practically invincible.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"So why do I still have to do this?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Where's this coming from?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"The Troupe forces us to do these daily drills.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"And some stupid \"tactical assessment\" every month...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"As if the great Chaton needs any of that!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceBegin",
-		param = {
-			"1",
-			"You know what they say: keep your soldiers sharp for when it counts.",
-			"Even the great Chaton has to keep leveling up her skills.",
-			"",
-			"",
-			"",
-			"",
-			"avg3_100"
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"You know what they say: keep your soldiers sharp for when it counts.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"The great Chaton is no foot soldier!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "2"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Even the great Chaton has to keep leveling up her skills.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Careful, or your dark powers might start leaking away!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceEnd",
-		param = {"1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Yeah, right. I'm not falling for that.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I want actual combat, not these boring drills.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Like taking on the Wilds or the Monolith!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Sure, but running live ops out there every single day...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"That would burn through your budget instantly, wouldn't it?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Budget?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"What budget?",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Travel, rations, ammo...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Plus, live combat takes all day. Think about it...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"You'd have zero time left for video games.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Wait, hold on! I definitely need my gaming hours.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Maybe daily combat is a bad idea.",
+			"So dry and uncomfortable...",
 			""
 		}
 	},
@@ -2878,7 +1554,245 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			3,
-			"avg1_114",
+			"avg1_157",
+			"emoji_sad_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Did you strain your eyes?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"It is not...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I was so tired yesterday that when I got back, I lay down on the bed and fell asleep right away",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I forgot to take my contacts out...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Why do you have to take them out before bed? Is it bad to keep wearing them?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Yeah...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I don't know how it works, but it is written on the instructions that come with the contact lenses I wished...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"\"It's best not to sleep while wearing them.\"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Now I understand why...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Then take them out for now. You probably shouldn't go out today either",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You don't like wearing those thick glasses, right?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Hmph. You sure are good at guessing",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I also know you'll be bored at home by yourself today",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Hmph",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Why do you understand me so well?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I hate you",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			3,
+			"avg1_157",
 			"emoji_angry_a",
 			"0",
 			"",
@@ -2889,20 +1803,188 @@ return {
 		}
 	},
 	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Take this!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			3,
+			"avg1_157",
+			"emoji_punch_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Arghhh—I might drop dead",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Just how old are you...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"So, do you want me to come over or not~",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I never said you couldn't...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Hurry up...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Okay, okay~",
+			""
+		}
+	},
+	{
 		cmd = "SetGroupId",
-		param = {"10"}
+		param = {"07"}
 	},
 	{
 		cmd = "SetPhoneMsg",
 		param = {
-			0,
-			"avg1_114",
+			5,
+			"0",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Whoa! Is this...",
+			"You have a missed call.",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			5,
+			"0",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You have a missed call.",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			5,
+			"0",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You have a missed call.",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			5,
+			"0",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Karin poked you.",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			5,
+			"0",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Karin poked you.",
 			""
 		}
 	},
@@ -2910,164 +1992,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"The legendary...",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Dark Power Crystal?!!!!!!!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceBegin",
-		param = {
-			"1",
-			"Uh... Yeah, let's go with that.",
-			"Just kidding. It's really not.",
-			"",
-			"",
-			"",
-			"",
-			"avg3_100"
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Uh... Yeah, let's go with that.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Mmm... This music is amazing!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceJumpTo",
-		param = {"1", "2"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			1,
-			"avg3_100",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Just kidding. It's really not.",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"I don't believe you!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"The music is way too good!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsgChoiceEnd",
-		param = {"1"}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Excellent!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"The great Chaton is pleased!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Name your reward, Tyrant!",
+			"Hello??? Anybody home???",
 			""
 		}
 	},
@@ -3081,7 +2012,7 @@ return {
 			"",
 			false,
 			"",
-			"Reward?",
+			"What's up?",
 			""
 		}
 	},
@@ -3089,13 +2020,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Yep!",
+			"Finally!",
 			""
 		}
 	},
@@ -3103,13 +2034,55 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"Well, since the Tyrant can't decide...",
+			"Thought maybe you lost your phone",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I just got back after a commission...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Whoa, so many calls...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Anything you want me to do?",
 			""
 		}
 	},
@@ -3117,41 +2090,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"I'll just pick for you!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Your reward shall be—",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Me doubling my efforts to help you reclaim your true dark power!",
+			"Nope",
 			""
 		}
 	},
@@ -3173,41 +2118,13 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"So let's go take on some commissions!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Bigger ones! Harder ones!",
-			""
-		}
-	},
-	{
-		cmd = "SetPhoneMsg",
-		param = {
-			0,
-			"avg1_114",
-			"",
-			"0",
-			"",
-			false,
-			"",
-			"Commissions worthy of a true Tyrant!",
+			"Am I not allowed to call on you if nothing happened?",
 			""
 		}
 	},
@@ -3221,7 +2138,66 @@ return {
 			"",
 			false,
 			"",
-			"W-Wait hold on!!!!",
+			"That's not what I meant...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"There should at least be a reason, right...?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsgChoiceBegin",
+		param = {
+			"1",
+			"Feeling hungry?",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"avg3_100"
+		}
+	},
+	{
+		cmd = "SetPhoneMsgChoiceJumpTo",
+		param = {"1", "1"}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Oh! I get it now",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You wanna eat, don't you",
 			""
 		}
 	},
@@ -3229,13 +2205,1041 @@ return {
 		cmd = "SetPhoneMsg",
 		param = {
 			0,
-			"avg1_114",
+			"avg1_157",
 			"",
 			"0",
 			"",
 			false,
 			"",
-			"I'm already at the Trekker Association! Hurry up and get over here, Tyrant!",
+			"As if!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			3,
+			"avg1_157",
+			"emoji_punch_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsgChoiceJumpTo",
+		param = {"1", "2"}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Don't tell me you've been doing surveillance on me",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"No way!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I mean, I do have to keep an eye on you...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"But not like that!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsgChoiceEnd",
+		param = {"1"}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"So, what is it then?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I... I was just thinking...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I was looking through an animal encyclopedia earlier, and I saw something about rabbits",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"It said rabbits can get sick if they get too lonely...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			4,
+			"avg3_100",
+			"emoji_comfort_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Ah yeah I got it",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I'm kind of curious about that book now, too",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Can I come over and read it with you?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Suit yourself",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I'll be there soon",
+			""
+		}
+	},
+	{
+		cmd = "SetGroupId",
+		param = {"08"}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"(Stare)",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Huh?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"(Stare)",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			4,
+			"avg3_100",
+			"emoji_surprise_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"(Keep staring)",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I know, I know~",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"What do you know?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Don't be so impatient. All in good time, yeah?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I'm picking things out with Shia right now",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You mean, a present?!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Oh, that was taken care of way back then",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Right now, we're actually picking out a cake",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			3,
+			"avg1_157",
+			"emoji_cheerup_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I wanna come!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I wanna pick it out with you guys!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You just wait at home, okay? Can't have the birthday girl do all the work",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Oh, I forgot to say it this morning, so I'll say it now",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Happy birthday, Karin!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			4,
+			"avg3_100",
+			"emoji_flower_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Heheh...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			3,
+			"avg1_157",
+			"emoji_heart_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetGroupId",
+		param = {"09"}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Are, are you alright...?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You looked really pale just now",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Of course I did...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Anyone would be scared if they saw a shark half the size of a boat",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Sorry. That was actually \"Boss Shark\"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Sometimes when we're hunting out at sea, it just suddenly shows up",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"That sounds dangerous...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Doesn't it attack people?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"When it meets you for the first time, sure",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"So I fought it, but in the end, neither of us would back down",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Then I found out it likes fish cakes, so sometimes I toss it some as an escort fee",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"When it's around, it keeps other big sea creatures from coming over and causing trouble",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"But most of the time, it's the real troublemaker!",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"What a strange bond you two have",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Exactly...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"And this time it gave you a scare, too",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I'll remember this. Next time I see it, I'm bonking that giant head",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You're surprisingly impressive when it comes to things like this, Karin",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Hmph~",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"You're only realizing that now?",
+			""
+		}
+	},
+	{
+		cmd = "SetGroupId",
+		param = {"10"}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Can sounds carry memories, too?",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Of course they can. You can safely say sound is a part of memory itself",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I heard a strange melody in the Monolith just now...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"For a moment, it felt like I remembered something",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"I see. No wonder you suddenly froze",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Hmm...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Usually, this is where you'd say you didn't hear anything",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"True. But we're inside a Monolith right now. Anything can happen here",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"So my guess is, you must have heard a melody from your memories",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Okay. Even though I don't really get it...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"But... That memory was like a kind of fruit",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"The first bite tasted bitter, but then, very quickly, there was a sweet aftertaste",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			1,
+			"avg3_100",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"The way you described that, Karin. That was so you",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			3,
+			"avg1_157",
+			"emoji_angry_a",
+			"0",
+			"",
+			false,
+			"",
+			"",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"What's that supposed to mean? You're making fun of me again...",
+			""
+		}
+	},
+	{
+		cmd = "SetPhoneMsg",
+		param = {
+			0,
+			"avg1_157",
+			"",
+			"0",
+			"",
+			false,
+			"",
+			"Fine. Since I got to experience something amazing this time, I'll let it slide",
 			""
 		}
 	},

@@ -350,13 +350,13 @@ return {
 	},
 	{
 		id = "avg2_938",
-		name = "***",
+		name = "Glopo Duke",
 		name_bg_color = "#0ABEC5",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg2_939",
-		name = "***",
+		name = "Water Tower Stellaroid",
 		name_bg_color = "#0ABEC5",
 		ver = "1.14.0"
 	},
@@ -1266,13 +1266,13 @@ return {
 	},
 	{
 		id = "avg3_233",
-		name = "***",
+		name = "Shia Rabbit Plushie",
 		name_bg_color = "#0ABEC5",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_234",
-		name = "***",
+		name = "Trekker Association Staff (F)",
 		name_bg_color = "#0ABEC5",
 		ver = "1.14.0"
 	},
@@ -3025,35 +3025,35 @@ return {
 	},
 	{
 		id = "avg3_1314",
-		name = "***",
+		name = "Glopo A",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_975",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_1315",
-		name = "***",
+		name = "Glopo B",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_975",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_1316",
-		name = "***",
+		name = "Glopo C",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_975",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_1317",
-		name = "***",
+		name = "Hermit Crab A",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_945",
 		ver = "1.14.0"
 	},
 	{
 		id = "avg3_1318",
-		name = "***",
+		name = "Hermit Crab B",
 		name_bg_color = "#0ABEC5",
 		reuse = "avg2_945",
 		ver = "1.14.0"
