@@ -1,10 +1,9 @@
-local TaskCommonCtrl_01 = class("TaskCommonCtrl_01", BaseCtrl)
+local BreakOutTaskCtrl = class("BreakOutTaskCtrl", BaseCtrl)
 local JumpUtil = require("Game.Common.Utils.JumpUtil")
 local PlayerActivityData = PlayerData.Activity
 local TabType = GameEnum.ActivityTaskTabType
 local ItemType = GameEnum.itemType
-local tbImgDbType = {SizeDelta = 1, FillAmount = 2}
-TaskCommonCtrl_01._mapNodeConfig = {
+BreakOutTaskCtrl._mapNodeConfig = {
 	TopBarPanel = {
 		sNodeName = "TopBarPanel",
 		sCtrlName = "Game.UI.TopBarEx.TopBarCtrl"
@@ -17,17 +16,6 @@ TaskCommonCtrl_01._mapNodeConfig = {
 	},
 	svList_GroupReward = {
 		sComponentName = "LoopScrollView"
-	},
-	imgGroupDone = {},
-	tmpGroupName = {sComponentName = "TMP_Text"},
-	tmpGroupProgress = {sComponentName = "TMP_Text"},
-	tmpGroupUndone = {
-		sComponentName = "TMP_Text",
-		sLanguageId = "PerActivity_Quest_UnComplete"
-	},
-	btnGroupDone = {
-		sComponentName = "UIButton",
-		callback = "onBtn_GroupDone"
 	},
 	tb_tmpReceived = {
 		nCount = 3,
@@ -52,32 +40,24 @@ TaskCommonCtrl_01._mapNodeConfig = {
 		sLanguageId = "PerActivity_Quest_Receive"
 	}
 }
-TaskCommonCtrl_01._mapEventConfig = {
+BreakOutTaskCtrl._mapEventConfig = {
 	onClick_RewardItem = "onEvent_ClickRewardItem",
 	onClick_TaskDone = "onEvent_ClickTaskDone",
 	onClick_TaskJump = "onEvent_ClickTaskJump"
 }
-TaskCommonCtrl_01._mapRedDotConfig = {}
-function TaskCommonCtrl_01:OnEnable()
+BreakOutTaskCtrl._mapRedDotConfig = {}
+function BreakOutTaskCtrl:OnEnable()
 	local tbParam = self:GetPanelParam()
 	self.nActivityId = type(tbParam) == "table" and tbParam[1] or nil
 	self.nCurGroupIndex = tbParam[2]
-	self.imgDbType = tbParam[3] or tbImgDbType.SizeDelta
 	if type(self.nActivityId) ~= "number" then
 		self.nActivityId = nil
 	end
 	self:BuildData(self.nActivityId)
 	self:refresh_Tab()
 	self:refresh_Task()
-	self:refresh_Group()
-	self:SetEndTimer()
 end
-function TaskCommonCtrl_01:FadeIn()
-	EventManager.Hit(EventId.SetTransition)
-end
-function TaskCommonCtrl_01:BuildData(nActivityId)
-	self.tbData = {}
-	self.tbGroupId = {}
+function BreakOutTaskCtrl:BuildData(nActivityId)
 	if self.tbData == nil then
 		self.tbData = {}
 	end
@@ -221,10 +201,10 @@ function TaskCommonCtrl_01:BuildData(nActivityId)
 		self.nCurGroupIndex = nFirstReddot
 	end
 end
-function TaskCommonCtrl_01:refresh_Tab()
+function BreakOutTaskCtrl:refresh_Tab()
 	self._mapNode.svList_Tab:Init(#self.tbData, self, self.onGridRefresh_Tab, self.onGridBtnClick_Tab)
 end
-function TaskCommonCtrl_01:onGridRefresh_Tab(go)
+function BreakOutTaskCtrl:onGridRefresh_Tab(go)
 	local nIndex = tonumber(go.name) + 1
 	local mapData = self.tbData[nIndex]
 	local mapCfgData_ActivityTaskGroup = ConfigTable.GetData("ActivityTaskGroup", mapData.nGroupId)
@@ -232,6 +212,8 @@ function TaskCommonCtrl_01:onGridRefresh_Tab(go)
 	local nTotal = #mapData.tbTaskData
 	local sProgress = string.format("%s/%s", tostring(nDone), tostring(nTotal))
 	local tr = go.transform
+	local canvasGroupOn = tr:Find("scale_on_click/imgDb_on"):GetComponent("CanvasGroup")
+	local canvasGroupOff = tr:Find("scale_on_click/imgDb_off"):GetComponent("CanvasGroup")
 	self:RefreshScaleOnClick_State(tr, nIndex, mapCfgData_ActivityTaskGroup, sProgress)
 	local goRedDot = tr:Find("scale_on_click/redDotTab")
 	local bInActGroup, nActGroupId = PlayerData.Activity:IsActivityInActivityGroup(self.nActivityId)
@@ -248,7 +230,7 @@ function TaskCommonCtrl_01:onGridRefresh_Tab(go)
 		}, goRedDot, nil, nil, true)
 	end
 end
-function TaskCommonCtrl_01:onGridBtnClick_Tab(go)
+function BreakOutTaskCtrl:onGridBtnClick_Tab(go)
 	local nIndex = tonumber(go.name) + 1
 	if self.nCurGroupIndex ~= nIndex then
 		local canvasGroupOn = go.transform.parent:GetChild(self.nCurGroupIndex - 1):Find("scale_on_click/imgDb_on"):GetComponent("CanvasGroup")
@@ -258,10 +240,9 @@ function TaskCommonCtrl_01:onGridBtnClick_Tab(go)
 		self.nCurGroupIndex = nIndex
 		self:refresh_Tab()
 		self:refresh_Task(true)
-		self:refresh_Group()
 	end
 end
-function TaskCommonCtrl_01:RefreshScaleOnClick_State(tr, nIndex, mapCfgData_ActivityTaskGroup, sProgress)
+function BreakOutTaskCtrl:RefreshScaleOnClick_State(tr, nIndex, mapCfgData_ActivityTaskGroup, sProgress)
 	local canvasGroupOn = tr:Find("scale_on_click/imgDb_on"):GetComponent("CanvasGroup")
 	local canvasGroupOff = tr:Find("scale_on_click/imgDb_off"):GetComponent("CanvasGroup")
 	if self.nCurGroupIndex == nIndex then
@@ -276,14 +257,14 @@ function TaskCommonCtrl_01:RefreshScaleOnClick_State(tr, nIndex, mapCfgData_Acti
 		NovaAPI.SetTMPText(tr:Find("scale_on_click/imgDb_off/tmpTabProgress_off"):GetComponent("TMP_Text"), sProgress)
 	end
 end
-function TaskCommonCtrl_01:refresh_Task(bPlayAnim)
+function BreakOutTaskCtrl:refresh_Task(bPlayAnim)
 	local mapData = self.tbData[self.nCurGroupIndex]
 	if bPlayAnim == true then
 		self._mapNode.svList_Task:SetAnim(0.05)
 	end
 	self._mapNode.svList_Task:Init(#mapData.tbTaskData, self, self.onGridRefresh_Task, nil)
 end
-function TaskCommonCtrl_01:onGridRefresh_Task(go)
+function BreakOutTaskCtrl:onGridRefresh_Task(go)
 	local nIndex = tonumber(go.name) + 1
 	local mapData = self.tbData[self.nCurGroupIndex]
 	local mapTask = mapData.tbTaskData[nIndex]
@@ -291,107 +272,6 @@ function TaskCommonCtrl_01:onGridRefresh_Task(go)
 	for i = 1, 5 do
 		tr:Find("imgRare_" .. tostring(i)).localScale = i == mapTask.nRarity and Vector3.one or Vector3.zero
 	end
-	if self.imgDbType == tbImgDbType.SizeDelta then
-		self:SetImgBar_SizeDelta(mapTask, tr)
-	elseif self.imgDbType == tbImgDbType.FillAmount then
-		self:SetImgBar_FillAmount(mapTask, tr)
-	end
-	local nCount = #mapTask.tbTaskRewardId
-	for i = 1, 2 do
-		local _tr = tr:Find("goTaskReward" .. tostring(i))
-		if i <= nCount then
-			_tr.localScale = Vector3.one
-			local nId = mapTask.tbTaskRewardId[i]
-			local mapCfgData_Item = ConfigTable.GetData("Item", nId)
-			self:SetSprite_FrameColor(_tr:Find("Size/scale_on_click/imgRare").gameObject:GetComponent("Image"), mapCfgData_Item.Rarity, AllEnum.FrameType_New.Item, false)
-			self:SetPngSprite(_tr:Find("Size/scale_on_click/imgIcon").gameObject:GetComponent("Image"), mapCfgData_Item.Icon)
-			_tr:Find("Size/scale_on_click/goReceived").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Received and Vector3.one or Vector3.zero
-			local nNum = self:SetBigNum(mapTask.tbTaskRewardNum[i])
-			local sNum = mapCfgData_Item.Type ~= ItemType.Char and mapCfgData_Item.Type ~= ItemType.Disc and "×" .. tostring(nNum) or ""
-			NovaAPI.SetTMPText(_tr:Find("Size/scale_on_click/tmpCount").gameObject:GetComponent("TMP_Text"), sNum)
-			_tr:GetChild(0).name = tostring(nId)
-			_tr:Find("Size/scale_on_click/goTimeLimit").localScale = 0 < mapCfgData_Item.ExpireType and Vector3.one or Vector3.zero
-		else
-			_tr.localScale = Vector3.zero
-		end
-	end
-	tr:Find("tmpUndone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 >= mapTask.nJumpTo and Vector3.one or Vector3.zero
-	tr:Find("btnDone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Complete and Vector3.one or Vector3.zero
-	tr:Find("btnDone"):GetChild(0).name = tostring(mapTask.nTaskId)
-	tr:Find("btnJump").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 < mapTask.nJumpTo and Vector3.one or Vector3.zero
-	tr:Find("btnJump"):GetChild(0).name = tostring(mapTask.nJumpTo)
-	tr:Find("goDone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Received and Vector3.one or Vector3.zero
-end
-function TaskCommonCtrl_01:onEvent_ClickRewardItem(goBtn)
-	local nItemId = tonumber(goBtn.transform:GetChild(0).name)
-	if nItemId ~= nil then
-		UTILS.ClickItemGridWithTips(nItemId, goBtn.transform, true, true, true)
-	end
-end
-function TaskCommonCtrl_01:onEvent_ClickTaskDone(goBtn)
-	local nTaskId = tonumber(goBtn.transform:GetChild(0).name)
-	if nTaskId ~= nil then
-		local cb = function()
-			self:BuildData(self.nActivityId)
-			self:refresh_Tab()
-			self:refresh_Task(true)
-			self:refresh_Group()
-		end
-		local mapData = self.tbData[self.nCurGroupIndex]
-		self.ins_ActivityTaskData:SendMsg_ActivityTaskRewardReceiveReq(mapData.nGroupId, 0, mapData.nTabType, cb)
-	end
-end
-function TaskCommonCtrl_01:onEvent_ClickTaskJump(goBtn)
-	local nJumpId = tonumber(goBtn.transform:GetChild(0).name)
-	if nJumpId ~= nil and 0 < nJumpId then
-		JumpUtil.JumpTo(nJumpId)
-	end
-end
-function TaskCommonCtrl_01:refresh_Group()
-	local mapData = self.tbData[self.nCurGroupIndex]
-	local nGroupId = mapData.nGroupId
-	local tbTaskData = mapData.tbTaskData
-	self.bGot = table.indexof(self.ins_ActivityTaskData.tbActivityTaskGroupIds, nGroupId) > 0
-	local nDone = mapData.nTaskDoneNum
-	local nOK = mapData.nTaskOKNum
-	local nTotal = #tbTaskData
-	local bDone = nOK == nTotal
-	local mapCfgData_ActivityTaskGroup = ConfigTable.GetData("ActivityTaskGroup", nGroupId)
-	NovaAPI.SetTMPText(self._mapNode.tmpGroupName, mapCfgData_ActivityTaskGroup.TabText)
-	NovaAPI.SetTMPText(self._mapNode.tmpGroupProgress, string.format("%s/%s", tostring(nDone), tostring(nTotal)))
-	self._mapNode.tmpGroupUndone.transform.localScale = bDone == true and Vector3.zero or Vector3.one
-	self._mapNode.btnGroupDone.transform.localScale = bDone == true and self.bGot == false and Vector3.one or Vector3.zero
-	self._mapNode.imgGroupDone.transform.localScale = self.bGot == true and Vector3.one or Vector3.zero
-	self.tbCurGroupRewardId = mapData.tbGroupRewardId
-	self.tbCurGroupRewardNum = mapData.tbGroupRewardNum
-	self._mapNode.svList_GroupReward:Init(#self.tbCurGroupRewardId, self, self.onGridRefresh_GroupRewardItem, self.onGridBtnClick_GroupRewardItem)
-end
-function TaskCommonCtrl_01:onGridRefresh_GroupRewardItem(go)
-	local nIndex = tonumber(go.name) + 1
-	local mapCfgData_Item = ConfigTable.GetData("Item", self.tbCurGroupRewardId[nIndex])
-	local tr = go.transform
-	self:SetSprite_FrameColor(tr:Find("scale_on_click/imgRare").gameObject:GetComponent("Image"), mapCfgData_Item.Rarity, AllEnum.FrameType_New.Item, false)
-	self:SetPngSprite(tr:Find("scale_on_click/imgIcon").gameObject:GetComponent("Image"), mapCfgData_Item.Icon)
-	tr:Find("scale_on_click/goReceived").localScale = self.bGot == true and Vector3.one or Vector3.zero
-	local nNum = self:SetBigNum(self.tbCurGroupRewardNum[nIndex])
-	local sNum = mapCfgData_Item.Type ~= ItemType.Char and mapCfgData_Item.Type ~= ItemType.Disc and "×" .. tostring(nNum) or ""
-	NovaAPI.SetTMPText(tr:Find("scale_on_click/tmpCount").gameObject:GetComponent("TMP_Text"), sNum)
-	tr:Find("scale_on_click/goTimeLimit").localScale = mapCfgData_Item.ExpireType > 0 and Vector3.one or Vector3.zero
-end
-function TaskCommonCtrl_01:onGridBtnClick_GroupRewardItem(go)
-	local nIndex = tonumber(go.transform.parent.name) + 1
-	UTILS.ClickItemGridWithTips(self.tbCurGroupRewardId[nIndex], go.transform, true, true, true)
-end
-function TaskCommonCtrl_01:onBtn_GroupDone()
-	local mapData = self.tbData[self.nCurGroupIndex]
-	local cb = function()
-		self:BuildData(self.nActivityId)
-		self:refresh_Tab()
-		self:refresh_Group()
-	end
-	self.ins_ActivityTaskData:SendMsg_ActivityTaskGroupRewardReceiveReq(mapData.nGroupId, cb)
-end
-function TaskCommonCtrl_01:SetImgBar_SizeDelta(mapTask, tr)
 	local nCur = mapTask.nCur
 	local nMax = mapTask.nMax
 	if nMax <= 0 then
@@ -408,67 +288,58 @@ function TaskCommonCtrl_01:SetImgBar_SizeDelta(mapTask, tr)
 	if 0 < nWidth and nWidth < 40 then
 		nWidth = 40
 	end
-	tr:Find("imgProgessBar"):GetComponent("RectTransform").sizeDelta = Vector2(nWidth, rt.rect.height)
+	tr:Find("imgProgessBar"):GetComponent("RectTransform").sizeDelta = Vector2(nWidth, tr:Find("imgProgessBar"):GetComponent("RectTransform").rect.height)
 	NovaAPI.SetTMPText(tr:Find("tmpTaskDesc"):GetComponent("TMP_Text"), mapTask.sDesc)
 	NovaAPI.SetTMPText(tr:Find("tmpTaskProgress"):GetComponent("TMP_Text"), string.format("%s/%s", tostring(nCur), tostring(nMax)))
+	local nCount = #mapTask.tbTaskRewardId
+	for i = 1, 2 do
+		local _tr = tr:Find("TaskRewards/goTaskReward" .. tostring(i))
+		if i <= nCount then
+			_tr.localScale = Vector3.one
+			local nId = mapTask.tbTaskRewardId[i]
+			local mapCfgData_Item = ConfigTable.GetData("Item", nId)
+			self:SetSprite_FrameColor(_tr:Find("scale_on_click/imgRare").gameObject:GetComponent("Image"), mapCfgData_Item.Rarity, AllEnum.FrameType_New.Item, false)
+			self:SetPngSprite(_tr:Find("scale_on_click/imgIcon").gameObject:GetComponent("Image"), mapCfgData_Item.Icon)
+			_tr:Find("scale_on_click/goReceived").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Received and Vector3.one or Vector3.zero
+			local nNum = mapTask.tbTaskRewardNum[i]
+			local sNum = mapCfgData_Item.Type ~= ItemType.Char and mapCfgData_Item.Type ~= ItemType.Disc and "×" .. tostring(nNum) or ""
+			NovaAPI.SetTMPText(_tr:Find("scale_on_click/tmpCount").gameObject:GetComponent("TMP_Text"), sNum)
+			_tr:GetChild(0).name = tostring(nId)
+			_tr:Find("scale_on_click/goTimeLimit").localScale = 0 < mapCfgData_Item.ExpireType and Vector3.one or Vector3.zero
+		else
+			_tr.localScale = Vector3.zero
+			_tr.gameObject:SetActive(false)
+		end
+	end
+	tr:Find("tmpUndone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 >= mapTask.nJumpTo and Vector3.one or Vector3.zero
+	tr:Find("btnDone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Complete and Vector3.one or Vector3.zero
+	tr:Find("btnDone"):GetChild(0).name = tostring(mapTask.nTaskId)
+	tr:Find("btnJump").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 < mapTask.nJumpTo and Vector3.one or Vector3.zero
+	tr:Find("btnJump"):GetChild(0).name = tostring(mapTask.nJumpTo)
+	tr:Find("goDone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Received and Vector3.one or Vector3.zero
 end
-function TaskCommonCtrl_01:SetImgBar_FillAmount(mapTask, tr)
-	local nCur = mapTask.nCur
-	local nMax = mapTask.nMax
-	if nMax <= 0 then
-		nMax = 0 < nCur and nCur or 1
-	end
-	if nCur > nMax then
-		nCur = nMax
-	end
-	if mapTask.nStatus == AllEnum.ActQuestStatus.Complete or mapTask.nStatus == AllEnum.ActQuestStatus.Received then
-		nCur = nMax
-	end
-	local imgProgessBar = tr:Find("imgProgessBar"):GetComponent("Image")
-	NovaAPI.SetImageFillAmount(imgProgessBar, nCur / nMax)
-	NovaAPI.SetTMPText(tr:Find("tmpTaskDesc"):GetComponent("TMP_Text"), mapTask.sDesc)
-	NovaAPI.SetTMPText(tr:Find("tmpTaskProgress"):GetComponent("TMP_Text"), string.format("%s/%s", tostring(nCur), tostring(nMax)))
-end
-function TaskCommonCtrl_01:SetEndTimer()
-	if self.endTimer ~= nil then
-		self.endTimer:Cancel(false)
-		self.endTimer = nil
-	end
-	if self.ins_ActivityTaskData == nil then
-		return
-	end
-	local nEndTime = self.ins_ActivityTaskData.nEndTime or 0
-	if nEndTime <= 0 then
-		return
-	end
-	local nRemain = nEndTime - CS.ClientManager.Instance.serverTimeStamp
-	if nRemain <= 0 then
-		self:AddTimer(1, 0, function()
-			self:OnActivityEnd()
-		end, true, true, true)
-		return
-	end
-	self.endTimer = self:AddTimer(1, nRemain, function()
-		self:OnActivityEnd()
-	end, true, true, false)
-end
-function TaskCommonCtrl_01:OnActivityEnd()
-	EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("Activity_End_Notice"))
-	EventManager.Hit(EventId.CloesCurPanel)
-end
-function TaskCommonCtrl_01:OnDisable()
-	if self.endTimer ~= nil then
-		self.endTimer:Cancel(false)
-		self.endTimer = nil
+function BreakOutTaskCtrl:onEvent_ClickRewardItem(goBtn)
+	local nItemId = tonumber(goBtn.transform:GetChild(0).name)
+	if nItemId ~= nil then
+		UTILS.ClickItemGridWithTips(nItemId, goBtn.transform, true, true, true)
 	end
 end
-function TaskCommonCtrl_01:SetBigNum(number)
-	local nNum = number
-	if 999999 < nNum then
-		local nFloor = math.floor(nNum / 100)
-		local nK = string.format("%.0f", nFloor / 10)
-		nNum = nK .. "k"
+function BreakOutTaskCtrl:onEvent_ClickTaskDone(goBtn)
+	local nTaskId = tonumber(goBtn.transform:GetChild(0).name)
+	if nTaskId ~= nil then
+		local cb = function()
+			self:BuildData(self.nActivityId)
+			self:refresh_Tab()
+			self:refresh_Task(true)
+		end
+		local mapData = self.tbData[self.nCurGroupIndex]
+		self.ins_ActivityTaskData:SendMsg_ActivityTaskRewardReceiveReq(mapData.nGroupId, 0, mapData.nTabType, cb)
 	end
-	return nNum
 end
-return TaskCommonCtrl_01
+function BreakOutTaskCtrl:onEvent_ClickTaskJump(goBtn)
+	local nJumpId = tonumber(goBtn.transform:GetChild(0).name)
+	if 0 < nJumpId then
+		JumpUtil.JumpTo(nJumpId)
+	end
+end
+return BreakOutTaskCtrl

@@ -1,12 +1,12 @@
 local BaseCtrl = require("GameCore.UI.BaseCtrl")
-local SummerCheckinThemeCtrl = class("SummerCheckinThemeCtrl", BaseCtrl)
+local SummerAdvCtrl = class("SummerAdvCtrl", BaseCtrl)
 local ClientManager = CS.ClientManager.Instance
 local TimerManager = require("GameCore.Timer.TimerManager")
 local LocalData = require("GameCore.Data.LocalData")
-SummerCheckinThemeCtrl._mapNodeConfig = {
+SummerAdvCtrl._mapNodeConfig = {
 	goBg = {sNodeName = "---Bg---"},
 	btnEntrance_ = {
-		nCount = 7,
+		nCount = 5,
 		sComponentName = "UIButton",
 		callback = "OnBtn_ClickActivityEntrance"
 	},
@@ -21,12 +21,12 @@ SummerCheckinThemeCtrl._mapNodeConfig = {
 	imgMiniGame = {sComponentName = "Image"},
 	txtMiniGame = {
 		sComponentName = "TMP_Text",
-		sLanguageId = "IceCreamTruck_PlayTitle"
+		sLanguageId = "Activity_MiniGame_ThrowGifts"
 	},
 	imgMiniGameEnd = {},
 	txtMiniGameEnd = {
 		sComponentName = "TMP_Text",
-		sLanguageId = "IceCreamTruck_PlayTitle"
+		sLanguageId = "Activity_MiniGame_ThrowGifts"
 	},
 	txtMiniGame_End = {},
 	txtTask = {
@@ -115,72 +115,32 @@ SummerCheckinThemeCtrl._mapNodeConfig = {
 	imgShopEnd = {},
 	txtShop_End = {},
 	txtTaskProgressEnd = {sComponentName = "TMP_Text"},
-	txtShow = {
-		sComponentName = "TMP_Text",
-		sLanguageId = "TravelerDuel_ChallengeTitle"
-	},
-	imgShowEnd = {},
-	imgShowActivityTime = {},
-	txtShowActivityTime = {sComponentName = "TMP_Text"},
-	goShowEnd = {},
-	txtShowEnd = {
-		sNodeName = "txtShow_End",
-		sComponentName = "TMP_Text",
-		sLanguageId = "TravelerDuel_ChallengeTitle"
-	},
-	imgShowActivityUnlockTime = {},
-	txtShowActivityUnlockTime = {sComponentName = "TMP_Text"},
-	imgShowLock = {},
-	txtLock = {sComponentName = "TMP_Text"},
-	imgFateCard = {sComponentName = "Image"},
-	txtFateCard = {
-		sComponentName = "TMP_Text",
-		sLanguageId = "Activity_Fate_Card_20102"
-	},
-	imgFateCardEnd = {},
-	txtFateCardEnd = {
-		sComponentName = "TMP_Text",
-		sLanguageId = "Activity_Fate_Card_20102"
-	},
-	txtFateCard_End = {},
-	goFateCardEnd = {},
-	txtFateCardEndState = {
-		sComponentName = "TMP_Text",
-		sLanguageId = "Activity_End"
-	},
-	imgFateCardActivityUnlockTime = {},
-	txtFateCardActivityUnlockTime = {sComponentName = "TMP_Text"},
-	imgFateCardActivityTime = {},
-	txtFateCardActivityTime = {sComponentName = "TMP_Text"},
-	reddotShow = {},
 	dbTaskEnd = {},
-	dbFateCardEnd = {},
 	miniGameRedDot = {},
 	redDotEntrance2 = {},
 	storyRedDot = {},
 	reddotLevel = {},
-	reddotFatecard = {},
 	goMiniGameEnd = {},
 	imgStoryEnd = {}
 }
-SummerCheckinThemeCtrl._mapEventConfig = {}
+SummerAdvCtrl._mapEventConfig = {}
 local ActivityState = {
 	NotOpen = 1,
 	Open = 2,
 	Closed = 3
 }
-function SummerCheckinThemeCtrl:Awake()
+function SummerAdvCtrl:Awake()
 	local param = self:GetPanelParam()
 	if type(param) == "table" then
 		self.nActId = param[1]
 	end
-	self.SummerCheckinData = PlayerData.Activity:GetActivityGroupDataById(self.nActId)
-	if self.SummerCheckinData ~= nil then
-		self.ActivityGroupCfg = self.SummerCheckinData.actGroupConfig
+	self.SummerAdvData = PlayerData.Activity:GetActivityGroupDataById(self.nActId)
+	if self.SummerAdvData ~= nil then
+		self.ActivityGroupCfg = self.SummerAdvData.actGroupConfig
 	end
 	self.tbBtnAnimator = {}
 end
-function SummerCheckinThemeCtrl:OnEnable()
+function SummerAdvCtrl:OnEnable()
 	if #self.tbBtnAnimator == 0 then
 		for k, v in pairs(self._mapNode.btnEntrance_) do
 			local anim = v.transform:GetChild(0):GetComponent("Animator")
@@ -191,29 +151,60 @@ function SummerCheckinThemeCtrl:OnEnable()
 		end
 	end
 	self:RefreshPanel()
-	self:RegisterReddot()
-	local sAnimName = "SummerCheckinPanel_Pullback"
-	local sSoundName = "mode_20103_activity"
+	for i = 1, 5 do
+		local actData = self.SummerAdvData:GetActivityDataByIndex(i)
+		local nActId = actData ~= nil and actData.ActivityId or 0
+		local state = self.tbActState[nActId]
+		if nActId ~= nil and 0 < nActId and state ~= nil then
+			if i == AllEnum.ActivityThemeFuncIndex.Task then
+				if state == ActivityState.Closed then
+					self._mapNode.redDotEntrance2:SetActive(false)
+				else
+					RedDotManager.RegisterNode(RedDotDefine.Activity_Group_Task, {
+						self.nActId,
+						nActId
+					}, self._mapNode.redDotEntrance2)
+				end
+			elseif i == AllEnum.ActivityThemeFuncIndex.Level then
+				RedDotManager.RegisterNode(RedDotDefine.ActivityLevel, {
+					self.nActId,
+					nActId
+				}, self._mapNode.reddotLevel)
+			elseif i == AllEnum.ActivityThemeFuncIndex.Story then
+				RedDotManager.RegisterNode(RedDotDefine.Activity_GroupNew_Avg_Group, {
+					self.nActId,
+					nActId
+				}, self._mapNode.storyRedDot)
+			elseif i == AllEnum.ActivityThemeFuncIndex.MiniGame then
+				if state == ActivityState.Closed then
+					self._mapNode.miniGameRedDot:SetActive(false)
+				else
+					local nActId = actData.ActivityId
+					RedDotManager.RegisterNode(RedDotDefine.Activity_ThrowGift_New, {nActId}, self._mapNode.miniGameRedDot)
+				end
+			end
+		end
+	end
+	local sAnimName = "SummerAdvPanel_in"
+	local sSoundName = "mode_10110_activity"
 	if self.animRoot ~= nil then
 		self.animRoot = self.gameObject:GetComponent("Animator")
-		sAnimName = "SummerCheckinPanel_Full"
-		sSoundName = "mode_20103_activity_1"
+		sAnimName = "SummerAdvPanel_in1"
+		sSoundName = "mode_10110_activity_01"
 	end
 	self.animRoot = self.gameObject:GetComponent("Animator")
-	self.animRoot.enabled = true
 	local nAnimLength = NovaAPI.GetAnimClipLength(self.animRoot, {sAnimName})
 	self.animRoot:Play(sAnimName, 0, 0)
 	CS.WwiseAudioManager.Instance:PlaySound(sSoundName)
 	EventManager.Hit(EventId.TemporaryBlockInput, nAnimLength)
 	self:AddTimer(1, nAnimLength, function()
-		self.animRoot.enabled = false
 		for k, v in pairs(self.tbBtnAnimator) do
 			v.enabled = true
 			v:Play("btnEntrance_idle")
 		end
 	end, true, true, true)
 end
-function SummerCheckinThemeCtrl:OnDisable()
+function SummerAdvCtrl:OnDisable()
 	if nil ~= self.minigameRemainTimer then
 		TimerManager.Remove(self.minigameRemainTimer)
 		self.minigameRemainTimer = nil
@@ -238,74 +229,24 @@ function SummerCheckinThemeCtrl:OnDisable()
 		TimerManager.Remove(self.taskRemainTimer)
 		self.taskRemainTimer = nil
 	end
-	if nil ~= self.showRemainTimer then
-		TimerManager.Remove(self.showRemainTimer)
-		self.showRemainTimer = nil
-	end
 	for i = 1, #self.tbBtnAnimator do
 		self.tbBtnAnimator[i] = nil
 	end
 end
-function SummerCheckinThemeCtrl:RegisterReddot()
-	for i = 1, 7 do
-		local actData = self.SummerCheckinData:GetActivityDataByIndex(i)
-		local nActId = actData ~= nil and actData.ActivityId or 0
-		local state = self.tbActState[nActId]
-		if nActId ~= nil and 0 < nActId and state ~= nil then
-			if i == AllEnum.ActivityThemeFuncIndex.Task then
-				if state == ActivityState.Closed then
-					self._mapNode.redDotEntrance2:SetActive(false)
-				else
-					RedDotManager.RegisterNode(RedDotDefine.Activity_Group_Task, {
-						self.nActId,
-						nActId
-					}, self._mapNode.redDotEntrance2)
-				end
-			elseif i == AllEnum.ActivityThemeFuncIndex.Level then
-				RedDotManager.RegisterNode(RedDotDefine.ActivityLevel, {
-					self.nActId,
-					nActId
-				}, self._mapNode.reddotLevel)
-			elseif i == AllEnum.ActivityThemeFuncIndex.Story then
-				RedDotManager.RegisterNode(RedDotDefine.Activity_GroupNew_Avg_Group, {
-					self.nActId,
-					nActId
-				}, self._mapNode.storyRedDot)
-			elseif i == AllEnum.ActivityThemeFuncIndex.TrekkerVersus then
-				local activityData = ConfigTable.GetData("Activity", actData.ActivityId)
-				local nNeedWorldLevel = tonumber(activityData.LimitParam) or 0
-				if nNeedWorldLevel > PlayerData.Base:GetWorldClass() then
-					self._mapNode.reddotShow:SetActive(false)
-				end
-				RedDotManager.RegisterNode(RedDotDefine.TrekkerVersus, {
-					self.nActId,
-					nActId
-				}, self._mapNode.reddotShow)
-			elseif i == AllEnum.ActivityThemeFuncIndex.FateCard then
-				RedDotManager.RegisterNode(RedDotDefine.Activity_Group_PenguinCard_Level, {
-					self.nActId
-				}, self._mapNode.reddotFatecard)
-			elseif i == AllEnum.ActivityThemeFuncIndex.MiniGame then
-				local nActId = actData.ActivityId
-				RedDotManager.RegisterNode(RedDotDefine.Activity_IceCreamTruck_New, {nActId}, self._mapNode.miniGameRedDot)
-			end
-		end
-	end
-end
-function SummerCheckinThemeCtrl:RefreshPanel()
-	if self.SummerCheckinData == nil or self.ActivityGroupCfg == nil then
+function SummerAdvCtrl:RefreshPanel()
+	if self.SummerAdvData == nil or self.ActivityGroupCfg == nil then
 		return
 	end
 	self:RefreshTime()
 	self:RefreshButtonState()
 end
-function SummerCheckinThemeCtrl:RefreshTime()
-	local bOpen = self.SummerCheckinData:CheckActivityGroupOpen()
+function SummerAdvCtrl:RefreshTime()
+	local bOpen = self.SummerAdvData:CheckActivityGroupOpen()
 	if bOpen then
-		self:RefreshRemainTime(self.SummerCheckinData:GetActGroupEndTime(), self._mapNode.txtActivityTime)
+		self:RefreshRemainTime(self.SummerAdvData:GetActGroupEndTime(), self._mapNode.txtActivityTime)
 		if nil == self.remainTimer then
 			self.remainTimer = self:AddTimer(0, 1, function()
-				local remainTime = self:RefreshRemainTime(self.SummerCheckinData:GetActGroupEndTime(), self._mapNode.txtActivityTime)
+				local remainTime = self:RefreshRemainTime(self.SummerAdvData:GetActGroupEndTime(), self._mapNode.txtActivityTime)
 				if remainTime <= 0 then
 					TimerManager.Remove(self.remainTimer)
 					self.remainTimer = nil
@@ -315,13 +256,13 @@ function SummerCheckinThemeCtrl:RefreshTime()
 	end
 	self._mapNode.imgRemaineTime:SetActive(bOpen)
 	self._mapNode.imgEnd:SetActive(not bOpen)
-	local nOpenMonth, nOpenDay, nEndMonth, nEndDay, nOpenYear, nEndYear = self.SummerCheckinData:GetActGroupDate()
+	local nOpenMonth, nOpenDay, nEndMonth, nEndDay, nOpenYear, nEndYear = self.SummerAdvData:GetActGroupDate()
 	local strOpenDay = string.format("%d", nOpenDay)
 	local strEndDay = string.format("%d", nEndDay)
 	local dateStr = string.format("%s/%s/%s ~ %s/%s/%s", nOpenYear, nOpenMonth, strOpenDay, nEndYear, nEndMonth, strEndDay)
 	NovaAPI.SetTMPText(self._mapNode.txtActivityDate, dateStr)
 end
-function SummerCheckinThemeCtrl:RefreshRemainTime(endTime, txtComp)
+function SummerAdvCtrl:RefreshRemainTime(endTime, txtComp)
 	local curTime = ClientManager.serverTimeStamp
 	local remainTime = endTime - curTime
 	local sTimeStr = ""
@@ -356,7 +297,7 @@ function SummerCheckinThemeCtrl:RefreshRemainTime(endTime, txtComp)
 	NovaAPI.SetTMPText(txtComp, sTimeStr)
 	return remainTime
 end
-function SummerCheckinThemeCtrl:RefreshRemainOpenTime(openTime)
+function SummerAdvCtrl:RefreshRemainOpenTime(openTime)
 	local curTime = ClientManager.serverTimeStamp
 	local remainTime = openTime - curTime
 	local sTimeStr = ""
@@ -375,10 +316,10 @@ function SummerCheckinThemeCtrl:RefreshRemainOpenTime(openTime)
 	end
 	return sTimeStr
 end
-function SummerCheckinThemeCtrl:RefreshButtonState()
+function SummerAdvCtrl:RefreshButtonState()
 	self.tbActState = {}
-	for i = 1, 7 do
-		local actData = self.SummerCheckinData:GetActivityDataByIndex(i)
+	for i = 1, 5 do
+		local actData = self.SummerAdvData:GetActivityDataByIndex(i)
 		if i == AllEnum.ActivityThemeFuncIndex.MiniGame then
 			self:RefreshMiniGameButtonState(actData)
 		elseif i == AllEnum.ActivityThemeFuncIndex.Task then
@@ -389,34 +330,27 @@ function SummerCheckinThemeCtrl:RefreshButtonState()
 			self:RefreshShopButtonState(actData)
 		elseif i == AllEnum.ActivityThemeFuncIndex.Story then
 			self:RefreshStoryButtonState(actData)
-		elseif i == AllEnum.ActivityThemeFuncIndex.TrekkerVersus then
-			self:RefreshOtherButtonState(actData)
-		elseif i == AllEnum.ActivityThemeFuncIndex.FateCard then
-			self:RefreshFateCardButtonState(actData)
 		end
 	end
 end
-function SummerCheckinThemeCtrl:RefreshButtonTimer(actData, timer, txtTrans, imgTrans, refreshFunc)
+function SummerAdvCtrl:RefreshButtonTimer(actData, timer, txtTrans, imgTrans, refreshFunc)
 	local countDowmTimer
 	local activityId = actData.ActivityId
 	local activityData = ConfigTable.GetData("Activity", activityId)
-	local sEndTime = activityData.EndTime
-	if activityData ~= nil and (activityData.ActivityType == GameEnum.activityType.Story or activityData.ActivityType == GameEnum.activityType.HistoryStory) and activityData.MidGroupId ~= nil and activityData.MidGroupId > 0 then
-		local activityGroupData = ConfigTable.GetData("ActivityGroup", activityData.MidGroupId)
-		if activityGroupData ~= nil and activityGroupData.StoryShowTime ~= nil and activityGroupData.StoryShowTime ~= "" then
-			sEndTime = activityGroupData.StoryShowTime
-		end
+	local sEndTime = ""
+	if activityData ~= nil then
+		sEndTime = activityData.EndTime
 	end
 	local state = ActivityState.NotOpen
 	local bShowCountDown = false
 	if activityData ~= nil then
 		local curTime = ClientManager.serverTimeStamp
-		if activityData.StartTime ~= "" and sEndTime ~= "" then
+		if activityData.StartTime ~= "" and activityData.EndTime ~= "" then
 			local openTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(activityData.StartTime)
-			local endTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(sEndTime)
+			local endTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(activityData.EndTime)
 			if curTime < openTime then
 				state = ActivityState.NotOpen
-			elseif curTime >= openTime and curTime <= endTime then
+			elseif curTime >= openTime and curTime < endTime then
 				state = ActivityState.Open
 			else
 				state = ActivityState.Closed
@@ -431,7 +365,7 @@ function SummerCheckinThemeCtrl:RefreshButtonTimer(actData, timer, txtTrans, img
 			end
 		end
 		if state == ActivityState.NotOpen then
-			if nil == timer and activityData.StartTime ~= "" and sEndTime ~= "" then
+			if nil == timer and activityData.StartTime ~= "" and activityData.EndTime ~= "" then
 				local openTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(activityData.StartTime)
 				local fcTimer = function()
 					curTime = ClientManager.serverTimeStamp
@@ -454,15 +388,13 @@ function SummerCheckinThemeCtrl:RefreshButtonTimer(actData, timer, txtTrans, img
 				fcTimer()
 				countDowmTimer = self:AddTimer(0, 1, fcTimer, true, true, false)
 			end
-		elseif state == ActivityState.Open and activityData.StartTime ~= "" and sEndTime ~= "" then
+		elseif state == ActivityState.Open and activityData.StartTime ~= "" and activityData.EndTime ~= "" then
 			do
-				local endTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(sEndTime)
-				if endTime > self.SummerCheckinData:GetActGroupEndTime() then
+				local endTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(activityData.EndTime)
+				if endTime > self.SummerAdvData:GetActGroupEndTime() then
 					bShowCountDown = true
-				elseif endTime < self.SummerCheckinData:GetActGroupEndTime() then
+				elseif endTime < self.SummerAdvData:GetActGroupEndTime() then
 					bShowCountDown = endTime - curTime <= 259200
-				elseif sEndTime ~= activityData.EndTime and sEndTime ~= "" then
-					bShowCountDown = true
 				end
 				if timer == nil and bShowCountDown then
 					self:RefreshRemainTime(endTime, txtTrans)
@@ -484,7 +416,7 @@ function SummerCheckinThemeCtrl:RefreshButtonTimer(actData, timer, txtTrans, img
 	end
 	return state, bShowCountDown, countDowmTimer
 end
-function SummerCheckinThemeCtrl:RefreshMiniGameButtonState(actData)
+function SummerAdvCtrl:RefreshMiniGameButtonState(actData)
 	local activityId = actData.ActivityId
 	local activityData = ConfigTable.GetData("Activity", activityId)
 	if activityData ~= nil then
@@ -502,11 +434,14 @@ function SummerCheckinThemeCtrl:RefreshMiniGameButtonState(actData)
 		self._mapNode.txtMiniGameEnd.gameObject:SetActive(state == ActivityState.Closed)
 		self._mapNode.goMiniGameEnd.gameObject:SetActive(state == ActivityState.Closed)
 		if state ~= ActivityState.Open then
+			RedDotManager.SetValid(RedDotDefine.Activity_ThrowGift_New, {
+				actData.ActivityId
+			}, false)
 		end
 		self.tbActState[activityId] = state
 	end
 end
-function SummerCheckinThemeCtrl:RefreshTaskButtonState(actData)
+function SummerAdvCtrl:RefreshTaskButtonState(actData)
 	local activityId = actData.ActivityId
 	local actInsData = PlayerData.Activity:GetActivityDataById(activityId)
 	local activityData = ConfigTable.GetData("Activity", activityId)
@@ -540,7 +475,7 @@ function SummerCheckinThemeCtrl:RefreshTaskButtonState(actData)
 		NovaAPI.SetTMPText(self._mapNode.txtTaskProgressEnd, progress)
 	end
 end
-function SummerCheckinThemeCtrl:RefreshStoryButtonState(actData)
+function SummerAdvCtrl:RefreshStoryButtonState(actData)
 	local activityId = actData.ActivityId
 	local activityData = ConfigTable.GetData("Activity", activityId)
 	if activityData ~= nil then
@@ -569,7 +504,7 @@ function SummerCheckinThemeCtrl:RefreshStoryButtonState(actData)
 		self.tbActState[activityId] = state
 	end
 end
-function SummerCheckinThemeCtrl:RefreshLevelButtonState(actData)
+function SummerAdvCtrl:RefreshLevelButtonState(actData)
 	local activityId = actData.ActivityId
 	local activityData = ConfigTable.GetData("Activity", activityId)
 	if activityData ~= nil then
@@ -596,9 +531,11 @@ function SummerCheckinThemeCtrl:RefreshLevelButtonState(actData)
 		self._mapNode.goLevelEnd:SetActive(state == ActivityState.Closed)
 		self._mapNode.txtLevel_End.gameObject:SetActive(state == ActivityState.Closed)
 		self.tbActState[activityId] = state
+		local anim = self._mapNode.btnEntrance_[AllEnum.ActivityThemeFuncIndex.Level].transform:GetChild(0):GetComponent("Animator")
+		anim.enabled = state == ActivityState.Open
 	end
 end
-function SummerCheckinThemeCtrl:RefreshShopButtonState(actData)
+function SummerAdvCtrl:RefreshShopButtonState(actData)
 	local activityId = actData.ActivityId
 	local activityData = ConfigTable.GetData("Activity", activityId)
 	if activityData ~= nil then
@@ -617,58 +554,7 @@ function SummerCheckinThemeCtrl:RefreshShopButtonState(actData)
 		self.tbActState[activityId] = state
 	end
 end
-function SummerCheckinThemeCtrl:RefreshOtherButtonState(actData)
-	local activityId = actData.ActivityId
-	local activityData = ConfigTable.GetData("Activity", activityId)
-	if activityData ~= nil then
-		local nNeedWorldLevel = tonumber(activityData.LimitParam) or 0
-		local bNeedLv = nNeedWorldLevel <= PlayerData.Base:GetWorldClass()
-		local refreshFunc = function(actData)
-			self:RefreshOtherButtonState(actData)
-		end
-		local state, bShowCountDown, countDowmTimer
-		if bNeedLv then
-			state, bShowCountDown, countDowmTimer = self:RefreshButtonTimer(actData, self.showRemainTimer, self._mapNode.txtShowActivityTime, self._mapNode.imgShowActivityUnlockTime, refreshFunc)
-			if self.showRemainTimer == nil then
-				self.showRemainTimer = countDowmTimer
-			end
-		else
-			state = ActivityState.NotOpen
-		end
-		self._mapNode.imgShowActivityTime:SetActive(state == ActivityState.Open and bShowCountDown)
-		self._mapNode.imgShowActivityUnlockTime:SetActive(state == ActivityState.NotOpen and bNeedLv)
-		self._mapNode.imgShowEnd:SetActive(state == ActivityState.Closed or not bNeedLv)
-		self._mapNode.txtShow.gameObject:SetActive(state ~= ActivityState.Closed and bNeedLv)
-		self._mapNode.txtShowEnd.gameObject:SetActive(state == ActivityState.Closed or not bNeedLv)
-		self._mapNode.goShowEnd:SetActive(state == ActivityState.Closed)
-		self._mapNode.imgShowLock:SetActive(state == ActivityState.NotOpen and not bNeedLv)
-		local txtLock = orderedFormat(ConfigTable.GetUIText("ActivityEnter_Lock"), nNeedWorldLevel)
-		NovaAPI.SetTMPText(self._mapNode.txtLock, txtLock)
-		self.tbActState[activityId] = state
-	end
-end
-function SummerCheckinThemeCtrl:RefreshFateCardButtonState(actData)
-	local activityId = actData.ActivityId
-	local activityData = ConfigTable.GetData("Activity", activityId)
-	if activityData ~= nil then
-		local refreshFunc = function(actData)
-			self:RefreshFateCardButtonState(actData)
-		end
-		local state, bShowCountDown, countDowmTimer = self:RefreshButtonTimer(actData, self.fateCardRemainTimer, self._mapNode.txtFateCardActivityTime, self._mapNode.imgFateCardActivityUnlockTime, refreshFunc)
-		if self.fateCardRemainTimer == nil then
-			self.fateCardRemainTimer = countDowmTimer
-		end
-		self._mapNode.imgFateCardActivityUnlockTime:SetActive(state == ActivityState.NotOpen)
-		self._mapNode.imgFateCardActivityTime.gameObject:SetActive(state == ActivityState.Open and bShowCountDown)
-		self._mapNode.imgFateCardEnd:SetActive(state == ActivityState.Closed)
-		self._mapNode.txtFateCard_End:SetActive(state == ActivityState.Closed)
-		self._mapNode.txtFateCardEnd.gameObject:SetActive(state == ActivityState.Closed)
-		self._mapNode.goFateCardEnd.gameObject:SetActive(state == ActivityState.Closed)
-		self._mapNode.dbFateCardEnd:SetActive(state == ActivityState.Closed)
-		self.tbActState[activityId] = state
-	end
-end
-function SummerCheckinThemeCtrl:RequireActiviyData()
+function SummerAdvCtrl:RequireActiviyData()
 	if self.bRequiredActData then
 		return
 	end
@@ -682,14 +568,14 @@ function SummerCheckinThemeCtrl:RequireActiviyData()
 		self.bRequiredActData = false
 	end, true, true, true)
 end
-function SummerCheckinThemeCtrl:RefreshActivityData()
+function SummerAdvCtrl:RefreshActivityData()
 	if self.bRequiredActData then
 		return
 	end
 	self:AddTimer(1, 3, self.RequireActiviyData, true, true, true)
 end
-function SummerCheckinThemeCtrl:OnBtn_ClickActivityEntrance(btn, nIndex)
-	local actData = self.SummerCheckinData:GetActivityDataByIndex(nIndex)
+function SummerAdvCtrl:OnBtn_ClickActivityEntrance(btn, nIndex)
+	local actData = self.SummerAdvData:GetActivityDataByIndex(nIndex)
 	local state = self.tbActState[actData.ActivityId]
 	if nil == state then
 		return
@@ -698,18 +584,6 @@ function SummerCheckinThemeCtrl:OnBtn_ClickActivityEntrance(btn, nIndex)
 		EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("Activity_End_Notice"))
 		return
 	elseif state == ActivityState.NotOpen then
-		if nIndex == AllEnum.ActivityThemeFuncIndex.TrekkerVersus then
-			local activityData = ConfigTable.GetData("Activity", actData.ActivityId)
-			if activityData ~= nil then
-				local nNeedWorldLevel = tonumber(activityData.LimitParam) or 0
-				local bNeedLv = nNeedWorldLevel <= PlayerData.Base:GetWorldClass()
-				if not bNeedLv then
-					local txtLock = orderedFormat(ConfigTable.GetUIText("ActivityEnter_Lock"), nNeedWorldLevel)
-					EventManager.Hit(EventId.OpenMessageBox, txtLock)
-					return
-				end
-			end
-		end
 		EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("Activity_Not_Open"))
 		return
 	elseif state == ActivityState.Open then
@@ -732,24 +606,21 @@ function SummerCheckinThemeCtrl:OnBtn_ClickActivityEntrance(btn, nIndex)
 	end
 	if actData.PanelId ~= nil and ActivityState.Open == state then
 		if nIndex == AllEnum.ActivityThemeFuncIndex.MiniGame then
-			LocalData.SetPlayerLocalData("Activity_MiniGame_20103_New", true)
-			RedDotManager.SetValid(RedDotDefine.Activity_GroupNew_MiniGame, {
+			LocalData.SetPlayerLocalData("Activity_ThrowGift_New", true)
+			RedDotManager.SetValid(RedDotDefine.Activity_ThrowGift_New, {
 				actData.ActivityId
 			}, false)
-			EventManager.Hit(EventId.OpenPanel, actData.PanelId, actData.ActivityId, self.nActId)
-		else
-			local nTransitionIdx = self.ActivityGroupCfg.TransitionId
-			if (nTransitionIdx == nil or nTransitionIdx == 0) and nIndex == AllEnum.ActivityThemeFuncIndex.TrekkerVersus then
-				nTransitionIdx = 30
+			local func = function()
+				EventManager.Hit(EventId.OpenPanel, actData.PanelId, actData.ActivityId, self.nActId)
 			end
-			if nTransitionIdx ~= nil and 0 < nTransitionIdx then
-				EventManager.Hit(EventId.SetTransition, nTransitionIdx, function()
-					EventManager.Hit(EventId.OpenPanel, actData.PanelId, actData.ActivityId)
-				end)
-			else
+			EventManager.Hit(EventId.SetTransition, 37, func)
+		elseif self.ActivityGroupCfg.TransitionId ~= nil and self.ActivityGroupCfg.TransitionId > 0 then
+			EventManager.Hit(EventId.SetTransition, self.ActivityGroupCfg.TransitionId, function()
 				EventManager.Hit(EventId.OpenPanel, actData.PanelId, actData.ActivityId)
-			end
+			end)
+		else
+			EventManager.Hit(EventId.OpenPanel, actData.PanelId, actData.ActivityId)
 		end
 	end
 end
-return SummerCheckinThemeCtrl
+return SummerAdvCtrl
