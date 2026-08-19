@@ -279,7 +279,7 @@
                     "damageType": [],
                     "effectType": [],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [
@@ -290,7 +290,7 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "addAttrType": "Skill Intensity (base)",
+                            "addAttrType": "DMG multiplier (base)",
                             "buffIcon": "Icon_CommonBuff_AttackSpeedUp"
                         }
                     ],
@@ -966,7 +966,7 @@
                     "damageType": [],
                     "effectType": [],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [],
@@ -975,7 +975,7 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "addAttrType": "Skill Intensity (base)"
+                            "addAttrType": "DMG multiplier (base)"
                         }
                     ],
                     "hiddenParams": [],
@@ -38314,7 +38314,7 @@
                     ],
                     "effectType": [],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [],
@@ -38327,7 +38327,7 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "addAttrType": "Skill Intensity (base)"
+                            "addAttrType": "DMG multiplier (base)"
                         },
                         {
                             "damageType": "Skill (11.05e, from Skill, scale with Skill)"
@@ -65565,7 +65565,7 @@
                     ],
                     "effectType": [],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [],
@@ -65578,7 +65578,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)"
                         },
                         {
-                            "addAttrType": "Skill Intensity (base)"
+                            "addAttrType": "DMG multiplier (base)"
                         }
                     ],
                     "hiddenParams": [],
@@ -69520,7 +69520,7 @@
                     ],
                     "effectType": [],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [
@@ -69543,7 +69543,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)"
                         },
                         {
-                            "addAttrType": "Skill Intensity (base)",
+                            "addAttrType": "DMG multiplier (base)",
                             "buffIcon": "No Icon"
                         },
                         {
@@ -72859,7 +72859,7 @@
                     ],
                     "effectType": [],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [],
@@ -72872,7 +72872,7 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "addAttrType": "Skill Intensity (base)"
+                            "addAttrType": "DMG multiplier (base)"
                         },
                         {
                             "damageType": "Skill (6.77e, from Skill, scale with Skill)"
@@ -72901,7 +72901,7 @@
                         "Skill DMG Taken (base)"
                     ],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [
@@ -72917,7 +72917,7 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "addAttrType": "Skill Intensity (base)",
+                            "addAttrType": "DMG multiplier (base)",
                             "buffIcon": "Icon_CommonBuff_DefenseDown"
                         },
                         {
@@ -129954,20 +129954,20 @@
                     "damageType": [],
                     "effectType": [],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [],
                     "params": [
-                        "Skill Intensity",
+                        "DMG multiplier",
                         "5.2%/8.4%/11.5%/14.7%/17.8%/21%/22%/23%/24%"
                     ],
                     "paramsTooltips": [
                         {
-                            "addAttrType": "Skill Intensity (base)"
+                            "addAttrType": "DMG multiplier (base)"
                         },
                         {
-                            "addAttrType": "Skill Intensity (base)"
+                            "addAttrType": "DMG multiplier (base)"
                         }
                     ],
                     "hiddenParams": [],
@@ -130040,20 +130040,20 @@
                     "damageType": [],
                     "effectType": [],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [],
                     "params": [
-                        "Skill Intensity",
+                        "DMG multiplier",
                         "10%/16%/22%/28%/34%/40%/42%/44%/45%"
                     ],
                     "paramsTooltips": [
                         {
-                            "addAttrType": "Skill Intensity (base)"
+                            "addAttrType": "DMG multiplier (base)"
                         },
                         {
-                            "addAttrType": "Skill Intensity (base)"
+                            "addAttrType": "DMG multiplier (base)"
                         }
                     ],
                     "hiddenParams": [],
@@ -142079,7 +142079,7 @@
                         "Aqua DMG Taken (base)"
                     ],
                     "addAttrType": [
-                        "Skill Intensity (base)"
+                        "DMG multiplier (base)"
                     ],
                     "effectData": [],
                     "buffIcon": [
@@ -142094,7 +142094,7 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "addAttrType": "Skill Intensity (base)",
+                            "addAttrType": "DMG multiplier (base)",
                             "buffIcon": "Icon_CommonBuff_DefenseDown"
                         },
                         {
