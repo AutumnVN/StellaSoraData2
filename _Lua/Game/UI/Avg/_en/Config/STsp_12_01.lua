@@ -10212,7 +10212,7 @@ return {
 			"",
 			false,
 			"",
-			"Ahaha, we're actually super plain-looking! Totally average! Uh, anyway—Noya, Iris, Boss? Let's go scout ahead!",
+			"Ahaha, we're actually super plain-looking! Totally average! Uh, anyway—Noya, Abmer, Boss? Let's go scout ahead!",
 			""
 		}
 	},
