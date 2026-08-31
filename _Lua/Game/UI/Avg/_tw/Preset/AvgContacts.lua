@@ -169,6 +169,14 @@ return {
 		signature = "沒圖沒真相"
 	},
 	{
+		id = 137,
+		icon = "Icon/Head/head_13701_S",
+		name = "***",
+		landmark = "埃摩金城區菲茨羅伊家族大宅",
+		signature = "買買買！",
+		ver = "1.15.0"
+	},
+	{
 		id = 138,
 		icon = "Icon/Head/head_13801_S",
 		name = "星雁",

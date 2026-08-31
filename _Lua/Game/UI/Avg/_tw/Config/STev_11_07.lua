@@ -1538,7 +1538,7 @@ return {
 			"",
 			false,
 			"",
-			"後來，她從星塔裡許願出了一種名為「隱形眼鏡」的神器。那天，她在內心幫自己辦了一場盛大的慶祝會，慶祝自己從此永遠告別了「四眼妹花鈴」這個外號——",
+			"後來，她從星塔裡許願出了一種名為「隱形眼鏡」的神器。",
 			""
 		}
 	},
@@ -5208,6 +5208,22 @@ return {
 		}
 	},
 	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave_lp",
+			0,
+			2,
+			nil,
+			2.0,
+			0.9,
+			0.0,
+			false,
+			true,
+			0.0
+		}
+	},
+	{
 		cmd = "CtrlBg",
 		param = {
 			0,
@@ -5215,22 +5231,17 @@ return {
 			nil,
 			nil,
 			300.0,
-			1.1,
+			1.2,
 			nil,
 			nil,
 			nil,
 			nil,
 			"none",
 			"Linear",
-			1.0,
-			false,
-			0,
-			10.0
+			0.0,
+			true,
+			0
 		}
-	},
-	{
-		cmd = "Wait",
-		param = {1}
 	},
 	{
 		cmd = "SetTrans",
@@ -5241,7 +5252,7 @@ return {
 			"Linear",
 			false,
 			false,
-			1.0,
+			0.5,
 			true,
 			"default"
 		}
@@ -5253,27 +5264,6 @@ return {
 			"se_432",
 			0.0,
 			false
-		}
-	},
-	{
-		cmd = "CtrlBg",
-		param = {
-			0,
-			nil,
-			nil,
-			nil,
-			nil,
-			nil,
-			nil,
-			nil,
-			nil,
-			nil,
-			"none",
-			"OutBack",
-			1.0,
-			false,
-			0,
-			0.0
 		}
 	},
 	{
@@ -5598,7 +5588,7 @@ return {
 		cmd = "SetAudio",
 		param = {
 			0,
-			"se_336",
+			"se_327",
 			0.0,
 			false
 		}
@@ -5611,20 +5601,20 @@ return {
 			nil,
 			"none",
 			nil,
-			0.3,
 			nil,
 			nil,
 			nil,
 			nil,
 			nil,
-			"JuGong",
+			nil,
+			"jushou2",
 			"none",
 			"OutBack",
 			0,
 			nil,
 			false,
 			1.0,
-			true,
+			false,
 			nil
 		}
 	},
@@ -5634,10 +5624,10 @@ return {
 			0,
 			"fx_avg_water_splash",
 			0,
-			1,
+			2,
 			nil,
-			nil,
-			nil,
+			3.0,
+			1.5,
 			0.0,
 			false,
 			false,
@@ -5651,8 +5641,8 @@ return {
 			"fx_avg_water_attack",
 			0,
 			0,
-			-4.0,
-			-3.0,
+			nil,
+			-1.0,
 			1.5,
 			0.0,
 			false,
@@ -5746,7 +5736,7 @@ return {
 			0,
 			"fx_avg_water_attack",
 			0,
-			0,
+			2,
 			-2.0,
 			4.0,
 			nil,
@@ -5771,7 +5761,7 @@ return {
 			0,
 			"fx_avg_water_attack",
 			0,
-			0,
+			2,
 			-5.0,
 			-2.0,
 			nil,
@@ -5796,7 +5786,7 @@ return {
 			0,
 			"fx_avg_water_attack",
 			0,
-			0,
+			2,
 			5.0,
 			-1.0,
 			nil,
@@ -5943,7 +5933,7 @@ return {
 			"none",
 			nil,
 			nil,
-			0.2,
+			0.1,
 			0.8,
 			nil,
 			nil,
@@ -5951,6 +5941,26 @@ return {
 			0.0,
 			true,
 			nil
+		}
+	},
+	{
+		cmd = "CtrlBg",
+		param = {
+			3,
+			nil,
+			nil,
+			nil,
+			350.0,
+			1.3,
+			nil,
+			nil,
+			nil,
+			nil,
+			"none",
+			"Linear",
+			0.0,
+			true,
+			0
 		}
 	},
 	{
@@ -5996,12 +6006,12 @@ return {
 			nil,
 			"none",
 			nil,
-			1.0,
 			nil,
 			nil,
 			nil,
 			nil,
-			0.0,
+			nil,
+			nil,
 			"LianTiao",
 			"none",
 			"Linear",
@@ -6042,7 +6052,7 @@ return {
 			0,
 			"fx_avg_water_attack",
 			0,
-			0,
+			2,
 			4.0,
 			2.0,
 			0.75,
@@ -6058,7 +6068,7 @@ return {
 			0,
 			"fx_avg_water_attack",
 			0,
-			0,
+			2,
 			-4.0,
 			-2.0,
 			0.75,
@@ -6139,6 +6149,22 @@ return {
 		}
 	},
 	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave_lp",
+			1,
+			2,
+			nil,
+			nil,
+			nil,
+			0.0,
+			false,
+			false,
+			0.0
+		}
+	},
+	{
 		cmd = "SetTrans",
 		param = {
 			1,
@@ -6185,8 +6211,8 @@ return {
 			nil,
 			nil,
 			nil,
-			nil,
-			nil,
+			250.0,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -6205,8 +6231,8 @@ return {
 			nil,
 			nil,
 			nil,
-			nil,
-			nil,
+			250.0,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -6229,9 +6255,9 @@ return {
 			"002",
 			"none",
 			nil,
-			nil,
-			0.2,
-			0.8,
+			0.5,
+			-0.1,
+			1.2,
 			nil,
 			nil,
 			nil,
@@ -6251,9 +6277,9 @@ return {
 			"032",
 			"none",
 			nil,
-			nil,
-			-0.18,
-			1.25,
+			0.5,
+			-0.35,
+			1.5,
 			nil,
 			nil,
 			nil,
@@ -6460,6 +6486,26 @@ return {
 		}
 	},
 	{
+		cmd = "CtrlBg",
+		param = {
+			0,
+			nil,
+			nil,
+			nil,
+			300.0,
+			1.3,
+			nil,
+			nil,
+			nil,
+			nil,
+			"none",
+			"Linear",
+			0.0,
+			true,
+			0
+		}
+	},
+	{
 		cmd = "Wait",
 		param = {0.5}
 	},
@@ -6549,8 +6595,8 @@ return {
 			0,
 			2,
 			nil,
-			nil,
-			nil,
+			0.5,
+			1.5,
 			0.0,
 			false,
 			false,
@@ -6821,12 +6867,30 @@ return {
 		}
 	},
 	{
+		cmd = "Wait",
+		param = {0.5}
+	},
+	{
+		cmd = "SetTrans",
+		param = {
+			0,
+			0,
+			"0",
+			"Linear",
+			false,
+			false,
+			1,
+			true,
+			"default"
+		}
+	},
+	{
 		cmd = "SetStage",
 		param = {
 			4,
 			1,
 			"OutSine",
-			1.0,
+			0.5,
 			true
 		}
 	},
@@ -6846,15 +6910,15 @@ return {
 			nil,
 			nil,
 			nil,
-			nil,
-			nil,
+			300.0,
+			1.3,
 			nil,
 			nil,
 			1.0,
 			nil,
 			"none",
 			"OutSine",
-			1.0,
+			0.0,
 			true,
 			0
 		}
@@ -6875,39 +6939,40 @@ return {
 			1.15,
 			nil,
 			nil,
-			0.0,
+			1.0,
 			0.0,
 			true,
 			nil
 		}
 	},
 	{
-		cmd = "Wait",
-		param = {0.5}
-	},
-	{
-		cmd = "CtrlChar",
+		cmd = "SetFx",
 		param = {
-			"avg1_157",
-			"b",
-			nil,
-			"none",
-			nil,
-			nil,
-			nil,
-			nil,
-			nil,
-			nil,
-			1.0,
-			"none",
-			"none",
-			"OutQuad",
+			0,
+			"fx_avg_splash_lp",
+			0,
 			0,
 			nil,
+			4.0,
+			1.3,
+			0.0,
+			false,
+			false,
+			0.0
+		}
+	},
+	{
+		cmd = "SetTrans",
+		param = {
+			1,
+			0,
+			"0",
+			"Linear",
+			false,
 			false,
 			0.5,
 			true,
-			nil
+			"default"
 		}
 	},
 	{
@@ -6947,6 +7012,31 @@ return {
 			"",
 			"領先了！接下來只需要繼續保持下去就——唔？！",
 			""
+		}
+	},
+	{
+		cmd = "SetAudio",
+		param = {
+			0,
+			"se_370",
+			0.0,
+			false
+		}
+	},
+	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave",
+			0,
+			0,
+			nil,
+			nil,
+			nil,
+			0.0,
+			false,
+			false,
+			0.0
 		}
 	},
 	{
@@ -7000,8 +7090,20 @@ return {
 		}
 	},
 	{
-		cmd = "Wait",
-		param = {0.3}
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_splash_lp",
+			1,
+			0,
+			nil,
+			nil,
+			nil,
+			0.0,
+			false,
+			false,
+			0.0
+		}
 	},
 	{
 		cmd = "SetAudio",
@@ -7011,6 +7113,26 @@ return {
 			0.0,
 			false
 		}
+	},
+	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_splash_end",
+			0,
+			2,
+			nil,
+			nil,
+			nil,
+			0.0,
+			false,
+			false,
+			0.0
+		}
+	},
+	{
+		cmd = "Wait",
+		param = {0.3}
 	},
 	{
 		cmd = "SetBGM",
@@ -7031,22 +7153,6 @@ return {
 			"se_369_stop",
 			0.0,
 			false
-		}
-	},
-	{
-		cmd = "SetFx",
-		param = {
-			0,
-			"fx_avg_splash_end",
-			0,
-			1,
-			nil,
-			nil,
-			nil,
-			0.0,
-			false,
-			false,
-			0.0
 		}
 	},
 	{
@@ -7078,6 +7184,22 @@ return {
 			true,
 			"default",
 			0
+		}
+	},
+	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave_lp",
+			1,
+			2,
+			nil,
+			nil,
+			nil,
+			0.0,
+			false,
+			false,
+			0.0
 		}
 	},
 	{
@@ -7243,7 +7365,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -7253,6 +7375,22 @@ return {
 			0.0,
 			true,
 			0
+		}
+	},
+	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave_lp",
+			0,
+			2,
+			nil,
+			2.0,
+			0.9,
+			0.0,
+			false,
+			false,
+			0.0
 		}
 	},
 	{
@@ -7286,28 +7424,6 @@ return {
 			nil,
 			nil,
 			-0.3,
-			nil,
-			nil,
-			nil,
-			0.0,
-			0.0,
-			true,
-			nil
-		}
-	},
-	{
-		cmd = "SetChar",
-		param = {
-			0,
-			0,
-			"none",
-			"avg2_945",
-			"b",
-			"002",
-			"none",
-			nil,
-			0.45,
-			-0.5,
 			nil,
 			nil,
 			nil,
@@ -7557,6 +7673,22 @@ return {
 			0.7,
 			true,
 			"default"
+		}
+	},
+	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave_lp",
+			1,
+			2,
+			nil,
+			nil,
+			nil,
+			0.0,
+			false,
+			false,
+			0.0
 		}
 	},
 	{
@@ -8567,7 +8699,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			1.2,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -9260,7 +9392,7 @@ return {
 			"",
 			false,
 			"",
-			"看不清楚又怎樣…衝浪板沒了又怎樣…==RT==這麼多年來，那些天天泡在海裡的日子，那些日復一日的拚命訓練，絕對不是在浪費時間——",
+			"看不清楚又怎樣…衝浪板沒了又怎樣…這麼多年來，那些天天泡在海裡的日子，那些日復一日的拚命訓練，絕對不是在浪費時間——",
 			""
 		}
 	},
@@ -9409,7 +9541,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -9419,6 +9551,22 @@ return {
 			0.0,
 			true,
 			0
+		}
+	},
+	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave_lp",
+			0,
+			2,
+			nil,
+			3.0,
+			1.0,
+			0.0,
+			false,
+			false,
+			0.0
 		}
 	},
 	{
@@ -9746,7 +9894,7 @@ return {
 			"002",
 			"none",
 			nil,
-			0.3,
+			0.45,
 			0.2,
 			0.8,
 			nil,
@@ -9972,18 +10120,6 @@ return {
 		}
 	},
 	{
-		cmd = "SetFrontObj",
-		param = {
-			1,
-			0,
-			"qstory_event_11_005",
-			nil,
-			nil,
-			1.0,
-			true
-		}
-	},
-	{
 		cmd = "Wait",
 		param = {0.5}
 	},
@@ -9999,6 +10135,18 @@ return {
 			1.0,
 			true,
 			"fade"
+		}
+	},
+	{
+		cmd = "SetFrontObj",
+		param = {
+			1,
+			0,
+			"qstory_event_11_005",
+			nil,
+			nil,
+			0.5,
+			true
 		}
 	},
 	{
@@ -10022,6 +10170,22 @@ return {
 			true,
 			"default",
 			0
+		}
+	},
+	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave_lp",
+			1,
+			2,
+			nil,
+			nil,
+			nil,
+			0.0,
+			false,
+			false,
+			0.0
 		}
 	},
 	{
@@ -10368,7 +10532,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -10391,7 +10555,7 @@ return {
 			"002",
 			"none",
 			nil,
-			0.25,
+			0.5,
 			0.2,
 			0.8,
 			nil,
@@ -10400,6 +10564,22 @@ return {
 			1.0,
 			true,
 			nil
+		}
+	},
+	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave_lp",
+			0,
+			2,
+			nil,
+			2.0,
+			0.9,
+			0.0,
+			false,
+			false,
+			0.0
 		}
 	},
 	{
@@ -10421,8 +10601,8 @@ return {
 		param = {
 			"avg2_938",
 			"a",
-			"002",
-			"none",
+			"003",
+			"avg_emoji_angry",
 			nil,
 			nil,
 			nil,
@@ -10459,7 +10639,7 @@ return {
 		cmd = "SetAudio",
 		param = {
 			0,
-			"se_336",
+			"se_327",
 			0.0,
 			false
 		}
@@ -10478,7 +10658,7 @@ return {
 			nil,
 			nil,
 			nil,
-			"JuGong",
+			"jushou2",
 			"none",
 			"Linear",
 			0,
@@ -10499,10 +10679,10 @@ return {
 			0,
 			"fx_avg_water_splash",
 			0,
-			0,
+			2,
 			nil,
-			nil,
-			nil,
+			3.0,
+			1.5,
 			0.0,
 			false,
 			false,
@@ -10516,8 +10696,8 @@ return {
 			"fx_avg_water_attack",
 			0,
 			0,
-			-4.0,
-			-3.0,
+			nil,
+			-1.0,
 			1.5,
 			0.0,
 			false,
@@ -10534,7 +10714,7 @@ return {
 		param = {
 			0,
 			0,
-			"AvgStageEffect_fade_left",
+			"0",
 			"OutSine",
 			true,
 			true,
@@ -10616,7 +10796,7 @@ return {
 			0,
 			"fx_avg_water_attack",
 			0,
-			0,
+			2,
 			3.0,
 			2.0,
 			nil,
@@ -10641,7 +10821,7 @@ return {
 			0,
 			"fx_avg_water_attack",
 			0,
-			0,
+			2,
 			-2.0,
 			4.0,
 			nil,
@@ -10666,7 +10846,7 @@ return {
 			0,
 			"fx_avg_water_attack",
 			0,
-			0,
+			2,
 			-5.0,
 			-2.0,
 			nil,
@@ -10691,7 +10871,7 @@ return {
 			0,
 			"fx_avg_water_attack",
 			0,
-			0,
+			2,
 			5.0,
 			-1.0,
 			nil,
@@ -10766,7 +10946,7 @@ return {
 		cmd = "SetAudio",
 		param = {
 			0,
-			"se_047",
+			"se_063",
 			0.0,
 			false
 		}
@@ -10850,7 +11030,7 @@ return {
 		cmd = "SetAudio",
 		param = {
 			0,
-			"se_063",
+			"se_148",
 			0.0,
 			false
 		}
@@ -10916,6 +11096,22 @@ return {
 			"fx_avg_line_goleft_lp_w",
 			1,
 			0,
+			nil,
+			nil,
+			nil,
+			0.0,
+			false,
+			false,
+			0.0
+		}
+	},
+	{
+		cmd = "SetFx",
+		param = {
+			0,
+			"fx_avg_wave_lp",
+			1,
+			2,
 			nil,
 			nil,
 			nil,
@@ -11064,7 +11260,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -11919,7 +12115,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			1.2,
+			1.3,
 			nil,
 			nil,
 			nil,
