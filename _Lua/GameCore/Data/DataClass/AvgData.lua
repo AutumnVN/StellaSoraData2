@@ -1040,20 +1040,34 @@ function AvgData:LevelEnd()
 	self.curLevel = nil
 end
 function AvgData:GetLastestStoryId()
-	local nMax = 101
-	for k, v in pairs(self.tbStoryIds) do
-		local curIdx = self.CFG_Story[v]
-		if nMax < curIdx then
-			nMax = curIdx
+	self.nLastestChapter = 0
+	local foreachfunc = function(mapData)
+		if mapData ~= nil then
+			local nStoryId = mapData.Id
+			local sStoryName = table.keyof(self.CFG_Story, nStoryId)
+			local nIdx = table.indexof(self.tbStoryIds, sStoryName)
+			if nIdx ~= nil and 0 < nIdx and mapData.Chapter > self.nLastestChapter then
+				self.nLastestChapter = mapData.Chapter
+			end
 		end
 	end
-	for k, v in pairs(self.tbTempStoryIds) do
-		local curIdx = self.CFG_Story[v]
-		if nMax < curIdx then
-			nMax = curIdx
-		end
+	ForEachTableLine(DataTable.Story, foreachfunc)
+	if self.nLastestChapter == 0 then
+		return 101
 	end
-	return nMax
+	local tbLastestChapterStoryIds = self.CFG_ChapterStoryNumIds[self.nLastestChapter]
+	if tbLastestChapterStoryIds ~= nil then
+		local nMaxStoryId = 0
+		for k, v in pairs(tbLastestChapterStoryIds) do
+			local sStoryName = table.keyof(self.CFG_Story, v)
+			local nIdx = table.indexof(self.tbStoryIds, sStoryName)
+			if nIdx ~= nil and 0 < nIdx and v > nMaxStoryId then
+				nMaxStoryId = v
+			end
+		end
+		return nMaxStoryId
+	end
+	return 101
 end
 function AvgData:GetRecentStoryId(nChapterId)
 	local nStoryId = self.mapRecentStoryId[tostring(nChapterId)]

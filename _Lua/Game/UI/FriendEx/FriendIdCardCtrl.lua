@@ -147,7 +147,12 @@ function FriendIdCardCtrl:RefreshMainlineProgress()
 	local curStoryId = PlayerData.Avg:GetLastestStoryId()
 	local storyConfig = ConfigTable.GetData_Story(curStoryId)
 	local nChapter = storyConfig.Chapter
-	local title = nChapter .. "-" .. storyConfig.Index
+	local mapChapterData = ConfigTable.GetData("StoryChapter", nChapter)
+	local nChapterIndex = 1
+	if mapChapterData ~= nil then
+		nChapterIndex = mapChapterData.Index
+	end
+	local title = nChapterIndex .. "-" .. storyConfig.Index
 	NovaAPI.SetTMPText(self._mapNode.txtMainlineProgress, title)
 end
 function FriendIdCardCtrl:SaveIdCard()
