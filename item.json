@@ -2572,7 +2572,7 @@
     },
     "72020": {
         "id": 72020,
-        "name": "Suffix Title: Dependable",
+        "name": "Suffix Title: Sailor",
         "desc": "Used to unlock the title: Sailor",
         "literary": "A small card inscribed with magical words.",
         "type": "Item",
@@ -4731,9 +4731,9 @@
     },
     "199025": {
         "id": 199025,
-        "name": "Minova Appearance (2D):\nA Taste of Summer All to Herself",
-        "desc": "Minova Appearance (2D):\nA Taste of Summer All to Herself",
-        "literary": "Minova Appearance (2D):\nA Taste of Summer All to Herself",
+        "name": "Cosette Appearance (2D):\nA Taste of Summer All to Herself",
+        "desc": "Cosette Appearance (2D):\nA Taste of Summer All to Herself",
+        "literary": "Cosette Appearance (2D):\nA Taste of Summer All to Herself",
         "type": "Item",
         "rarity": "SSR"
     },
