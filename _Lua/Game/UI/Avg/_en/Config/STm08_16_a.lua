@@ -168,7 +168,7 @@ return {
 		param = {
 			"12:30",
 			"Nebula Month",
-			"14th",
+			"17th",
 			"Mirage",
 			"Eureka Bar"
 		}
@@ -4929,7 +4929,7 @@ return {
 			"",
 			false,
 			"",
-			"I know.==W== That's why we all need a glass of thick, syrupy peach juice. ",
+			"I know.==W== That's why we all need a glass of thick, syrupy peach juice.",
 			""
 		}
 	},
@@ -15275,7 +15275,7 @@ return {
 		param = {
 			"15:30",
 			"Nebula Month",
-			"14th",
+			"17th",
 			"Mirage",
 			"Eureka Bar"
 		}

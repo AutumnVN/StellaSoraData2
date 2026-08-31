@@ -118,7 +118,7 @@ return {
 		cmd = "SetSceneHeading",
 		param = {
 			"08:00",
-			"狩月",
+			"霧月",
 			"07日",
 			"ミラーシュ",
 			"オアシス号"
