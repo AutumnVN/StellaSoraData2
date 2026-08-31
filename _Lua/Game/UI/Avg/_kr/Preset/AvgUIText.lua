@@ -6,6 +6,8 @@ return {
 	AVG_ImportantChoice_Choosed = "이미 선택한 루트입니다",
 	AVG_ImportantChoice_Disable = "이미 갔었던 곳입니다",
 	AVG_ImportantChoice_Match = "해당 루트를 선택하셨습니다",
+	AVG_ImportantChoice_NewChoiceTips1 = "새로운 선택을 할 수 있습니다",
+	AVG_ImportantChoice_NewChoiceTips2 = "마지막 선택",
 	AVG_ImportantChoice_UnknownDesc = "무언가 빠뜨리지 않으셨나요?",
 	AVG_ImportantChoice_UnknownTitle = "미지의 단서",
 	AVG_Log_Choice_Title = "%s의 선택",
@@ -43,6 +45,7 @@ return {
 			"셔츠",
 			"이너웨어"
 		},
+		["==SEX21=="] = {"언니", "오빠"},
 		["==SEX2=="] = {"언니", "오빠"},
 		["==SEX3=="] = {"큰언니", "큰오빠"},
 		["==SEX4=="] = {"여동생", "남동생"},
