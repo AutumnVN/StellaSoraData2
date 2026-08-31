@@ -2702,5 +2702,13 @@
     "CharId": 0,
     "SkinId": 0,
     "Cond": 116
+  },
+  "2017": {
+    "Id": 2017,
+    "Index": 17,
+    "Type": 5,
+    "CharId": 0,
+    "SkinId": 0,
+    "Cond": 116
   }
 }
