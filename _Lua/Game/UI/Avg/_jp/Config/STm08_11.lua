@@ -119,7 +119,7 @@ return {
 		cmd = "SetSceneHeading",
 		param = {
 			"10:30",
-			"狩月",
+			"霧月",
 			"07日",
 			"ミラーシュ",
 			"無名の道"
@@ -5377,7 +5377,7 @@ return {
 		cmd = "SetSceneHeading",
 		param = {
 			"12:45",
-			"狩月",
+			"霧月",
 			"07日",
 			"ミラーシュ",
 			"無名の道"
@@ -10373,7 +10373,7 @@ return {
 		cmd = "SetSceneHeading",
 		param = {
 			"21:10",
-			"狩月",
+			"霧月",
 			"07日",
 			"ミラーシュ",
 			"無名の道"
@@ -11449,7 +11449,7 @@ return {
 		cmd = "SetSceneHeading",
 		param = {
 			"21:25",
-			"狩月",
+			"霧月",
 			"07日",
 			"ミラーシュ",
 			"？？？"
