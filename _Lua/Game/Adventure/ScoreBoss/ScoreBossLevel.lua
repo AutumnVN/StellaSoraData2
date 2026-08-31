@@ -42,6 +42,8 @@ function ScoreBossLevel:Init(parent, nLevelId, nBuildId, isAgain)
 	self.MaxControlScore = getControlData.MaxLimit
 	self.ScoreBossBehavior = getControlData.ScoreBossBehavior
 	self.ScoreGetSwitchGroupId = leveData.ScoreGetSwitchGroup
+	self._dmgSeq = 0
+	self.totalDamageVal = 0
 	self.SwitchRate = 300
 	local getSwitchData = ConfigTable.GetData("ScoreGetSwitch", self.ScoreGetSwitchGroupId * 1000 + 1)
 	if getSwitchData ~= nil then
@@ -140,51 +142,15 @@ function ScoreBossLevel:OnEvent_BossRushSpawnId(bossId)
 	self.BossId = bossId
 	local healthInfo = CS.AdventureModuleHelper.GetEntityHealthInfo(bossId)
 	self.BossMaxHp = healthInfo ~= nil and healthInfo.hpMax or 0
-	EventManager.AddEntityEvent("HpChanged", self.BossId, self, self.OnEvent_HpChanged)
 	EventManager.AddEntityEvent("BossRushMonsterLevelChanged", self.BossId, self, self.OnEvent_BossRushMonsterLevelChanged)
-	EventManager.AddEntityEvent("BossRushMonsterBattleAttrChanged", self.BossId, self, self.OnEvent_BossRushMonsterBattleAttrChanged)
-end
-function ScoreBossLevel:OnEvent_HpChanged(hp, hpMax)
-	if self.isSettlement then
-		return
-	end
-	if self.isDontChangeHp then
-		return
-	end
-	if self.BossCurLvMinHp == -1 then
-		self.BossCurLvMinHp = hp
-		self.parent:DamageToScore(hpMax - hp, self.SwitchRate, self.BattleLv)
-		return
-	end
-	if hp >= self.BossCurLvMinHp then
-		printError("联合讨伐血量hp出现抖动" .. hp .. "    " .. hpMax .. "   " .. self.BattleLv)
-		return
-	end
-	self.BossCurLvMinHp = hp
-	self.parent:DamageToScore(hpMax - hp, self.SwitchRate, self.BattleLv)
+	EventManager.AddEntityEvent("BossRushMonsterDamageValue", self.BossId, self, self.OnEvent_BossRushMonsterDamageValue)
 end
 function ScoreBossLevel:OnEvent_BossRushMonsterLevelChanged(oldLevel, battleLevel)
-	if self.isSettlement then
-		return
-	end
-	self.isDontChangeHp = true
-	self.BossCurLvTotalChangeHp = self.BossCurLvTotalChangeHp + self.BossCurLvMinHp
-	self.BossCurLvMinHp = -1
 	self.BattleLv = battleLevel
-	self.parent:DamageToScore(self.BossMaxHp, self.SwitchRate, self.BattleLv)
-	self.BossCurLvTotalChangeHp = 0
-	if battleLevel <= 100 then
-		local getSwitchData = ConfigTable.GetData("ScoreGetSwitch", self.ScoreGetSwitchGroupId * 1000 + battleLevel)
-		if getSwitchData ~= nil then
-			self.SwitchRate = getSwitchData.SwitchRate
-		end
-	end
-	self.parent:HPLevelChanged()
 end
-function ScoreBossLevel:OnEvent_BossRushMonsterBattleAttrChanged()
-	local healthInfo = CS.AdventureModuleHelper.GetEntityHealthInfo(self.BossId)
-	self.BossMaxHp = healthInfo ~= nil and healthInfo.hpMax or 0
-	self.isDontChangeHp = false
+function ScoreBossLevel:OnEvent_BossRushMonsterDamageValue(val)
+	self.totalDamageVal = self.totalDamageVal + val
+	self.parent:DamageToScore(self.totalDamageVal, self.SwitchRate, self.BattleLv)
 end
 function ScoreBossLevel:ScoreBossResultTime(nTime)
 	self.nTime = nTime
@@ -266,9 +232,8 @@ function ScoreBossLevel:UnBindEvent()
 		end
 	end
 	if self.BossId then
-		EventManager.RemoveEntityEvent("HpChanged", self.BossId, self, self.OnEvent_HpChanged)
 		EventManager.RemoveEntityEvent("BossRushMonsterLevelChanged", self.BossId, self, self.OnEvent_BossRushMonsterLevelChanged)
-		EventManager.RemoveEntityEvent("BossRushMonsterBattleAttrChanged", self.BossId, self, self.OnEvent_BossRushMonsterBattleAttrChanged)
+		EventManager.RemoveEntityEvent("BossRushMonsterDamageValue", self.BossId, self, self.OnEvent_BossRushMonsterDamageValue)
 		self.BossId = nil
 	end
 end

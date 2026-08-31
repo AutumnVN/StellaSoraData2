@@ -2237,7 +2237,7 @@ return {
 			"",
 			false,
 			"",
-			"Aunt Allie.",
+			"Auntie.",
 			""
 		}
 	},
@@ -2276,7 +2276,7 @@ return {
 			"",
 			false,
 			"",
-			"Oh, right. Kids at the White Cat orphanages always say \"Mom.\" We must not raise suspicion...==W== So stick to \"Aunt Allie.\"",
+			"Oh, right. Kids at the White Cat orphanages always say \"Mom.\" We must not raise suspicion...==W== So stick to \"Auntie.\"",
 			""
 		}
 	},
@@ -2430,7 +2430,7 @@ return {
 			"",
 			false,
 			"",
-			"Do you think Aunt Allie could help these kids?==W== She took Amber and me in,==W== after all.",
+			"Do you think Auntie could help these kids?==W== She took Amber and me in,==W== after all.",
 			""
 		}
 	},
@@ -2758,7 +2758,7 @@ return {
 			"",
 			false,
 			"",
-			"Aunt Allie already exhausts herself with her tailoring jobs every day,==W== yet the Dorra she makes==W== is barely enough to feed us.",
+			"Auntie already exhausts herself with her tailoring jobs every day,==W== yet the Dorra she makes==W== is barely enough to feed us.",
 			""
 		}
 	},
@@ -2990,7 +2990,7 @@ return {
 			"",
 			false,
 			"",
-			"When I asked Aunt Allie about it, she just handed me the basement key and told us to focus on our studies. That tells me no matter how hard we try, we're just kids. We can't earn the kind of Dorra we need.",
+			"When I asked Auntie about it, she just handed me the basement key and told us to focus on our studies. That tells me no matter how hard we try, we're just kids. We can't earn the kind of Dorra we need.",
 			""
 		}
 	},
@@ -8666,7 +8666,7 @@ return {
 			"",
 			false,
 			"",
-			"Waaah!==W== Mo—==W==Aunt Allie doesn't want us anymore!",
+			"Waaah!==W== Mo—==W==Auntie doesn't want us anymore!",
 			""
 		}
 	},
@@ -9038,7 +9038,7 @@ return {
 			"",
 			false,
 			"",
-			"Fine! Then you're not our mom anymore! From now on, you're just Aunt Allie. Aunt Allie, Aunt Allie, Aunt Allie, Aunt Allie!",
+			"Fine! Then you're not our mom anymore! From now on, you're just Auntie. Auntie, Auntie, Auntie, Auntie!",
 			""
 		}
 	},

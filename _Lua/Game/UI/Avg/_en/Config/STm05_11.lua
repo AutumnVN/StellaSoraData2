@@ -5740,7 +5740,7 @@ return {
 			"",
 			false,
 			"",
-			"We're safe. Boss, what was that flying out of the roof? Was it the Blade of Jade?",
+			"We're safe. Master, what was that flying out of the roof? Was it the Blade of Jade?",
 			""
 		}
 	},

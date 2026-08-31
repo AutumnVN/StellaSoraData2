@@ -3806,20 +3806,6 @@ return {
 		}
 	},
 	{
-		cmd = "SetTrans",
-		param = {
-			1,
-			0,
-			"16",
-			"OutSine",
-			false,
-			false,
-			0.5,
-			true,
-			"AvgStageEffect_fade_right"
-		}
-	},
-	{
 		cmd = "SetFx",
 		param = {
 			0,
@@ -3833,6 +3819,20 @@ return {
 			false,
 			false,
 			0.0
+		}
+	},
+	{
+		cmd = "SetTrans",
+		param = {
+			1,
+			0,
+			"16",
+			"OutSine",
+			false,
+			false,
+			0.5,
+			true,
+			"AvgStageEffect_fade_right"
 		}
 	},
 	{
@@ -5964,7 +5964,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -7744,7 +7744,7 @@ return {
 			nil,
 			nil,
 			nil,
-			-700.0,
+			-500.0,
 			10.0,
 			nil,
 			nil,
@@ -8808,13 +8808,33 @@ return {
 		}
 	},
 	{
+		cmd = "CtrlBg",
+		param = {
+			0,
+			nil,
+			nil,
+			nil,
+			nil,
+			1.1,
+			nil,
+			nil,
+			nil,
+			nil,
+			"none",
+			"Linear",
+			0.0,
+			false,
+			0
+		}
+	},
+	{
 		cmd = "CtrlStage",
 		param = {
 			0,
 			nil,
 			nil,
 			-100.0,
-			400.0,
+			250.0,
 			1.2,
 			nil,
 			nil,
@@ -9555,7 +9575,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
