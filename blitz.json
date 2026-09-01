@@ -50707,7 +50707,8 @@
     },
     "24": {
         "id": 6310220,
-        "name": "Furious Stomper Crab",
+        "name": "Furious Stomper Crab S11",
+        "season": 11,
         "icon": "boss_Tachie_15",
         "type": "Blitz",
         "mechanic": [
@@ -53246,7 +53247,8 @@
     },
     "25": {
         "id": 6310230,
-        "name": "Forbidden Beauty",
+        "name": "Forbidden Beauty S11",
+        "season": 11,
         "icon": "boss_Tachie_09",
         "type": "Blitz",
         "mechanic": [
