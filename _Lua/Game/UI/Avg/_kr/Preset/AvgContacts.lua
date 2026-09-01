@@ -169,6 +169,14 @@ return {
 		signature = "사진이 없다는 건 진실이 아니라는 것"
 	},
 	{
+		id = 137,
+		icon = "Icon/Head/head_13701_S",
+		name = "***",
+		landmark = "아모르 골드 에리어 피츠로이가문 대저택",
+		signature = "구매! 구매! 구매!",
+		ver = "1.15.0"
+	},
+	{
 		id = 138,
 		icon = "Icon/Head/head_13801_S",
 		name = "닉스",

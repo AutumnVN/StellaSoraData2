@@ -192,12 +192,15 @@ end
 function Avg_1_BgCtrl:Active(bVisible)
 	self.gameObject:SetActive(bVisible == true)
 end
-function Avg_1_BgCtrl:_OptimizeUIEft()
-	if self.eftBg ~= nil then
-		if self.eftBg.effectFactor > 0 or 0 < self.eftBg.blurFactor or 0 < self.eftBg.effectFactorTr then
-			self.eftBg.enabled = true
+function Avg_1_BgCtrl:_OptimizeUIEft(eft, bBlurMode)
+	if eft ~= nil and eft:IsNull() == false then
+		if eft.effectFactor > 0 or 0 < eft.blurFactor or 0 < eft.effectFactorTr then
+			eft.enabled = true
 		else
-			self.eftBg.enabled = false
+			eft.enabled = false
+		end
+		if bBlurMode ~= nil then
+			eft.blurMode = bBlurMode
 		end
 	end
 end
@@ -445,14 +448,14 @@ function Avg_1_BgCtrl:CtrlBg(tbParam)
 			tweener:SetEase(enumEase)
 			if nGray < 0.001 then
 				local _cb = function()
-					self:_OptimizeUIEft()
+					self:_OptimizeUIEft(eft, nil)
 				end
 				tweener.onComplete = dotween_callback_handler(self, _cb)
 			end
 		else
 			eft.effectFactor = nGray
 			if nGray < 0.001 then
-				self:_OptimizeUIEft()
+				self:_OptimizeUIEft(eft, nil)
 			end
 		end
 	end
@@ -480,16 +483,14 @@ function Avg_1_BgCtrl:CtrlBg(tbParam)
 			tweener:SetEase(enumEase)
 			if nBlur < 0.001 then
 				local _cb = function()
-					eft.blurMode = false
-					self:_OptimizeUIEft()
+					self:_OptimizeUIEft(eft, false)
 				end
 				tweener.onComplete = dotween_callback_handler(self, _cb)
 			end
 		else
 			eft.blurFactor = nBlur
 			if nBlur < 0.001 then
-				eft.blurMode = false
-				self:_OptimizeUIEft()
+				self:_OptimizeUIEft(eft, false)
 			end
 		end
 	end

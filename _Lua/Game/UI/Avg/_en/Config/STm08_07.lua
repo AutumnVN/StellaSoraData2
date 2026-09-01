@@ -8618,7 +8618,7 @@ return {
 			"",
 			false,
 			"",
-			"Of course it's bad! See that big box in the hall that blows freezing air?==W== That's an Artifact!",
+			"Of course it's bad! See that big box in the hall that blows freezing air? That's an Artifact!",
 			""
 		}
 	},

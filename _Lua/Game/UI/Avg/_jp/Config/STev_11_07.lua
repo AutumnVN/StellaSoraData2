@@ -5005,26 +5005,6 @@ return {
 		}
 	},
 	{
-		cmd = "CtrlBg",
-		param = {
-			0,
-			nil,
-			nil,
-			nil,
-			300.0,
-			nil,
-			nil,
-			nil,
-			nil,
-			nil,
-			"none",
-			"Linear",
-			0.0,
-			true,
-			0
-		}
-	},
-	{
 		cmd = "SetFx",
 		param = {
 			0,
@@ -5038,6 +5018,26 @@ return {
 			false,
 			true,
 			0.0
+		}
+	},
+	{
+		cmd = "CtrlBg",
+		param = {
+			0,
+			nil,
+			nil,
+			nil,
+			300.0,
+			1.2,
+			nil,
+			nil,
+			nil,
+			nil,
+			"none",
+			"Linear",
+			0.0,
+			true,
+			0
 		}
 	},
 	{
@@ -5719,26 +5719,6 @@ return {
 		}
 	},
 	{
-		cmd = "CtrlBg",
-		param = {
-			3,
-			nil,
-			nil,
-			nil,
-			315.0,
-			nil,
-			nil,
-			nil,
-			nil,
-			nil,
-			"none",
-			"Linear",
-			0.0,
-			true,
-			0
-		}
-	},
-	{
 		cmd = "SetChar",
 		param = {
 			0,
@@ -5758,6 +5738,26 @@ return {
 			0.0,
 			true,
 			nil
+		}
+	},
+	{
+		cmd = "CtrlBg",
+		param = {
+			3,
+			nil,
+			nil,
+			nil,
+			350.0,
+			1.3,
+			nil,
+			nil,
+			nil,
+			nil,
+			"none",
+			"Linear",
+			0.0,
+			true,
+			0
 		}
 	},
 	{
@@ -6008,8 +6008,8 @@ return {
 			nil,
 			nil,
 			nil,
-			100.0,
-			nil,
+			250.0,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -6028,8 +6028,8 @@ return {
 			nil,
 			nil,
 			nil,
-			100.0,
-			nil,
+			250.0,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -6290,7 +6290,7 @@ return {
 			nil,
 			nil,
 			150.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -6707,8 +6707,8 @@ return {
 			nil,
 			nil,
 			nil,
-			nil,
-			nil,
+			300.0,
+			1.3,
 			nil,
 			nil,
 			1.0,
@@ -7162,7 +7162,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -8496,7 +8496,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			1.2,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -9329,7 +9329,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -9349,7 +9349,7 @@ return {
 			0,
 			2,
 			nil,
-			2.5,
+			3.0,
 			1.0,
 			0.0,
 			false,
@@ -10320,7 +10320,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -11048,7 +11048,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			nil,
+			1.3,
 			nil,
 			nil,
 			nil,
@@ -11903,7 +11903,7 @@ return {
 			nil,
 			nil,
 			300.0,
-			1.2,
+			1.3,
 			nil,
 			nil,
 			nil,

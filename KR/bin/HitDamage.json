@@ -97161,7 +97161,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      1800000,
+      1110000,
       0
     ],
     "SkillAbsAmend": [
@@ -97231,7 +97231,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      350000,
+      600000,
       0
     ],
     "SkillAbsAmend": [
@@ -97686,7 +97686,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      300000,
+      610000,
       0
     ],
     "SkillAbsAmend": [
@@ -97791,7 +97791,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      2100000,
+      2800000,
       0
     ],
     "SkillAbsAmend": [
@@ -97896,7 +97896,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      900000,
+      330000,
       0
     ],
     "SkillAbsAmend": [
@@ -97914,7 +97914,7 @@
     "SkillId": 3130128,
     "SkillSlotType": 0,
     "PerkId": 0,
-    "HitImmunityTime": 5000,
+    "HitImmunityTime": 2500,
     "SingleDamage": false
   },
   "31301282": {
@@ -97931,7 +97931,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      900000,
+      330000,
       0
     ],
     "SkillAbsAmend": [
@@ -97949,7 +97949,7 @@
     "SkillId": 3130128,
     "SkillSlotType": 0,
     "PerkId": 0,
-    "HitImmunityTime": 5000,
+    "HitImmunityTime": 2500,
     "SingleDamage": false
   },
   "31301321": {
@@ -98001,7 +98001,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      1650000,
+      710000,
       0
     ],
     "SkillAbsAmend": [

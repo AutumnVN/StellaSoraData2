@@ -109,7 +109,8 @@ return {
 	{
 		id = "avg1_114",
 		name = "シャトン",
-		name_bg_color = "#8e65ad"
+		name_bg_color = "#8e65ad",
+		reuseL2DPose = "b"
 	},
 	{
 		id = "avg1_115",
@@ -250,7 +251,8 @@ return {
 	{
 		id = "avg1_145",
 		name = "オトハ",
-		name_bg_color = "#90a1c6"
+		name_bg_color = "#90a1c6",
+		reuseL2DPose = "b"
 	},
 	{
 		id = "avg1_146",
@@ -321,6 +323,19 @@ return {
 		name = "ウィロー",
 		name_bg_color = "#b0e0f6",
 		ver = "1.13.0"
+	},
+	{
+		id = "avg1_161",
+		name = "***",
+		name_bg_color = "#f4e0d7",
+		reuse = "avg3_161",
+		ver = "2.1.0"
+	},
+	{
+		id = "avg1_162",
+		name = "***",
+		name_bg_color = "#ffddb1",
+		ver = "2.0.0"
 	},
 	{
 		id = "avg1_163",
@@ -3065,6 +3080,13 @@ return {
 		name_bg_color = "#0ABEC5",
 		reuse = "avg1_136",
 		ver = "1.16.0"
+	},
+	{
+		id = "avg3_1320",
+		name = "***",
+		name_bg_color = "#0ABEC5",
+		reuse = "avg3_232",
+		ver = "2.1.0"
 	},
 	{
 		id = "avg4_100",

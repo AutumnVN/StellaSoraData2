@@ -169,6 +169,14 @@ return {
 		signature = "No pic, no proof"
 	},
 	{
+		id = 137,
+		icon = "Icon/Head/head_13701_S",
+		name = "***",
+		landmark = "The Fitzroy Family Mansion, Gold District, Emor",
+		signature = "Shopaholic!",
+		ver = "1.15.0"
+	},
+	{
 		id = 138,
 		icon = "Icon/Head/head_13801_S",
 		name = "Nyx",
